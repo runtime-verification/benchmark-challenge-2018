@@ -1,0 +1,318 @@
+Generation: 2018/10/17 at 16h 23min 38s, Accuracy Activated<BR>
+<TITLE>./Verdict.html</TITLE>
+
+<IMG src=artimon.jpg ALT="artimon.jpg" TITLE="ARTiMon">
+<BR>
+*********************************************************************<BR>
+<BR>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <FONT color="#6D2C99" size=8>ARTiMon</FONT> <BR>
+<BR>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp( <FONT color="#6D2C99">A</FONT>ccurate <FONT color="#6D2C99"> R</FONT>eal <FONT color="#6D2C99"> Ti</FONT>me <FONT color="#6D2C99"> Mon</FONT>itor ) <BR>
+<BR>
+<BR>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Nicolas RAPIN <BR>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<a href="mailto:nicolas.rapin@cea.fr">nicolas.rapin@cea.fr</a><BR>
+<BR>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp CEA LIST <BR>
+<BR>
+<BR>
+*********************************************************************<BR>
+<BR>
+
+<BR>
+<BR>Model Name : Cycles
+<BR>
+<BR>./hybrid_engine_cycles.spec file parsed successfully !!
+<BR>
+<BR>End of this file : Line 61, Column 20
+<BR>
+<BR>Specification file name : ./hybrid_engine_cycles.spec
+<BR>
+<BR>Garbage : yes
+<BR>
+<BR>Specified start date : 0
+<BR>
+<BR>Stop date : DBL_MAX
+<BR>
+<BR>Time Mode : Variable-Step 
+<BR>
+<BR><A name="HazardsList"> Hazards list : </A>
+<BR>
+<BR><A href="#form_14241328">hazar_c</A> &nbsp : &nbsp ! ( prop_c )
+<BR>
+<BR><A href="#form_14241480">hazard_a</A> &nbsp : &nbsp ! ( prop_a )
+<BR>
+<BR><A href="#form_14310376">hazard_b</A> &nbsp : &nbsp ! ( prop_b )<BR><BR><A href="./Verdict.html">Summary</A><BR><BR><BR>
+<BR>
+Date of the first observation : 0.1<BR>
+
+<BR>
+<BR><A name="form_14241480">****************************************************************</A>
+<BR>&nbsp <FONT color="red" size="+1"><B>FAILURE</B></FONT>: hazard <FONT color="red" size="+1"><B>hazard_a</B></FONT> detected !
+<BR>&nbsp Date of the first occurrence : <FONT color="red"><B>3600.2</B></FONT>
+<BR>&nbsp Detection date : 3600.3 
+<BR>
+<BR>****************************************************************
+<BR>
+<BR>hazard_a is : ! ( prop_a )
+<BR>
+<BR>Calculus Interval : [0.1, 3600.3[
+<BR>
+<BR>Validity of sub-formulas:
+<BR>
+<BR><A name="form_hazard_a_1"><FONT color="green"><B>(hazard_a):</B> </FONT><A>! ( <A href="#form_prop_a_1"><FONT color="blue">prop_a</FONT></A> ) with CI [0.1, 3600.3[  :
+<BR>[3600.2, 3600.2] &nbsp
+<BR>
+<BR><A name="form_prop_a_1"><FONT color="green"><B>(prop_a):</B> </FONT><A>( <A href="#form_cycle_end_1"><FONT color="blue">cycle_end</FONT></A> ) -> ( <A href="#form_greatest_exceed_ms_1"><FONT color="blue">greatest_exceed_ms</FONT></A> ) with CI [0.1, 3600.3[  :
+<BR>[0.1, 3600.2[ &nbsp]3600.2, 3600.3[ &nbsp
+<BR>
+<BR><A name="form_cycle_end_1"><FONT color="green"><B>(cycle_end):</B> </FONT><A>Bot <A href="#form_cycleid_1"><FONT color="blue">cycleid</FONT></A> with CI [0.1, 3600.3]  :
+<BR>[3600.2, 3600.2]<SUB>^2.000000000</SUB> &nbsp
+<BR>
+<BR><A name="form_cycleid_1"><FONT color="green"><B>(cycleid):</B> </FONT><A>cycleid with CI [0.1, 3600.3]  :
+<BR>[3600.2, 3600.3]<SUB>^3.000000000</SUB> &nbsp
+<BR>
+<BR><A name="form_greatest_exceed_ms_1"><FONT color="green"><B>(greatest_exceed_ms):</B> </FONT><A>'>' (<A href="#form_greatest_end_cycle_1"><FONT color="blue">greatest_end_cycle</FONT></A>, <A href="#form_131.31_1"><FONT color="blue">131.31</FONT></A>) with CI [0.1, 3600.3[  :
+<BR>[1800.1, 1800.1] &nbsp
+<BR>
+<BR>(<A href="#form_greatest_end_cycle_1"><FONT color="blue">greatest_end_cycle</FONT></A>, <A href="#form_131.31_1"><FONT color="blue">131.31</FONT></A>) with CI [0.1, 3600.3[  :
+<BR>[1800.1, 1800.1]<SUB>^(131.315663700, 131.310000000)</SUB> &nbsp[3600.2, 3600.2]<SUB>^(131.309926000, 131.310000000)</SUB> &nbsp
+<BR>
+<BR><A name="form_greatest_end_cycle_1"><FONT color="green"><B>(greatest_end_cycle):</B> </FONT><A>( <A href="#form_cycle_end_1"><FONT color="blue">cycle_end</FONT></A> ) & ( <A href="#form_greatest_speed_1"><FONT color="blue">greatest_speed</FONT></A> ) with CI [0.1, 3600.3[  :
+<BR>[1800.1, 1800.1]<SUB>^131.315663700</SUB> &nbsp[3600.2, 3600.2]<SUB>^131.309926000</SUB> &nbsp
+<BR>
+<BR><A name="form_greatest_speed_1"><FONT color="green"><B>(greatest_speed):</B> </FONT><A>A{'greatest'}<SUB>] - &#8734, 0[</SUB> ( <A href="#form_speed_by_cycle_1"><FONT color="blue">speed_by_cycle</FONT></A> ) with CI [0.1, 3600.3]  :
+<BR>]3525.3, 3600.2]<SUB>^131.309926000</SUB> &nbsp]3600.2, 3600.3]<SUB>^0.000000000</SUB> &nbsp
+<BR>
+<BR><A name="form_speed_by_cycle_1"><FONT color="green"><B>(speed_by_cycle):</B> </FONT><A>#r ( ( <A href="#form_cycle_stable_1"><FONT color="blue">cycle_stable</FONT></A> ) & <A href="#form_speed_1"><FONT color="blue">speed</FONT></A> ) with CI [0.1, 3600.3[  :
+<BR>[3595.6, 3600.2[<SUB>^0.000000000</SUB> &nbsp[3600.2, 3600.2]<SUB>^&#8709</SUB> &nbsp]3600.2, 3600.3[<SUB>^0.000000000</SUB> &nbsp
+<BR>
+<BR>( <A href="#form_cycle_stable_1"><FONT color="blue">cycle_stable</FONT></A> ) & <A href="#form_speed_1"><FONT color="blue">speed</FONT></A> with CI [0.1, 3600.3[  :
+<BR>[3595.6, 3600.2[<SUB>^0.000000000</SUB> &nbsp]3600.2, 3600.3[<SUB>^0.000000000</SUB> &nbsp
+<BR>
+<BR><A name="form_cycle_stable_1"><FONT color="green"><B>(cycle_stable):</B> </FONT><A>! ( <A href="#form_cycle_end_1"><FONT color="blue">cycle_end</FONT></A> ) with CI [0.1, 3600.3[  :
+<BR>]1800.1, 3600.2[ &nbsp]3600.2, 3600.3[ &nbsp
+<BR>
+<BR><A name="form_speed_1"><FONT color="green"><B>(speed):</B> </FONT><A>speed with CI [0.1, 3600.3]  :
+<BR>[3595.6, 3600.3]<SUB>^0.000000000</SUB> &nbsp
+<BR>
+<BR><A name="form_131.31_1"><FONT color="green"><B>(131.31):</B> </FONT><A>131.31 with CI [0.1, 3600.3]  :
+<BR>[0.1, 3600.3]<SUB>^131.310000000</SUB> &nbsp
+<BR>
+<BR><A href="#HazardsList">(Return to hazards list)</A>
+<BR>
+<BR><A name="form_14310376">****************************************************************</A>
+<BR>&nbsp <FONT color="red" size="+1"><B>FAILURE</B></FONT>: hazard <FONT color="red" size="+1"><B>hazard_b</B></FONT> detected !
+<BR>&nbsp Date of the first occurrence : <FONT color="red"><B>3600.2</B></FONT>
+<BR>&nbsp Detection date : 3600.3 
+<BR>
+<BR>****************************************************************
+<BR>
+<BR>hazard_b is : ! ( <A href="#form_prop_b_1"><FONT color="blue">prop_b</FONT></A> )
+<BR>
+<BR>Calculus Interval : [0.1, 3600.3[
+<BR>
+<BR>Validity of sub-formulas:
+<BR>
+<BR><A name="form_hazard_b_2"><FONT color="green"><B>(hazard_b):</B> </FONT><A>! ( <A href="#form_prop_b_2"><FONT color="blue">prop_b</FONT></A> ) with CI [0.1, 3600.3[  :
+<BR>[3600.2, 3600.2] &nbsp
+<BR>
+<BR><A name="form_prop_b_2"><FONT color="green"><B>(prop_b):</B> </FONT><A>( <A href="#form_cycle_end_2"><FONT color="blue">cycle_end</FONT></A> ) -> ( '<' (<A href="#form_dsoc_dd_2"><FONT color="blue">dsoc_dd</FONT></A>, <A href="#form_2.5_2"><FONT color="blue">2.5</FONT></A>) ) with CI [0.1, 3600.3[  :
+<BR>[0.1, 3600.2[ &nbsp]3600.2, 3600.3[ &nbsp
+<BR>
+<BR><A name="form_cycle_end_2"><FONT color="green"><B>(cycle_end):</B> </FONT><A>Bot <A href="#form_cycleid_2"><FONT color="blue">cycleid</FONT></A> with CI [0.1, 3600.3]  :
+<BR>[3600.2, 3600.2]<SUB>^2.000000000</SUB> &nbsp
+<BR>
+<BR><A name="form_cycleid_2"><FONT color="green"><B>(cycleid):</B> </FONT><A>cycleid with CI [0.1, 3600.3]  :
+<BR>[3600.2, 3600.3]<SUB>^3.000000000</SUB> &nbsp
+<BR>
+<BR>'<' (<A href="#form_dsoc_dd_2"><FONT color="blue">dsoc_dd</FONT></A>, <A href="#form_2.5_2"><FONT color="blue">2.5</FONT></A>) with CI [0.1, 3600.3[  :
+<BR>[1800.1, 1800.1] &nbsp
+<BR>
+<BR>(<A href="#form_dsoc_dd_2"><FONT color="blue">dsoc_dd</FONT></A>, <A href="#form_2.5_2"><FONT color="blue">2.5</FONT></A>) with CI [0.1, 3600.3[  :
+<BR>[1800.1, 1800.1]<SUB>^(1.436457021, 2.500000000)</SUB> &nbsp[3600.2, 3600.2]<SUB>^(2.901110693, 2.500000000)</SUB> &nbsp
+<BR>
+<BR><A name="form_dsoc_dd_2"><FONT color="green"><B>(dsoc_dd):</B> </FONT><A>'div' (<A href="#form_delta_socf_2"><FONT color="blue">delta_socf</FONT></A>, <A href="#form_delta_d_2"><FONT color="blue">delta_d</FONT></A>) with CI [0.1, 3600.3[  :
+<BR>[1800.1, 1800.1]<SUB>^1.436457021</SUB> &nbsp[3600.2, 3600.2]<SUB>^2.901110693</SUB> &nbsp
+<BR>
+<BR>(<A href="#form_delta_socf_2"><FONT color="blue">delta_socf</FONT></A>, <A href="#form_delta_d_2"><FONT color="blue">delta_d</FONT></A>) with CI [0.1, 3600.3[  :
+<BR>[1800.1, 1800.1]<SUB>^(33.419326500, 23.265107140)</SUB> &nbsp[3600.2, 3600.2]<SUB>^(67.486770000, 23.262390560)</SUB> &nbsp
+<BR>
+<BR><A name="form_delta_socf_2"><FONT color="green"><B>(delta_socf):</B> </FONT><A>'-' (A{':='}<SUB>] - &#8734, 0[</SUB> ( <A href="#form_socfuel_at_start_2"><FONT color="blue">socfuel_at_start</FONT></A> ), <A href="#form_socfuel_at_end_2"><FONT color="blue">socfuel_at_end</FONT></A>) with CI [0.1, 3600.3[  :
+<BR>[1800.1, 1800.1]<SUB>^33.419326500</SUB> &nbsp[3600.2, 3600.2]<SUB>^67.486770000</SUB> &nbsp
+<BR>
+<BR>(A{':='}<SUB>] - &#8734, 0[</SUB> ( <A href="#form_socfuel_at_start_2"><FONT color="blue">socfuel_at_start</FONT></A> ), <A href="#form_socfuel_at_end_2"><FONT color="blue">socfuel_at_end</FONT></A>) with CI [0.1, 3600.3[  :
+<BR>[1800.1, 1800.1]<SUB>^(4500.000000000, 4466.580673500)</SUB> &nbsp[3600.2, 3600.2]<SUB>^(4466.580673500, 4399.093903500)</SUB> &nbsp
+<BR>
+<BR>A{':='}<SUB>] - &#8734, 0[</SUB> ( <A href="#form_socfuel_at_start_2"><FONT color="blue">socfuel_at_start</FONT></A> ) with CI [0.1, 3600.3]  :
+<BR>]1800.1, 3600.2]<SUB>^4466.580673500</SUB> &nbsp]3600.2, 3600.3]<SUB>^4399.093903500</SUB> &nbsp
+<BR>
+<BR><A name="form_socfuel_at_start_2"><FONT color="green"><B>(socfuel_at_start):</B> </FONT><A>( Top0 <A href="#form_cycleid_2"><FONT color="blue">cycleid</FONT></A> ) & ( <A href="#form_socf_sized_2"><FONT color="blue">socf_sized</FONT></A> ) with CI [0.1, 3600.3]  :
+<BR>[1800.1, 1800.1]<SUB>^4466.580673500</SUB> &nbsp[3600.2, 3600.2]<SUB>^4399.093903500</SUB> &nbsp
+<BR>
+<BR>Top0 <A href="#form_cycleid_2"><FONT color="blue">cycleid</FONT></A> with CI [0.1, 3600.3]  :
+<BR>[3600.2, 3600.2]<SUB>^3.000000000</SUB> &nbsp
+<BR>
+<BR><A name="form_socf_sized_2"><FONT color="green"><B>(socf_sized):</B> </FONT><A>'*' (<A href="#form_socfuel_2"><FONT color="blue">socfuel</FONT></A>, <A href="#form_4500_2"><FONT color="blue">4500</FONT></A>) with CI [0.1, 3600.3]  :
+<BR>[3541.8, 3600.3]<SUB>^4399.093903500</SUB> &nbsp
+<BR>
+<BR>(<A href="#form_socfuel_2"><FONT color="blue">socfuel</FONT></A>, <A href="#form_4500_2"><FONT color="blue">4500</FONT></A>) with CI [0.1, 3600.3]  :
+<BR>[3541.8, 3600.3]<SUB>^(0.977576423, 4500.000000000)</SUB> &nbsp
+<BR>
+<BR><A name="form_socfuel_2"><FONT color="green"><B>(socfuel):</B> </FONT><A>socfuel with CI [0.1, 3600.3]  :
+<BR>[3541.8, 3600.3]<SUB>^0.977576423</SUB> &nbsp
+<BR>
+<BR><A name="form_4500_2"><FONT color="green"><B>(4500):</B> </FONT><A>4500 with CI [0.1, 3600.3]  :
+<BR>[0.1, 3600.3]<SUB>^4500.000000000</SUB> &nbsp
+<BR>
+<BR><A name="form_socfuel_at_end_2"><FONT color="green"><B>(socfuel_at_end):</B> </FONT><A>( <A href="#form_cycle_end_2"><FONT color="blue">cycle_end</FONT></A> ) & ( A{':='}<SUB>] - &#8734, 0[</SUB> ( <A href="#form_socf_sized_2"><FONT color="blue">socf_sized</FONT></A> ) ) with CI [0.1, 3600.3[  :
+<BR>[1800.1, 1800.1]<SUB>^4466.580673500</SUB> &nbsp[3600.2, 3600.2]<SUB>^4399.093903500</SUB> &nbsp
+<BR>
+<BR>A{':='}<SUB>] - &#8734, 0[</SUB> ( <A href="#form_socf_sized_2"><FONT color="blue">socf_sized</FONT></A> ) with CI [0.1, 3600.3]  :
+<BR>]3541.8, 3600.3]<SUB>^4399.093903500</SUB> &nbsp
+<BR>
+<BR><A name="form_delta_d_2"><FONT color="green"><B>(delta_d):</B> </FONT><A>'-' (<A href="#form_distance_at_end_2"><FONT color="blue">distance_at_end</FONT></A>, A{':='}<SUB>] - &#8734, 0[</SUB> ( <A href="#form_distance_at_start_2"><FONT color="blue">distance_at_start</FONT></A> )) with CI [0.1, 3600.3[  :
+<BR>[1800.1, 1800.1]<SUB>^23.265107140</SUB> &nbsp[3600.2, 3600.2]<SUB>^23.262390560</SUB> &nbsp
+<BR>
+<BR>(<A href="#form_distance_at_end_2"><FONT color="blue">distance_at_end</FONT></A>, A{':='}<SUB>] - &#8734, 0[</SUB> ( <A href="#form_distance_at_start_2"><FONT color="blue">distance_at_start</FONT></A> )) with CI [0.1, 3600.3[  :
+<BR>[1800.1, 1800.1]<SUB>^(23.265107140, 0.000000000)</SUB> &nbsp[3600.2, 3600.2]<SUB>^(46.527497700, 23.265107140)</SUB> &nbsp
+<BR>
+<BR><A name="form_distance_at_end_2"><FONT color="green"><B>(distance_at_end):</B> </FONT><A>( <A href="#form_cycle_end_2"><FONT color="blue">cycle_end</FONT></A> ) & ( A{':='}<SUB>] - &#8734, 0[</SUB> <A href="#form_distance_2"><FONT color="blue">distance</FONT></A> ) with CI [0.1, 3600.3[  :
+<BR>[1800.1, 1800.1]<SUB>^23.265107140</SUB> &nbsp[3600.2, 3600.2]<SUB>^46.527497700</SUB> &nbsp
+<BR>
+<BR>A{':='}<SUB>] - &#8734, 0[</SUB> <A href="#form_distance_2"><FONT color="blue">distance</FONT></A> with CI [0.1, 3600.3]  :
+<BR>]3595.6, 3600.3]<SUB>^46.527497700</SUB> &nbsp
+<BR>
+<BR><A name="form_distance_2"><FONT color="green"><B>(distance):</B> </FONT><A>distance with CI [0.1, 3600.3]  :
+<BR>[3595.6, 3600.3]<SUB>^46.527497700</SUB> &nbsp
+<BR>
+<BR>A{':='}<SUB>] - &#8734, 0[</SUB> ( <A href="#form_distance_at_start_2"><FONT color="blue">distance_at_start</FONT></A> ) with CI [0.1, 3600.3]  :
+<BR>]1800.1, 3600.2]<SUB>^23.265107140</SUB> &nbsp]3600.2, 3600.3]<SUB>^46.527497700</SUB> &nbsp
+<BR>
+<BR><A name="form_distance_at_start_2"><FONT color="green"><B>(distance_at_start):</B> </FONT><A>( Top0 <A href="#form_cycleid_2"><FONT color="blue">cycleid</FONT></A> ) & <A href="#form_distance_2"><FONT color="blue">distance</FONT></A> with CI [0.1, 3600.3]  :
+<BR>[1800.1, 1800.1]<SUB>^23.265107140</SUB> &nbsp[3600.2, 3600.2]<SUB>^46.527497700</SUB> &nbsp
+<BR>
+<BR>Top0 <A href="#form_cycleid_2"><FONT color="blue">cycleid</FONT></A> with CI [0.1, 3600.3]  :
+<BR>[3600.2, 3600.2]<SUB>^3.000000000</SUB> &nbsp
+<BR>
+<BR><A name="form_2.5_2"><FONT color="green"><B>(2.5):</B> </FONT><A>2.5 with CI [0.1, 3600.3]  :
+<BR>[0.1, 3600.3]<SUB>^2.500000000</SUB> &nbsp
+<BR>
+<BR><A href="#HazardsList">(Return to hazards list)</A>
+<BR>
+<BR>******************************************
+<BR>
+<BR>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Behaviour(s) not detected 
+<BR>
+<BR>******************************************
+<BR>
+<BR><A name="form_14241328"> <FONT color="red"><B>hazar_c</B></FONT> : no occurency detected</A>
+<BR>
+<BR>hazar_c is : ! ( <A href="#form_prop_c_2"><FONT color="blue">prop_c</FONT></A> )
+<BR>
+<BR>Calculus Interval : [0.1, 7200.5[
+<BR>
+<BR>Validity of sub-formulas:
+<BR>
+<BR><A name="form_hazar_c_3"><FONT color="green"><B>(hazar_c):</B> </FONT><A>! ( <A href="#form_prop_c_3"><FONT color="blue">prop_c</FONT></A> ) with CI [0.1, 7200.5[  :
+<BR>Expression not valid on its Calculus Interval.
+<BR>
+<BR><A name="form_prop_c_3"><FONT color="green"><B>(prop_c):</B> </FONT><A>( <A href="#form_cycle_end_3"><FONT color="blue">cycle_end</FONT></A> ) -> ( '<' ('div' (<A href="#form_integral_trans_3"><FONT color="blue">integral_trans</FONT></A>, <A href="#form_1602180_3"><FONT color="blue">1602180</FONT></A>), <A href="#form_-1.7_3"><FONT color="blue">-1.7</FONT></A>) ) with CI [0.1, 7200.5[  :
+<BR>[0.1, 7200.5[ &nbsp
+<BR>
+<BR><A name="form_cycle_end_3"><FONT color="green"><B>(cycle_end):</B> </FONT><A>Bot <A href="#form_cycleid_3"><FONT color="blue">cycleid</FONT></A> with CI [0.1, 7200.5]  :
+<BR>[7200.3, 7200.3]<SUB>^4.000000000</SUB> &nbsp
+<BR>
+<BR><A name="form_cycleid_3"><FONT color="green"><B>(cycleid):</B> </FONT><A>cycleid with CI [0.1, 7200.5]  :
+<BR>[7200.3, 7200.5]<SUB>^5.000000000</SUB> &nbsp
+<BR>
+<BR>'<' ('div' (<A href="#form_integral_trans_3"><FONT color="blue">integral_trans</FONT></A>, <A href="#form_1602180_3"><FONT color="blue">1602180</FONT></A>), <A href="#form_-1.7_3"><FONT color="blue">-1.7</FONT></A>) with CI [0.1, 7200.5[  :
+<BR>[7200.3, 7200.3] &nbsp
+<BR>
+<BR>('div' (<A href="#form_integral_trans_3"><FONT color="blue">integral_trans</FONT></A>, <A href="#form_1602180_3"><FONT color="blue">1602180</FONT></A>), <A href="#form_-1.7_3"><FONT color="blue">-1.7</FONT></A>) with CI [0.1, 7200.5[  :
+<BR>[7200.3, 7200.3]<SUB>^(-1.930018406, -1.700000000)</SUB> &nbsp
+<BR>
+<BR>'div' (<A href="#form_integral_trans_3"><FONT color="blue">integral_trans</FONT></A>, <A href="#form_1602180_3"><FONT color="blue">1602180</FONT></A>) with CI [0.1, 7200.5[  :
+<BR>[7200.3, 7200.3]<SUB>^-1.930018406</SUB> &nbsp
+<BR>
+<BR>(<A href="#form_integral_trans_3"><FONT color="blue">integral_trans</FONT></A>, <A href="#form_1602180_3"><FONT color="blue">1602180</FONT></A>) with CI [0.1, 7200.5[  :
+<BR>[7200.3, 7200.3]<SUB>^(-3092236.889655166, 1602180.000000000)</SUB> &nbsp
+<BR>
+<BR><A name="form_integral_trans_3"><FONT color="green"><B>(integral_trans):</B> </FONT><A>( <A href="#form_cycle_end_3"><FONT color="blue">cycle_end</FONT></A> ) & ( <A href="#form_integral_3"><FONT color="blue">integral</FONT></A> ) with CI [0.1, 7200.5[  :
+<BR>[7200.3, 7200.3]<SUB>^-3092236.889655166</SUB> &nbsp
+<BR>
+<BR><A name="form_integral_3"><FONT color="green"><B>(integral):</B> </FONT><A>A{'sum'}<SUB>] - &#8734, 0[</SUB> ( <A href="#form_ep_neg_integ_reset_3"><FONT color="blue">ep_neg_integ_reset</FONT></A> ) with CI [0.1, 7200.5]  :
+<BR>]7200.3, 7200.5]<SUB>^0.000000000</SUB> &nbsp
+<BR>
+<BR><A name="form_ep_neg_integ_reset_3"><FONT color="green"><B>(ep_neg_integ_reset):</B> </FONT><A>#r ( ( <A href="#form_cycle_stable_3"><FONT color="blue">cycle_stable</FONT></A> ) & ( <A href="#form_ep_neg_integ_3"><FONT color="blue">ep_neg_integ</FONT></A> ) ) with CI [0.1, 7200.5[  :
+<BR>]7200.3, 7200.5[<SUB>^0.000000000</SUB> &nbsp
+<BR>
+<BR>( <A href="#form_cycle_stable_3"><FONT color="blue">cycle_stable</FONT></A> ) & ( <A href="#form_ep_neg_integ_3"><FONT color="blue">ep_neg_integ</FONT></A> ) with CI [0.1, 7200.5[  :
+<BR>]7200.3, 7200.5[<SUB>^0.000000000</SUB> &nbsp
+<BR>
+<BR><A name="form_cycle_stable_3"><FONT color="green"><B>(cycle_stable):</B> </FONT><A>! ( <A href="#form_cycle_end_3"><FONT color="blue">cycle_end</FONT></A> ) with CI [0.1, 7200.5[  :
+<BR>]7200.3, 7200.5[ &nbsp
+<BR>
+<BR><A name="form_ep_neg_integ_3"><FONT color="green"><B>(ep_neg_integ):</B> </FONT><A># ( '*' ( LI ( <A href="#form_ep_neg_3"><FONT color="blue">ep_neg</FONT></A> ) ) ) with CI [0.1, 7200.5]  :
+<BR>]7195.55, 7200.5]<SUB>^0.000000000</SUB> &nbsp
+<BR>
+<BR>'*' ( LI ( <A href="#form_ep_neg_3"><FONT color="blue">ep_neg</FONT></A> ) ) with CI [0.1, 7200.5]  :
+<BR>[7200.45, 7200.45]<SUB>^0.000000000</SUB> &nbsp
+<BR>
+<BR>LI ( <A href="#form_ep_neg_3"><FONT color="blue">ep_neg</FONT></A> ) with CI [0.1, 7200.5]  :
+<BR>[7200.45, 7200.45]<SUB>^(0.100000000, 0.000000000)</SUB> &nbsp
+<BR>
+<BR><A name="form_ep_neg_3"><FONT color="green"><B>(ep_neg):</B> </FONT><A># ( ( '<' (<A href="#form_elecpower_3"><FONT color="blue">elecpower</FONT></A>, <A href="#form_0_3"><FONT color="blue">0</FONT></A>) ) & <A href="#form_elecpower_3"><FONT color="blue">elecpower</FONT></A> ) with CI [0.1, 7200.5]  :
+<BR>[7195.6, 7200.5]<SUB>^0.000000000</SUB> &nbsp
+<BR>
+<BR>( '<' (<A href="#form_elecpower_3"><FONT color="blue">elecpower</FONT></A>, <A href="#form_0_3"><FONT color="blue">0</FONT></A>) ) & <A href="#form_elecpower_3"><FONT color="blue">elecpower</FONT></A> with CI [0.1, 7200.5]  :
+<BR>[7195.5, 7195.6[<SUB>^-1024.350733000</SUB> &nbsp
+<BR>
+<BR>'<' (<A href="#form_elecpower_3"><FONT color="blue">elecpower</FONT></A>, <A href="#form_0_3"><FONT color="blue">0</FONT></A>) with CI [0.1, 7200.5]  :
+<BR>[7166.3, 7195.6[ &nbsp
+<BR>
+<BR>(<A href="#form_elecpower_3"><FONT color="blue">elecpower</FONT></A>, <A href="#form_0_3"><FONT color="blue">0</FONT></A>) with CI [0.1, 7200.5]  :
+<BR>[7195.6, 7200.5]<SUB>^(0.000000000, 0.000000000)</SUB> &nbsp
+<BR>
+<BR><A name="form_elecpower_3"><FONT color="green"><B>(elecpower):</B> </FONT><A>elecpower with CI [0.1, 7200.5]  :
+<BR>[7195.6, 7200.5]<SUB>^0.000000000</SUB> &nbsp
+<BR>
+<BR><A name="form_0_3"><FONT color="green"><B>(0):</B> </FONT><A>0 with CI [0.1, 7200.5]  :
+<BR>[0.1, 7200.5]<SUB>^0.000000000</SUB> &nbsp
+<BR>
+<BR><A name="form_1602180_3"><FONT color="green"><B>(1602180):</B> </FONT><A>1602180 with CI [0.1, 7200.5]  :
+<BR>[0.1, 7200.5]<SUB>^1602180.000000000</SUB> &nbsp
+<BR>
+<BR><A name="form_-1.7_3"><FONT color="green"><B>(-1.7):</B> </FONT><A>-1.7 with CI [0.1, 7200.5]  :
+<BR>[0.1, 7200.5]<SUB>^-1.700000000</SUB> &nbsp
+<BR>
+<BR><A href="#HazardsList">(Return to hazards list)</A>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>End.
