@@ -1,0 +1,3 @@
+---
+name : "AbsentBR"
+pattern : "r -> (always[<=10](not p))"

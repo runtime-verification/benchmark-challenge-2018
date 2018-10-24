@@ -1,0 +1,95 @@
+#!/usr/bin/env python3
+
+import sys
+import argparse
+
+import reelay_benchgen
+
+def main(argv):
+
+    parser = argparse.ArgumentParser(
+        description='reelay-benchgen is a benchmark generator for metric temporal logic properties', 
+        formatter_class=argparse.RawTextHelpFormatter)
+
+    parser.add_argument('property', 
+        help='''Supported properties are below:
+    absence_after_q                   UBOUND
+    absence_before_r                  UBOUND
+    absence_between_q_and_r    LBOUND UBOUND
+
+    always_after_q                    UBOUND
+    always_before_r                   UBOUND
+    always_between_q_and_r     LBOUND UBOUND 
+
+    recurrence_globally               UBOUND
+    recurrence_between_q_and_r        UBOUND MIN_RECUR MAX_RECUR
+
+    response_globally          LBOUND UBOUND
+    response_between_q_and_r   LBOUND UBOUND MIN_RECUR MAX_RECUR
+
+    challenge_pandq            LBOUND UBOUND
+    challenge_delay            LBOUND UBOUND''')
+
+    parser.add_argument('-d','--duration', 
+        help='''define the approximate duration for the trace''',
+        default = 1000,
+        type=int,
+        metavar='N')
+    parser.add_argument('-l', '--lbound', 
+        help='''define the lower bound for the property if available for the property''',
+        default = 0,
+        type=int,
+        metavar='N')
+    parser.add_argument('-u', '--ubound', 
+        help='''define the upper bound for the property if available for the property''',
+        default = 100,
+        type=int,
+        metavar='N')
+    parser.add_argument('--min-recur', 
+        help='''define the minimum number of recurrence in the trace if available for the property''',
+        default = 1,
+        type=int,
+        metavar='N')
+    parser.add_argument('--max-recur', 
+        help='''define the maximum number of recurrence in the trace if available for the property''',
+        default = 7,
+        type=int,
+        metavar='N')
+
+    parser.add_argument('--name', 
+        help='''define the name of property (default: MySpec)''',
+        default = "MySpec",
+        metavar='STRING')
+
+    parser.add_argument('--limit-stutter', 
+        help='''define the maximum amount of stuttering in the trace (default: 0 -- No limit)''',
+        default = 0,
+        type=int,
+        metavar='N')
+    parser.add_argument('--failing-end', 
+        help='''append a sequence to the trace to makes the spec fail (default: True)''',
+        action="store_true",
+        default=True)
+    parser.add_argument('--output-dir', 
+        help='''use existing DIR as the directory to write output files in''',
+        default = '',
+        metavar='DIR')
+
+    args = parser.parse_args()
+
+    spec, rows = reelay_benchgen.generate(
+        property=args.property,
+        lower_bound=args.lbound, 
+        upper_bound=args.ubound,
+        min_recur=args.min_recur, 
+        max_recur=args.max_recur,
+        limit_stutter=args.limit_stutter,
+        duration=args.duration,
+        failing_end=args.failing_end
+        )
+
+    reelay_benchgen.write_spec(spec, filename=args.name, directory=args.output_dir)
+    reelay_benchgen.write_trace(rows, filename=args.name, directory=args.output_dir)
+
+if __name__ == '__main__':
+    main(sys.argv)

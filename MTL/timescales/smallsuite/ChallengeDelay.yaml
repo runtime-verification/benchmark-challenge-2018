@@ -1,0 +1,3 @@
+---
+name : "ChallengeDelay"
+pattern : "(p since[60,60] q) or p"

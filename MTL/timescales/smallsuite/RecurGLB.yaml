@@ -1,0 +1,3 @@
+---
+name : "RecurGLB"
+pattern : "once[<=10](p)"
