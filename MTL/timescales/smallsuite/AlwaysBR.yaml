@@ -1,0 +1,3 @@
+---
+name : "AlwaysBR"
+pattern : "r -> (always[<=10](p))"
