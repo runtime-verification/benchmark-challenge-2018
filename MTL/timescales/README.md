@@ -1,16 +1,16 @@
 ## timescales
 
-`timescales` is a benchmark generator for Metric Temporal Logic (MTL) monitoring tools originally developed for the tool [reelay](https://github.com/doganulus/reelay). It generates a past MTL formula (in the standard YAML format) and an input trace (in the standard CSV format) that satisfies the formula at every time points. A set of predefined properties and challenges is available through the interface. Please see the help below.
+`timescales` is a benchmark generator bundle for Metric Temporal Logic (MTL) monitoring tools. The included benchmark generator `reelay_benchgen`, which is originally developed for the monitoring tool [reelay](https://github.com/doganulus/reelay). It generates a past MTL specification (in standard YAML format) and an input trace (in standard CSV format) that satisfies the formula at every time point. A set of parametrized temporal properties and challenging cases is available through the interface. Please see the help for more information.
 
-The purpose of these benchmarks is to measure the performance and scalability of MTL monitoring with respect to large timing bounds in the specification over some typical and extreme properties. Ideally, the performance of real-time monitoring tools should be robust against changes in the base time unit since different (parts of) systems use different time scales up to orders of magnitude. This fact leads to large timing bounds in specifications that we want to check their performance in monitoring.
+The purpose of these benchmarks is to measure the performance and scalability of MTL monitoring tools with respect to large timing bounds in the specification over some typical and extreme cases. Ideally, the performance of real-time monitoring tools should remain constant when the base time unit has changed. This is due to that different (parts of) systems use different time scales up to orders of magnitude and the specification of slower systems contain large timing bounds.
 
 ## use
 
-The package `timescales` includes a Makefile to demonstrate the generation of benchmarks. The command `make small` generates a benchmark suite of supported properties with small timing bounds over short traces. On the other hand, the command `make large` generates three benchmarks for each property with increasingly larger time bounds over traces with a length of 1 million. The large suite has a size of 400MB and is not included in the distribution. The customization for the benchmark generation can be done easily using the underlying benchmark generator `reelay-benchgen`.
+The bundle `timescales` includes a Makefile to demonstrate the generation of benchmarks. For each supported property, the command `make small` generates a benchmark that contains a specification with small timing bounds and a short trace. On the other hand, the command `make large` generates three benchmarks for each property with increasingly larger time bounds (1x, 10x, 100x) over traces with a length of 1 million. The large suite has a size of 400MB and is not included in the distribution. The customization of benchmark generation can be done easily using the interface of `reelay_benchgen`.
 
 ## help
 
-The Python script `reelay-benchgen` is the benchmark generator of `timescales`. The full interface of the benchmark generator is as follows:
+The Python script `reelay_benchgen` is the benchmark generator of `timescales`. The full interface of the benchmark generator is as follows:
 
     usage: reelay_benchgen [-h] [-d N] [-l N] [-u N] [--min-recur N]
                            [--max-recur N] [--name STRING] [--limit-stutter N]

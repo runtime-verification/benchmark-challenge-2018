@@ -79,7 +79,7 @@ def generate(property, lower_bound, upper_bound, min_recur, max_recur, duration,
 		rows = bounded_response_globally.generate_trace(lower_bound, upper_bound, duration, failing_end)
 	elif property == "response_between_q_and_r":
 		spec = bounded_response_between_q_and_r.generate_formula(lower_bound, upper_bound)
-		rows = bounded_response_between_q_and_r.generate_trace(lower_bound, upper_bound, duration, failing_end)
+		rows = bounded_response_between_q_and_r.generate_trace(lower_bound, upper_bound, min_recur, max_recur, duration, failing_end)
 	elif property == "challenge_pandq":
 		spec = challenge_pandq.generate_formula(lower_bound, upper_bound)
 		rows = challenge_pandq.generate_trace(lower_bound, upper_bound, duration, failing_end)
@@ -87,7 +87,7 @@ def generate(property, lower_bound, upper_bound, min_recur, max_recur, duration,
 		spec = challenge_delay.generate_formula(lower_bound, upper_bound)
 		rows = challenge_delay.generate_trace(lower_bound, upper_bound, duration, failing_end)
 	else:
-		print("Unknown property. Please see the help.")
+		raise ValueError("Unknown property. Please see the help for supported properties.")
 
 	rows = rows if limit_stutter == 0 else eliminate_stuttering(rows, limit_stutter)
 
