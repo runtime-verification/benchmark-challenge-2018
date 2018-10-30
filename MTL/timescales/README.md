@@ -14,7 +14,7 @@ The Python script `reelay_benchgen` is the benchmark generator of `timescales`. 
 
     usage: reelay_benchgen [-h] [-d N] [-l N] [-u N] [--min-recur N]
                            [--max-recur N] [--name STRING] [--limit-stutter N]
-                           [--failing-end] [--output-dir DIR]
+                           [--no-failing-end] [--output-dir DIR]
                            property
      
     reelay-benchgen is a benchmark generator for metric temporal logic properties
@@ -45,7 +45,7 @@ The Python script `reelay_benchgen` is the benchmark generator of `timescales`. 
       -u N, --ubound N    define the upper bound for the property if available for the property
       --min-recur N       define the minimum number of recurrence in the trace if available for the property
       --max-recur N       define the maximum number of recurrence in the trace if available for the property
-      --name STRING       define the name of property (default: MySpec)
+      --name STRING       define the name of specification (default: MySpec)
       --limit-stutter N   define the maximum amount of stuttering in the trace (default: 0 -- No limit)
-      --failing-end       append a sequence to the trace to makes the spec fail (default: True)
+      --no-failing-end    disable appending a sequence to the trace to make the spec fail (default: Enabled)
       --output-dir DIR    use existing DIR as the directory to write output files in
