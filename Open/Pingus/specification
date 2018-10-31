@@ -1,0 +1,59 @@
+The LTL-FO+ properties use a lot of high Unicode characters. Make sure your
+text editor shows correctly these symbols (if you see boxes or question marks,
+there is a problem!): ∀ ∃ ∈ ¬ ∨
+
+P1. A Pingu on screen must be alive. Hence dead Pingus cannot clutter the screen
+    and should be disposed of by the game loop. Since a Pingu is removed from
+    the game once it dies, this entails that the only status for Pingus is
+    ALIVE.
+    
+    G (∀ x ∈ /message/characters/character/status : (¬(x = DEAD)))
+
+P2. A Pingu cannot start exploding when it is falling. The only proper way for a
+    Pingu to explode is a fixed amount of time after it has been assigned the
+    task of Bomber.
+    
+	G (∀ c ∈ message/characters/character[status=FALLER]/id : (
+	 X ( ∀ x ∈ message/characters/character[id=$c]/status : (¬(x =bomber)))))
+
+P3. A Walker must always move. Pingus with no specific status must keep walking
+    and cannot stall on the playing field.
+    
+	G (∀ c ∈ message/characters/character[status=WALKER]/id : (
+	  ∀ x ∈ message/characters/character[id=$c]/position/x : (
+		X (∀ x' ∈ message/characters/character[id=$c]/position/x : (¬ (x=x'))))))
+
+P4. A Basher must stop bashing at some point in the game. Bashers dig horizontal
+    tunnels into walls; all these walls are of finite dimensions and hence a
+    Basher that keeps bashing until the end of a level indicates a problem.
+    
+	G (∀ c ∈ message/characters/character[status=basher]/id : (
+	  X ( F ( ∀ x ∈ message/characters/character[id=$c]/status : (¬(x=basher))))))
+
+P5. A Pingu falling faster than some predefined ``deadly velocity'' must keep
+    falling, drown in water or splash on the ground. The fate of a Faller
+    exceeding the velocity is hence sealed; for example such a Faller must not
+    become a Walker again in the future.
+    
+	G (∀ c ∈ message/characters/character[status=FALLER]/id : ( 
+	  (∀ vy ∈ message/characters/character[id=$c]/velocity/y : (vy > 6)) → (
+		X (∀ s ∈ message/characters/character[id=$c]/status : ( ((s=FALLER) ∨ (s=DROWN)) ∨ (s=DEAD) )
+			  )
+			 )
+			)
+		   )
+
+P6. A Walker encountering a Blocker must turn around and keep on walking.
+
+	G (∀ b ∈ /message/characters/character[status=BLOCKER]/id : (
+	  ∀ bx ∈ /message/characters/character[id=$b]/position/x : (
+		∀ by ∈ /message/characters/character[id=$b]/position/y : (
+		  ∀ w ∈ /message/characters/character[status='walker'][position/x=$bx][position/y=$by]/id : (
+			∀ wv ∈ /message/characters/character[id=$w]/velocity/x : (
+			  X (∀ wv' ∈ /message/characters/character[id=$w]/velocity/x : (
+				¬ (wv = wv')))))
+	))))
+
+P7. There cannot be only Blockers in a level.
+
+     G (∃ x ∈ /message/characters/character/status : (¬(x = BLOCKER)))
