@@ -1,0 +1,1429 @@
+Event timestamp,Event ID,Event type,Calling object,Calling object identity hashcode,Method return type,Method name,Method call depth,Method parameters number,Parameters types,Parameters values
+1541009258085,668386784,call,NA,NA, ,SemaphoreTest.<clinit>,0,0,NA,NA
+1541009258086,2065951873,call,NA,NA, ,java.util.concurrent.Semaphore.<init>,1,1,java.lang.Integer,4
+1541009258086,2065951873,return,java.util.concurrent.Semaphore@3feba861[Permits = 4],0,NA,NA,NA,NA,NA,NA
+1541009258087,1531448569,call,NA,NA, ,SemaphoreTest.semaphore,1,1,java.util.concurrent.Semaphore,java.util.concurrent.Semaphore@3feba861[Permits = 4]
+1541009258087,1531448569,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009258085,668386784,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009258087,1867083167,call,NA,NA,void,SemaphoreTest.main,0,1,[Ljava.lang.String;,[Ljava.lang.String;@b4c966a
+1541009258088,793589513,call,NA,NA,void,java.lang.System.out,1,0,NA,NA
+1541009258088,793589513,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009258088,495053715,call,NA,NA,void,java.lang.StringBuilder.<init>,1,1,java.lang.String,Total available Semaphore permits : 
+1541009258088,495053715,return,Total available Semaphore permits : ,0,NA,NA,NA,NA,NA,NA
+1541009258088,1922154895,call,NA,NA,void,SemaphoreTest.semaphore,1,0,NA,NA
+1541009258088,1922154895,return,java.util.concurrent.Semaphore@3feba861[Permits = 4],0,NA,NA,NA,NA,NA,NA
+1541009258088,883049899,call,java.util.concurrent.Semaphore@3feba861[Permits = 4],1072408673,int,java.util.concurrent.Semaphore.availablePermits,1,0,NA,NA
+1541009258088,883049899,return,4,1072408673,NA,NA,NA,NA,NA,NA
+1541009258088,1854731462,call,Total available Semaphore permits : ,885284298,class java.lang.StringBuilder,java.lang.StringBuilder.append,1,1,java.lang.Integer,4
+1541009258089,1854731462,return,Total available Semaphore permits : 4,885284298,NA,NA,NA,NA,NA,NA
+1541009258089,1389133897,call,Total available Semaphore permits : 4,885284298,class java.lang.String,java.lang.StringBuilder.toString,1,0,NA,NA
+1541009258089,1389133897,return,Total available Semaphore permits : 4,885284298,NA,NA,NA,NA,NA,NA
+1541009258089,1534030866,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,1,1,java.lang.String,Total available Semaphore permits : 4
+1541009258090,1534030866,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009258090,824909230,call,NA,NA,void,SemaphoreTest$MyATMThread.<init>,1,1,java.lang.String,A
+1541009258100,122883338,call,NA,NA,void,SemaphoreTest$MyATMThread.<clinit>,2,0,NA,NA
+1541009258100,122883338,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009258100,666641942,call,NA,NA,void,SemaphoreTest$MyATMThread.<init>,2,1,java.lang.String,A
+1541009258100,960604060,call,Thread[Thread-0(comma)5(comma)main],1349393271,void,SemaphoreTest$MyATMThread.<init>,2,1,java.lang.String,A
+1541009258101,1338668845,call,Thread[Thread-0(comma)5(comma)main],1349393271,void,SemaphoreTest$MyATMThread.<init>,3,1,java.lang.String,A
+1541009258101,159413332,call,Thread[Thread-0(comma)5(comma)main],1349393271,void,SemaphoreTest$MyATMThread.name,4,1,java.lang.String,
+1541009258101,159413332,return,NA,1349393271,NA,NA,NA,NA,NA,NA
+1541009258101,1028214719,call,Thread[Thread-0(comma)5(comma)main],1349393271,void,SemaphoreTest$MyATMThread.name,4,1,java.lang.String,A
+1541009258101,1028214719,return,NA,1349393271,NA,NA,NA,NA,NA,NA
+1541009258101,1338668845,return,NA,1349393271,NA,NA,NA,NA,NA,NA
+1541009258090,824909230,return,Thread[Thread-0(comma)5(comma)main],1349393271,NA,NA,NA,NA,NA,NA
+1541009258101,500977346,call,Thread[Thread-0(comma)5(comma)main],1349393271,void,SemaphoreTest$MyATMThread.start,1,0,NA,NA
+1541009258102,500977346,return,NA,1349393271,NA,NA,NA,NA,NA,NA
+1541009258102,2094548358,call,NA,NA,void,SemaphoreTest$MyATMThread.<init>,1,1,java.lang.String,B
+1541009258102,51228289,call,NA,NA,void,SemaphoreTest$MyATMThread.<init>,2,1,java.lang.String,B
+1541009258102,455896770,call,Thread[Thread-1(comma)5(comma)main],1323165413,void,SemaphoreTest$MyATMThread.<init>,2,1,java.lang.String,B
+1541009258102,1880587981,call,Thread[Thread-1(comma)5(comma)main],1323165413,void,SemaphoreTest$MyATMThread.<init>,4,1,java.lang.String,B
+1541009258102,1505375615,call,Thread[Thread-1(comma)5(comma)main],1323165413,void,SemaphoreTest$MyATMThread.run,4,1,java.lang.String,B,0,NA,NA
+1541009258102,511754216,call,Thread[Thread-1(comma)5(comma)main],1323165413,void,SemaphoreTest$MyATMThread.name,5,1,java.lang.String,
+1541009258102,1467859000,call,NA,NA,void,java.lang.System.out,6,0,NA,NA
+1541009258102,511754216,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009258102,1467859000,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009258103,1721931908,call,Thread[Thread-1(comma)5(comma)main],1349393271,void,SemaphoreTest$MyATMThread.name,6,1,java.lang.String,B
+1541009258103,1396858383,call,Thread[Thread-0(comma)5(comma)main],1349393271,void,SemaphoreTest$MyATMThread.name,6,1,java.lang.String,B,0,NA,NA
+1541009258103,1721931908,return,NA,1349393271,NA,NA,NA,NA,NA,NA
+1541009258103,1396858383,return,A,1349393271,NA,NA,NA,NA,NA,NA
+1541009258102,1880587981,return,NA,1349393271,NA,NA,NA,NA,NA,NA
+1541009258102,2094548358,return,Thread[Thread-1(comma)5(comma)main],0,NA,NA,NA,NA,NA,NA
+1541009258103,373344771,call,Thread[Thread-1(comma)5(comma)main],1323165413,void,java.lang.String.valueOf,3,1,java.lang.String,A
+1541009258103,373344771,return,A,1323165413,NA,NA,NA,NA,NA,NA
+1541009258103,1198108795,call,Thread[Thread-1(comma)5(comma)main],1323165413,void,SemaphoreTest$MyATMThread.start,3,1,java.lang.String,A,0,NA,NA
+1541009258103,664566682,call,NA,NA,void,java.lang.StringBuilder.<init>,3,1,java.lang.String,A
+1541009258103,664566682,return,A,0,NA,NA,NA,NA,NA,NA
+1541009258103,1198108795,return,NA,214126413,NA,NA,NA,NA,NA,NA
+1541009258103,1726999360,call,A,214126413,class java.lang.StringBuilder,java.lang.StringBuilder.append,3,1,java.lang.String
+1541009258103,396873410,call,NA,NA,class java.lang.StringBuilder,SemaphoreTest$MyATMThread.<init>,3,1,java.lang.String,C
+1541009258103,1726999360,return,A : acquiring lock...,0,NA,NA,NA,NA,NA,NA
+1541009258103,1706234378,call,NA,NA,class java.lang.StringBuilder,SemaphoreTest$MyATMThread.<init>,4,1,java.lang.String,C
+1541009258103,1986999628,call,A : acquiring lock...,214126413,class java.lang.String,java.lang.StringBuilder.toString,4,0,NA,NA
+1541009258103,1986999628,return,A : acquiring lock...,541265204,NA,NA,NA,NA,NA,NA
+1541009258103,1867750575,call,Thread[Thread-2(comma)5(comma)main],541265204,class java.lang.String,SemaphoreTest$MyATMThread.<init>,4,0,NA,NA,1,java.lang.String,C
+1541009258103,1690825229,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,5
+1541009258103,2046562095,call,Thread[Thread-2(comma)5(comma)main],541265204,void,SemaphoreTest$MyATMThread.<init>,5,1,java.lang.String,C
+1541009258104,1690825229,return,NA,541265204,NA,NA,NA,NA,NA,NA
+1541009258104,1342443276,call,Thread[Thread-2(comma)5(comma)main],541265204,void,SemaphoreTest$MyATMThread.name,6,1,java.lang.String,
+1541009258104,2112593982,call,NA,NA,void,java.lang.System.out,6,0,NA,NA
+1541009258104,1342443276,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009258104,2112593982,return,java.io.PrintStream@4e50df2e,541265204,NA,NA,NA,NA,NA,NA
+1541009258104,769287236,call,Thread[Thread-2(comma)5(comma)main],541265204,void,SemaphoreTest$MyATMThread.name,6
+1541009258104,769287236,return,NA,1349393271,NA,NA,NA,NA,NA,NA
+1541009258104,1914777498,call,Thread[Thread-0(comma)5(comma)main],1349393271,void,SemaphoreTest$MyATMThread.name,6,0,NA,NA
+1541009258104,2046562095,return,NA,1349393271,NA,NA,NA,NA,NA,NA
+1541009258104,1914777498,return,A,1349393271,NA,NA,NA,NA,NA,NA
+1541009258104,1253291591,call,NA,NA,class java.lang.String,java.lang.String.valueOf,3,1,java.lang.String,A
+1541009258103,396873410,return,Thread[Thread-2(comma)5(comma)main],0,NA,NA,NA,NA,NA,NA
+1541009258104,1253291591,return,A,541265204,NA,NA,NA,NA,NA,NA
+1541009258104,297759366,call,NA,NA,void,java.lang.StringBuilder.<init>,3,0,NA,NA
+1541009258104,1587487668,call,NA,NA,void,SemaphoreTest$MyATMThread.start,3,0,NA,NA
+1541009258104,297759366,return,A,0,NA,NA,NA,NA,NA,NA
+1541009258104,838191839,call,A,1246985860,class java.lang.StringBuilder,java.lang.StringBuilder.append,3,1,java.lang.String, : available Semaphore permits now: 
+1541009258104,1587487668,return,NA,1246985860,NA,NA,NA,NA,NA,NA
+1541009258104,838191839,return,A : available Semaphore permits now: ,1246985860,NA,NA,NA,NA,NA,NA
+1541009258104,1199823423,call,NA,NA,class java.lang.StringBuilder,SemaphoreTest$MyATMThread.<init>,3,1,java.lang.String,D
+1541009258105,495319047,call,NA,NA,class java.lang.StringBuilder,SemaphoreTest.semaphore,3,0,NA,NA
+1541009258105,932172204,call,NA,NA,class java.lang.StringBuilder,SemaphoreTest$MyATMThread.<init>,4,1,java.lang.String,D
+1541009258105,495319047,return,java.util.concurrent.Semaphore@3feba861[Permits = 4],0,NA,NA,NA,NA,NA,NA
+1541009258105,1332035430,call,java.util.concurrent.Semaphore@3feba861[Permits = 4],1072408673,int,SemaphoreTest$MyATMThread.run,5,0,NA,NA
+1541009258105,2000978547,call,Thread[Thread-3(comma)5(comma)main],1848402763,int,java.util.concurrent.Semaphore.availablePermits,5,0,NA,NA,1,java.lang.String,D
+1541009258105,1225358173,call,Thread[Thread-3(comma)5(comma)main],1848402763,int,SemaphoreTest$MyATMThread.<init>,5,0,NA,NA,1,java.lang.String,D
+1541009258105,2000978547,return,4,0,NA,NA,NA,NA,NA,NA
+1541009258105,1101191418,call,NA,NA,int,java.lang.System.out,6,0,NA,NA
+1541009258105,1101191418,return,java.io.PrintStream@4e50df2e,1246985860,NA,NA,NA,NA,NA,NA
+1541009258105,933699219,call,Thread[Thread-3(comma)5(comma)main],1848402763,int,SemaphoreTest$MyATMThread.<init>,7,1,java.lang.String,D
+1541009258105,1761090934,call,A : available Semaphore permits now: ,1246985860,class java.lang.StringBuilder,java.lang.StringBuilder.append,8,1,java.lang.Integer,4
+1541009258105,1167938582,call,Thread[Thread-1(comma)5(comma)main],1323165413,void,SemaphoreTest$MyATMThread.name,9
+1541009258105,1761090934,return,A : available Semaphore permits now: 4,1848402763,NA,NA,NA,NA,NA,NA
+1541009258105,2121055098,call,Thread[Thread-3(comma)5(comma)main],1848402763,void,SemaphoreTest$MyATMThread.name,9,1,java.lang.String,
+1541009258105,1782200738,call,Thread[Thread-2(comma)5(comma)main],1848402763,void,SemaphoreTest$MyATMThread.run,9,1,java.lang.String,,0,NA,NA
+1541009258105,1167938582,return,B,1848402763,NA,NA,NA,NA,NA,NA
+1541009258105,2121055098,return,NA,1246985860,NA,NA,NA,NA,NA,NA
+1541009258105,965667251,call,A : available Semaphore permits now: 4,1246985860,class java.lang.String,java.lang.StringBuilder.toString,9,0,NA,NA
+1541009258105,965667251,return,A : available Semaphore permits now: 4,1848402763,NA,NA,NA,NA,NA,NA
+1541009258105,10474177,call,NA,NA,class java.lang.String,java.lang.String.valueOf,9
+1541009258105,2084435065,call,Thread[Thread-3(comma)5(comma)main],1848402763,class java.lang.String,SemaphoreTest$MyATMThread.name,9,1,java.lang.String,D
+1541009258105,192510789,call,java.io.PrintStream@4e50df2e,0,void,java.io.PrintStream.println,10,0,NA,NA,1,java.lang.String,A : available Semaphore permits now: 4
+1541009258105,2084435065,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009258105,10474177,return,B,0,NA,NA,NA,NA,NA,NA
+1541009258105,933699219,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009258105,1694354069,call,NA,NA,void,java.lang.System.out,10,0,NA,NA,1,
+1541009258105,192510789,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009258105,1726432187,call,NA,NA,void,java.lang.StringBuilder.<init>,9,1,java.lang.String,B
+1541009258106,1726432187,return,B,0,NA,NA,NA,NA,NA,NA
+1541009258106,1484601155,call,NA,NA,void,SemaphoreTest.semaphore,9,0,NA,NA
+1541009258106,836055701,call,B,508034397,class java.lang.StringBuilder,java.lang.StringBuilder.append,7,1,java.lang.String, : acquiring lock...
+1541009258106,1484601155,return,java.util.concurrent.Semaphore@3feba861[Permits = 4],508034397,NA,NA,NA,NA,NA,NA
+1541009258106,1694354069,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009258106,836055701,return,B : acquiring lock...,508034397,NA,NA,NA,NA,NA,NA
+1541009258106,1622158734,call,B : acquiring lock...,508034397,class java.lang.String,java.lang.StringBuilder.toString,7,0,NA,NA
+1541009258105,1199823423,return,Thread[Thread-3(comma)5(comma)main],508034397,NA,NA,NA,NA,NA,NA
+1541009258106,1622158734,return,B : acquiring lock...,1072408673,NA,NA,NA,NA,NA,NA
+1541009258106,1892057751,call,java.util.concurrent.Semaphore@3feba861[Permits = 4],1072408673,void,java.util.concurrent.Semaphore.acquire,7,0,NA,NA,0,NA,NA
+1541009258106,1623347922,call,Thread[Thread-2(comma)5(comma)main],1072408673,void,SemaphoreTest$MyATMThread.name,7,0,NA,NA
+1541009258106,1896277646,call,java.io.PrintStream@4e50df2e,1313922862,void,SemaphoreTest$MyATMThread.start,7,0,NA,NA
+1541009258106,1016484024,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,7,1,java.lang.String,B : acquiring lock...
+1541009258106,1892057751,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009258106,1623347922,return,C,1313922862,NA,NA,NA,NA,NA,NA
+1541009258106,633389230,call,NA,NA,class java.lang.String,java.lang.String.valueOf,7,1,java.lang.String,C
+1541009258106,1016484024,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009258106,1053503053,call,NA,NA,void,java.lang.System.out,7,0,NA,NA
+1541009258106,633389230,return,C,0,NA,NA,NA,NA,NA,NA
+1541009258106,1053503053,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009258106,1896277646,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009258106,617581605,call,NA,NA,class java.lang.String,java.lang.System.out,7
+1541009258106,2128227771,call,NA,NA,class java.lang.String,SemaphoreTest$MyATMThread.<init>,7,1,java.lang.String,E
+1541009258106,512494237,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,7,1,java.lang.String,C
+1541009258106,617581605,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009258106,2124994946,call,Thread[Thread-0(comma)5(comma)main],0,class java.lang.String,SemaphoreTest$MyATMThread.name,7,1,java.lang.String,E,0,NA,NA
+1541009258107,512494237,return,C,1323165413,NA,NA,NA,NA,NA,NA
+1541009258107,88289524,call,Thread[Thread-1(comma)5(comma)main],1323165413,class java.lang.String,SemaphoreTest$MyATMThread.name,7,0,NA,NA
+1541009258107,2124994946,return,A,0,NA,NA,NA,NA,NA,NA
+1541009258107,1702297201,call,NA,NA,class java.lang.String,SemaphoreTest$MyATMThread.<init>,8,1,java.lang.String,E
+1541009258107,338674363,call,C,1720276526,class java.lang.String,java.lang.StringBuilder.append,8
+1541009258107,1339960891,call,C,1720276526,class java.lang.String,java.lang.String.valueOf,8,1,java.lang.String,A
+1541009258107,1996181658,call,Thread[Thread-4(comma)5(comma)main],806353501,class java.lang.String,SemaphoreTest$MyATMThread.<init>,8,1,java.lang.String,A,1,java.lang.String,E
+1541009258107,88289524,return,B,806353501,NA,NA,NA,NA,NA,NA
+1541009258107,1339960891,return,A,0,NA,NA,NA,NA,NA,NA
+1541009258107,1694413199,call,NA,NA,class java.lang.String,java.lang.String.valueOf,10,1,java.lang.String,B
+1541009258107,521645586,call,Thread[Thread-4(comma)5(comma)main],0,class java.lang.String,SemaphoreTest$MyATMThread.<init>,10,1,java.lang.String,B,1,java.lang.String,E
+1541009258107,338674363,return,C : acquiring lock...,806353501,NA,NA,NA,NA,NA,NA
+1541009258107,1694413199,return,B,0,NA,NA,NA,NA,NA,NA
+1541009258107,914179924,call,Thread[Thread-3(comma)5(comma)main],0,class java.lang.String,SemaphoreTest$MyATMThread.run,10,1,java.lang.String,B,1,java.lang.String,E,0,NA,NA
+1541009258107,1173307361,call,C : acquiring lock...,1720276526,class java.lang.String,java.lang.StringBuilder.toString,10,0,NA,NA
+1541009258107,1784888888,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,12
+1541009258107,951758827,call,NA,NA,class java.lang.String,java.lang.System.out,12
+1541009258107,1296064247,call,Thread[Thread-4(comma)5(comma)main],806353501,class java.lang.String,SemaphoreTest$MyATMThread.name,12,1,java.lang.String,
+1541009258107,1784888888,return,B,806353501,NA,NA,NA,NA,NA,NA
+1541009258107,197709677,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,12,1,java.lang.String,A
+1541009258107,951758827,return,java.io.PrintStream@4e50df2e,776825795,NA,NA,NA,NA,NA,NA
+1541009258107,848636405,call,B,776825795,class java.lang.StringBuilder,java.lang.StringBuilder.append,12,1,java.lang.String, : available Semaphore permits now: 
+1541009258107,1296064247,return,NA,1848402763,NA,NA,NA,NA,NA,NA
+1541009258107,197709677,return,A,1848402763,NA,NA,NA,NA,NA,NA
+1541009258107,1173307361,return,C : acquiring lock...,776825795,NA,NA,NA,NA,NA,NA
+1541009258107,848636405,return,B : available Semaphore permits now: ,806353501,NA,NA,NA,NA,NA,NA
+1541009258107,1637070917,call,Thread[Thread-4(comma)5(comma)main],806353501,class java.lang.StringBuilder,SemaphoreTest$MyATMThread.name,12,1,java.lang.String,E
+1541009258107,994643235,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,12,1,java.lang.String,C : acquiring lock...
+1541009258107,1637070917,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009258107,1015360548,call,Thread[Thread-3(comma)5(comma)main],1848402763,class java.lang.StringBuilder,SemaphoreTest$MyATMThread.name,12,0,NA,NA
+1541009258108,1068418380,call,NA,NA,void,SemaphoreTest.semaphore,12,0,NA,NA
+1541009258108,1015360548,return,D,0,NA,NA,NA,NA,NA,NA
+1541009258108,994643235,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009258108,1813389599,call,A,1422561750,class java.lang.StringBuilder,java.lang.StringBuilder.append,12,1,java.lang.String, : got the permit!
+1541009258107,521645586,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009258108,1360603883,call,NA,NA,class java.lang.StringBuilder,java.lang.System.out,11,0,NA,NA
+1541009258108,1068418380,return,java.util.concurrent.Semaphore@3feba861[Permits = 3],1422561750,NA,NA,NA,NA,NA,NA
+1541009258108,1360603883,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009258108,1288679039,call,java.util.concurrent.Semaphore@3feba861[Permits = 3],0,class java.lang.String,java.util.concurrent.Semaphore.availablePermits,11,1,java.lang.String,D
+1541009258108,2038932944,call,NA,NA,class java.lang.String,java.lang.String.valueOf,11,1,java.lang.String,D
+1541009258108,1288679039,return,3,0,NA,NA,NA,NA,NA,NA
+1541009258108,1460595858,call,B : available Semaphore permits now: ,776825795,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.Integer,3,0,NA,NA
+1541009258108,2106408640,call,Thread[Thread-2(comma)5(comma)main],776825795,class java.lang.StringBuilder,SemaphoreTest$MyATMThread.name,11,1,java.lang.Integer,3,0,NA,NA
+1541009258108,1813389599,return,A : got the permit!,0,NA,NA,NA,NA,NA,NA
+1541009258108,1460595858,return,B : available Semaphore permits now: 3,776825795,NA,NA,NA,NA,NA,NA
+1541009258108,1792787074,call,A : got the permit!,1422561750,class java.lang.String,java.lang.StringBuilder.toString,9,0,NA,NA
+1541009258108,1792787074,return,A : got the permit!,776825795,NA,NA,NA,NA,NA,NA
+1541009258108,665176851,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,9,1,java.lang.String,A : got the permit!
+1541009258109,2106408640,return,C,1313922862,NA,NA,NA,NA,NA,NA
+1541009258109,2038932944,return,D,1313922862,NA,NA,NA,NA,NA,NA
+1541009258109,665176851,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009258109,2061895713,call,NA,NA,class java.lang.String,java.lang.System.out,9,0,NA,NA
+1541009258109,2061895713,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009258109,2057462410,call,Thread[Thread-0(comma)5(comma)main],1349393271,class java.lang.String,SemaphoreTest$MyATMThread.name,9,0,NA,NA
+1541009258109,2057462410,return,A,1349393271,NA,NA,NA,NA,NA,NA
+1541009258109,1314484366,call,NA,NA,class java.lang.String,java.lang.String.valueOf,9,1,java.lang.String,A
+1541009258109,1314484366,return,A,0,NA,NA,NA,NA,NA,NA
+1541009258109,1202575109,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,9,1,java.lang.String,A
+1541009258109,1202575109,return,A,0,NA,NA,NA,NA,NA,NA
+1541009258109,222329041,call,A,1688206785,class java.lang.StringBuilder,java.lang.StringBuilder.append,9,1,java.lang.String, : is performing operation 
+1541009258109,222329041,return,A : is performing operation ,1688206785,NA,NA,NA,NA,NA,NA
+1541009258109,1640443100,call,A : is performing operation ,1688206785,class java.lang.StringBuilder,java.lang.StringBuilder.append,9,1,java.lang.Integer,1
+1541009258109,1640443100,return,A : is performing operation 1,1688206785,NA,NA,NA,NA,NA,NA
+1541009258110,1224464926,call,A : is performing operation 1,1688206785,class java.lang.StringBuilder,java.lang.StringBuilder.append,9,1,java.lang.String,(comma) available Semaphore permits : 
+1541009258110,1224464926,return,A : is performing operation 1(comma) available Semaphore permits : ,1688206785,NA,NA,NA,NA,NA,NA
+1541009258110,1181988128,call,NA,NA,class java.lang.StringBuilder,SemaphoreTest.semaphore,9,0,NA,NA
+1541009258110,1181988128,return,java.util.concurrent.Semaphore@3feba861[Permits = 3],0,NA,NA,NA,NA,NA,NA
+1541009258110,1570318810,call,java.util.concurrent.Semaphore@3feba861[Permits = 3],1072408673,int,java.util.concurrent.Semaphore.availablePermits,9,0,NA,NA
+1541009258110,1570318810,return,3,1072408673,NA,NA,NA,NA,NA,NA
+1541009258110,98586489,call,A : is performing operation 1(comma) available Semaphore permits : ,1688206785,class java.lang.StringBuilder,java.lang.StringBuilder.append,9,1,java.lang.Integer,3
+1541009258110,98586489,return,A : is performing operation 1(comma) available Semaphore permits : 3,1688206785,NA,NA,NA,NA,NA,NA
+1541009258110,333274865,call,A : is performing operation 1(comma) available Semaphore permits : 3,1688206785,class java.lang.String,java.lang.StringBuilder.toString,9,0,NA,NA
+1541009258110,333274865,return,A : is performing operation 1(comma) available Semaphore permits : 3,1688206785,NA,NA,NA,NA,NA,NA
+1541009258110,1213997855,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,9,1,java.lang.String,A : is performing operation 1(comma) available Semaphore permits : 3
+1541009258110,1213997855,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009258109,1101072039,call,NA,NA,class java.lang.StringBuilder,java.lang.String.valueOf,9,1,java.lang.String,A : is performing operation 1(comma) available Semaphore permits : 3
+1541009258111,1545540663,call,NA,NA,void,java.lang.Thread.sleep,9,1,java.lang.Long,1000
+1541009258111,1101072039,return,C,0,NA,NA,NA,NA,NA,NA
+1541009258108,316184259,call,B : available Semaphore permits now: 3,776825795,class java.lang.String,java.lang.StringBuilder.toString,9,0,NA,NA
+1541009258107,2128227771,return,Thread[Thread-4(comma)5(comma)main],1422561750,NA,NA,NA,NA,NA,NA
+1541009258111,316184259,return,B : available Semaphore permits now: 3,0,NA,NA,NA,NA,NA,NA
+1541009258111,854731685,call,NA,NA,void,java.lang.StringBuilder.<init>,9,1,java.lang.String,C
+1541009258111,854731685,return,C,0,NA,NA,NA,NA,NA,NA
+1541009258111,780237624,call,NA,NA,class java.lang.StringBuilder,SemaphoreTest$MyATMThread.start,9,1,
+1541009258111,780237624,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009258111,630983251,call,NA,NA,class java.lang.StringBuilder,java.lang.StringBuilder.<init>,9,1,java.lang.String,
+1541009258111,205797316,call,NA,NA,class java.lang.StringBuilder,SemaphoreTest$MyATMThread.<init>,9,1,java.lang.String,F
+1541009258111,1128032093,call,NA,NA,class java.lang.StringBuilder,SemaphoreTest$MyATMThread.<init>,10,1,java.lang.String,F
+1541009258111,1066516207,call,Thread[Thread-5(comma)5(comma)main],443308702,class java.lang.StringBuilder,SemaphoreTest$MyATMThread.<init>,10,1,java.lang.String,F
+1541009258111,935044096,call,Thread[Thread-5(comma)5(comma)main],443308702,class java.lang.StringBuilder,SemaphoreTest$MyATMThread.<init>,11,1,java.lang.String,F
+1541009258112,396180261,call,Thread[Thread-5(comma)5(comma)main],443308702,class java.lang.StringBuilder,SemaphoreTest$MyATMThread.name,12,1,java.lang.String,
+1541009258112,396180261,return,NA,443308702,NA,NA,NA,NA,NA,NA
+1541009258112,625576447,call,Thread[Thread-5(comma)5(comma)main],443308702,class java.lang.StringBuilder,SemaphoreTest$MyATMThread.name,12,1,java.lang.String,F
+1541009258112,625576447,return,NA,443308702,NA,NA,NA,NA,NA,NA
+1541009258112,935044096,return,NA,443308702,NA,NA,NA,NA,NA,NA
+1541009258111,205797316,return,Thread[Thread-5(comma)5(comma)main],443308702,NA,NA,NA,NA,NA,NA
+1541009258112,1560911714,call,Thread[Thread-5(comma)5(comma)main],443308702,void,SemaphoreTest$MyATMThread.start,9,0,NA,NA
+1541009258112,1560911714,return,NA,443308702,NA,NA,NA,NA,NA,NA
+1541009258088,1867083167,return,NA,443308702,NA,NA,NA,NA,NA,NA
+1541009258112,630983251,return,D,443308702,NA,NA,NA,NA,NA,NA
+1541009258113,1219771644,call,D,1564855746,class java.lang.StringBuilder,java.lang.StringBuilder.append,7,1,java.lang.String, : acquiring lock...
+1541009258113,1219771644,return,D : acquiring lock...,1564855746,NA,NA,NA,NA,NA,NA
+1541009258113,430463647,call,D : acquiring lock...,1564855746,class java.lang.String,java.lang.StringBuilder.toString,7,0,NA,NA
+1541009258113,430463647,return,D : acquiring lock...,1564855746,NA,NA,NA,NA,NA,NA
+1541009258113,1554191723,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,7,1,java.lang.String,D : acquiring lock...
+1541009258113,1554191723,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009258113,899256799,call,NA,NA,void,java.lang.System.out,7,0,NA,NA
+1541009258113,899256799,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009258113,1178689907,call,Thread[Thread-3(comma)5(comma)main],1848402763,void,SemaphoreTest$MyATMThread.name,7,0,NA,NA
+1541009258113,1178689907,return,D,1848402763,NA,NA,NA,NA,NA,NA
+1541009258113,501655430,call,NA,NA,class java.lang.String,java.lang.String.valueOf,7,1,java.lang.String,D
+1541009258113,501655430,return,D,0,NA,NA,NA,NA,NA,NA
+1541009258113,1504370972,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,7,1,java.lang.String,D
+1541009258113,1504370972,return,D,0,NA,NA,NA,NA,NA,NA
+1541009258113,541365407,call,D,1841509149,class java.lang.StringBuilder,java.lang.StringBuilder.append,7,1,java.lang.String, : available Semaphore permits now: 
+1541009258113,541365407,return,D : available Semaphore permits now: ,1841509149,NA,NA,NA,NA,NA,NA
+1541009258114,1160868788,call,NA,NA,class java.lang.StringBuilder,SemaphoreTest.semaphore,7,0,NA,NA
+1541009258114,1160868788,return,java.util.concurrent.Semaphore@3feba861[Permits = 3],0,NA,NA,NA,NA,NA,NA
+1541009258114,1268635663,call,java.util.concurrent.Semaphore@3feba861[Permits = 3],1072408673,int,java.util.concurrent.Semaphore.availablePermits,7,0,NA,NA
+1541009258114,1268635663,return,3,1072408673,NA,NA,NA,NA,NA,NA
+1541009258114,1341742479,call,D : available Semaphore permits now: ,1841509149,class java.lang.StringBuilder,java.lang.StringBuilder.append,7,1,java.lang.Integer,3
+1541009258114,1341742479,return,D : available Semaphore permits now: 3,1841509149,NA,NA,NA,NA,NA,NA
+1541009258114,1003930806,call,D : available Semaphore permits now: 3,1841509149,class java.lang.String,java.lang.StringBuilder.toString,7,0,NA,NA
+1541009258114,1003930806,return,D : available Semaphore permits now: 3,1841509149,NA,NA,NA,NA,NA,NA
+1541009258114,1974774955,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,7,1,java.lang.String,D : available Semaphore permits now: 3
+1541009258114,1974774955,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009258114,1347182514,call,NA,NA,void,SemaphoreTest.semaphore,7,0,NA,NA
+1541009258114,1347182514,return,java.util.concurrent.Semaphore@3feba861[Permits = 3],0,NA,NA,NA,NA,NA,NA
+1541009258114,1432122641,call,java.util.concurrent.Semaphore@3feba861[Permits = 3],1072408673,void,java.util.concurrent.Semaphore.acquire,7,0,NA,NA
+1541009258114,1432122641,return,NA,1072408673,NA,NA,NA,NA,NA,NA
+1541009258114,1487071352,call,NA,NA,void,java.lang.System.out,7,0,NA,NA
+1541009258114,1487071352,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009258114,144954931,call,Thread[Thread-3(comma)5(comma)main],1848402763,void,SemaphoreTest$MyATMThread.name,7,0,NA,NA
+1541009258114,144954931,return,D,1848402763,NA,NA,NA,NA,NA,NA
+1541009258114,983607642,call,NA,NA,class java.lang.String,java.lang.String.valueOf,7,1,java.lang.String,D
+1541009258114,983607642,return,D,0,NA,NA,NA,NA,NA,NA
+1541009258114,207796194,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,7,1,java.lang.String,D
+1541009258114,207796194,return,D,0,NA,NA,NA,NA,NA,NA
+1541009258114,1129082686,call,D,1430797098,class java.lang.StringBuilder,java.lang.StringBuilder.append,7,1,java.lang.String, : got the permit!
+1541009258114,1129082686,return,D : got the permit!,1430797098,NA,NA,NA,NA,NA,NA
+1541009258114,1780327072,call,D : got the permit!,1430797098,class java.lang.String,java.lang.StringBuilder.toString,7,0,NA,NA
+1541009258114,1780327072,return,D : got the permit!,1430797098,NA,NA,NA,NA,NA,NA
+1541009258114,1935263142,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,7,1,java.lang.String,D : got the permit!
+1541009258115,1935263142,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009258115,1397514604,call,NA,NA,void,java.lang.System.out,7,0,NA,NA
+1541009258115,1397514604,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009258111,707002722,call,C,1053508056,class java.lang.StringBuilder,java.lang.StringBuilder.append,9,1,java.lang.String, : available Semaphore permits now: 
+1541009258115,1204392260,call,Thread[Thread-3(comma)5(comma)main],1848402763,void,SemaphoreTest$MyATMThread.name,7,0,NA,NA
+1541009258115,1204392260,return,D,1848402763,NA,NA,NA,NA,NA,NA
+1541009258115,1528149361,call,NA,NA,class java.lang.String,java.io.PrintStream.println,7,1,java.lang.String,B : available Semaphore permits now: 3
+1541009258115,1086731199,call,NA,NA,class java.lang.String,java.lang.String.valueOf,7,1,java.lang.String,B : available Semaphore permits now: 3
+1541009258115,707002722,return,C : available Semaphore permits now: ,1848402763,NA,NA,NA,NA,NA,NA
+1541009258115,1528149361,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009258115,2006383768,call,NA,NA,class java.lang.String,SemaphoreTest.semaphore,7,0,NA,NA
+1541009258115,1086731199,return,D,0,NA,NA,NA,NA,NA,NA
+1541009258115,1779979322,call,NA,NA,class java.lang.String,SemaphoreTest.semaphore,7,0,NA,NA
+1541009258115,2098182900,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,7,1,java.lang.String,D
+1541009258115,2006383768,return,java.util.concurrent.Semaphore@3feba861[Permits = 2],0,NA,NA,NA,NA,NA,NA
+1541009258115,1779979322,return,java.util.concurrent.Semaphore@3feba861[Permits = 2],0,NA,NA,NA,NA,NA,NA
+1541009258115,2098182900,return,D,0,NA,NA,NA,NA,NA,NA
+1541009258115,1411014348,call,java.util.concurrent.Semaphore@3feba861[Permits = 2],1072408673,int,java.util.concurrent.Semaphore.availablePermits,7,0,NA,NA
+1541009258115,1299768120,call,D,1177552994,class java.lang.StringBuilder,java.lang.StringBuilder.append,7,1,java.lang.String, : is performing operation 
+1541009258115,1255301015,call,java.util.concurrent.Semaphore@3feba861[Permits = 2],1072408673,int,java.util.concurrent.Semaphore.acquire,7,0,NA,NA
+1541009258115,1411014348,return,2,1177552994,NA,NA,NA,NA,NA,NA
+1541009258115,1299768120,return,D : is performing operation ,1177552994,NA,NA,NA,NA,NA,NA
+1541009258115,1581214268,call,C : available Semaphore permits now: ,1053508056,class java.lang.StringBuilder,java.lang.StringBuilder.append,6,1,java.lang.Integer,2
+1541009258115,924483792,call,D : is performing operation ,1177552994,class java.lang.StringBuilder,java.lang.StringBuilder.append,7,1,java.lang.Integer,1
+1541009258115,924483792,return,D : is performing operation 1,1177552994,NA,NA,NA,NA,NA,NA
+1541009258115,927093981,call,D : is performing operation 1,1177552994,class java.lang.StringBuilder,java.lang.StringBuilder.append,7,1,java.lang.String,(comma) available Semaphore permits : 
+1541009258115,927093981,return,D : is performing operation 1(comma) available Semaphore permits : ,1177552994,NA,NA,NA,NA,NA,NA
+1541009258116,1026101294,call,NA,NA,class java.lang.StringBuilder,SemaphoreTest.semaphore,7,0,NA,NA
+1541009258116,1026101294,return,java.util.concurrent.Semaphore@3feba861[Permits = 1],0,NA,NA,NA,NA,NA,NA
+1541009258115,1255301015,return,NA,1177552994,NA,NA,NA,NA,NA,NA
+1541009258116,2065464561,call,java.util.concurrent.Semaphore@3feba861[Permits = 1],0,int,java.util.concurrent.Semaphore.availablePermits,7,0,NA,NA,0,NA,NA
+1541009258116,476755584,call,NA,NA,int,java.lang.System.out,7,0,NA,NA,0,NA,NA
+1541009258116,2065464561,return,1,0,NA,NA,NA,NA,NA,NA
+1541009258116,476755584,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009258116,409169730,call,D : is performing operation 1(comma) available Semaphore permits : ,1323165413,class java.lang.StringBuilder,java.lang.StringBuilder.append,7,1,java.lang.Integer,1
+1541009258116,1780622913,call,Thread[Thread-1(comma)5(comma)main],1323165413,class java.lang.StringBuilder,SemaphoreTest$MyATMThread.name,7,1,java.lang.Integer,1,0,NA,NA
+1541009258116,409169730,return,D : is performing operation 1(comma) available Semaphore permits : 1,1323165413,NA,NA,NA,NA,NA,NA
+1541009258116,1780622913,return,B,1323165413,NA,NA,NA,NA,NA,NA
+1541009258116,1119033019,call,NA,NA,class java.lang.String,java.lang.String.valueOf,7,0,NA,NAjava.lang.String,B
+1541009258116,1034040367,call,NA,NA,class java.lang.String,java.lang.StringBuilder.toString,7,0,NA,NAjava.lang.String,B
+1541009258116,1119033019,return,B,0,NA,NA,NA,NA,NA,NA
+1541009258116,440784797,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,7,1,java.lang.String,B
+1541009258116,1034040367,return,D : is performing operation 1(comma) available Semaphore permits : 1,0,NA,NA,NA,NA,NA,NA
+1541009258116,440784797,return,B,0,NA,NA,NA,NA,NA,NA
+1541009258116,1397927139,call,B,674863334,class java.lang.StringBuilder,java.lang.StringBuilder.append,7,1,java.lang.String, : got the permit!
+1541009258116,1397927139,return,B : got the permit!,674863334,NA,NA,NA,NA,NA,NA
+1541009258116,1216347093,call,java.io.PrintStream@4e50df2e,1313922862,class java.lang.StringBuilder,java.io.PrintStream.println,7,1,java.lang.String,D : is performing operation 1(comma) available Semaphore permits : 1
+1541009258116,1927632276,call,B : got the permit!,674863334,class java.lang.String,java.lang.StringBuilder.toString,7,0,NA,NA
+1541009258116,1216347093,return,NA,674863334,NA,NA,NA,NA,NA,NA
+1541009258116,1927632276,return,B : got the permit!,674863334,NA,NA,NA,NA,NA,NA
+1541009258116,1344077279,call,NA,NA,void,java.lang.Thread.sleep,7,1,java.lang.Long,1000,1,java.lang.String,B : got the permit!
+1541009258116,1185451370,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,7,1,java.lang.Long,1000,1,java.lang.String,B : got the permit!
+1541009258116,1185451370,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009258116,5965032,call,NA,NA,void,java.lang.System.out,7,0,NA,NA
+1541009258116,5965032,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009258116,1681998509,call,Thread[Thread-1(comma)5(comma)main],1323165413,void,SemaphoreTest$MyATMThread.name,8,0,NA,NA,0,NA,NA
+1541009258116,1983600766,call,Thread[Thread-5(comma)5(comma)main],1323165413,void,SemaphoreTest$MyATMThread.run,8,0,NA,NA,0,NA,NA
+1541009258117,1681998509,return,B,1323165413,NA,NA,NA,NA,NA,NA
+1541009258117,2029828297,call,NA,NA,void,java.lang.System.out,9,0,NA,NA
+1541009258117,1020326468,call,NA,NA,class java.lang.String,java.lang.String.valueOf,9,1,java.lang.String,B
+1541009258117,2029828297,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009258117,1020326468,return,B,0,NA,NA,NA,NA,NA,NA
+1541009258117,1041365865,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,9,1,java.lang.String,B,0,NA,NA
+1541009258117,2093167374,call,Thread[Thread-5(comma)5(comma)main],0,class java.lang.String,SemaphoreTest$MyATMThread.name,9,1,java.lang.String,B,0,NA,NA
+1541009258117,1041365865,return,B,0,NA,NA,NA,NA,NA,NA
+1541009258117,2093167374,return,F,0,NA,NA,NA,NA,NA,NA
+1541009258117,968995570,call,NA,NA,class java.lang.String,java.lang.String.valueOf,9,1,java.lang.String, : is performing operation 
+1541009258117,1714803719,call,NA,NA,class java.lang.String,java.lang.StringBuilder.append,9,1,java.lang.String, : is performing operation 
+1541009258117,968995570,return,F,0,NA,NA,NA,NA,NA,NA
+1541009258117,1714803719,return,B : is performing operation ,0,NA,NA,NA,NA,NA,NA
+1541009258117,353756444,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,9,1,java.lang.String,F
+1541009258117,353756444,return,F,145894791,NA,NA,NA,NA,NA,NA
+1541009258117,135247430,call,B : is performing operation ,145894791,class java.lang.StringBuilder,java.lang.StringBuilder.append,9,1,java.lang.Integer,1
+1541009258117,1837901020,call,F,1508789693,class java.lang.StringBuilder,java.lang.StringBuilder.append,9,1,java.lang.String, : acquiring lock...
+1541009258117,1837901020,return,F : acquiring lock...,1508789693,NA,NA,NA,NA,NA,NA
+1541009258117,135247430,return,B : is performing operation 1,1508789693,NA,NA,NA,NA,NA,NA
+1541009258117,1667853977,call,B : is performing operation 1,145894791,class java.lang.StringBuilder,java.lang.StringBuilder.toString,9,0,NA,NA,1,java.lang.String,
+1541009258117,1667853977,return,F : acquiring lock...,145894791,NA,NA,NA,NA,NA,NA
+1541009258117,2058266982,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,9,1,java.lang.String,F : acquiring lock...
+1541009258117,863385553,call,B : is performing operation 1,145894791,void,java.lang.StringBuilder.append,9,1,java.lang.String,F : acquiring lock...
+1541009258117,863385553,return,B : is performing operation 1(comma) available Semaphore permits : ,1313922862,NA,NA,NA,NA,NA,NA
+1541009258117,42817637,call,NA,NA,void,SemaphoreTest.semaphore,9,0,NA,NA
+1541009258117,2058266982,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009258117,1988675627,call,NA,NA,void,java.lang.System.out,9,0,NA,NA
+1541009258117,42817637,return,java.util.concurrent.Semaphore@3feba861[Permits = 1],0,NA,NA,NA,NA,NA,NA
+1541009258117,1988675627,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009258117,1246769631,call,java.util.concurrent.Semaphore@3feba861[Permits = 1],1072408673,int,java.util.concurrent.Semaphore.availablePermits,9,0,NA,NA
+1541009258118,1246769631,return,1,443308702,NA,NA,NA,NA,NA,NA
+1541009258118,1570828514,call,Thread[Thread-5(comma)5(comma)main],443308702,int,SemaphoreTest$MyATMThread.name,9,0,NA,NA
+1541009258118,1570828514,return,F,145894791,NA,NA,NA,NA,NA,NA
+1541009258118,1972715625,call,NA,NA,class java.lang.String,java.lang.String.valueOf,9,1,java.lang.String,F
+1541009258118,1058542421,call,B : is performing operation 1(comma) available Semaphore permits : ,0,class java.lang.String,java.lang.StringBuilder.append,9,1,java.lang.String,F,1,java.lang.Integer,1
+1541009258118,1972715625,return,F,0,NA,NA,NA,NA,NA,NA
+1541009258118,2055156260,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,9,1,java.lang.String,F
+1541009258118,2055156260,return,F,0,NA,NA,NA,NA,NA,NA
+1541009258118,1058542421,return,B : is performing operation 1(comma) available Semaphore permits : 1,276544146,NA,NA,NA,NA,NA,NA
+1541009258118,1241933008,call,F,276544146,class java.lang.StringBuilder,java.lang.StringBuilder.append,9,1,java.lang.String, : available Semaphore permits now: 
+1541009258118,1241933008,return,F : available Semaphore permits now: ,145894791,NA,NA,NA,NA,NA,NA
+1541009258118,1328690940,call,NA,NA,class java.lang.String,SemaphoreTest.semaphore,10,0,NA,NA
+1541009258118,1037198296,call,B : is performing operation 1(comma) available Semaphore permits : 1,0,class java.lang.String,java.lang.StringBuilder.toString,10,0,NA,NA,0,NA,NA
+1541009258118,1328690940,return,java.util.concurrent.Semaphore@3feba861[Permits = 1],0,NA,NA,NA,NA,NA,NA
+1541009258118,1037198296,return,B : is performing operation 1(comma) available Semaphore permits : 1,0,NA,NA,NA,NA,NA,NA
+1541009258118,1281344300,call,java.util.concurrent.Semaphore@3feba861[Permits = 1],1072408673,int,java.util.concurrent.Semaphore.availablePermits,10
+1541009258118,1281344300,return,1,1313922862,NA,NA,NA,NA,NA,NA
+1541009258118,1433688695,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,10,1,java.lang.String,B : is performing operation 1(comma) available Semaphore permits : 1
+1541009258118,897982099,call,F : available Semaphore permits now: ,276544146,class java.lang.StringBuilder,java.lang.StringBuilder.append,10,1,java.lang.Integer,1
+1541009258118,897982099,return,F : available Semaphore permits now: 1,276544146,NA,NA,NA,NA,NA,NA
+1541009258118,2019859867,call,F : available Semaphore permits now: 1,276544146,class java.lang.String,java.lang.StringBuilder.toString,10,0,NA,NA
+1541009258118,1433688695,return,NA,276544146,NA,NA,NA,NA,NA,NA
+1541009258118,2019859867,return,F : available Semaphore permits now: 1,276544146,NA,NA,NA,NA,NA,NA
+1541009258118,518084559,call,NA,NA,void,java.lang.Thread.sleep,10,1,java.lang.Long,1000
+1541009258118,641712573,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,10,1,java.lang.String,F : available Semaphore permits now: 1
+1541009258118,497964871,call,Thread[Thread-4(comma)5(comma)main],1313922862,void,SemaphoreTest$MyATMThread.run,10,1,java.lang.String,F : available Semaphore permits now: 1,0,NA,NA
+1541009258118,641712573,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009258118,325692034,call,NA,NA,void,java.lang.System.out,11,0,NA,NA
+1541009258118,340472053,call,NA,NA,void,SemaphoreTest.semaphore,11,0,NA,NA
+1541009258118,325692034,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009258118,340472053,return,java.util.concurrent.Semaphore@3feba861[Permits = 1],0,NA,NA,NA,NA,NA,NA
+1541009258119,289199721,call,java.util.concurrent.Semaphore@3feba861[Permits = 1],806353501,void,java.util.concurrent.Semaphore.acquire,11,0,NA,NA
+1541009258119,391527479,call,Thread[Thread-4(comma)5(comma)main],806353501,void,SemaphoreTest$MyATMThread.name,11,0,NA,NA,0,NA,NA
+1541009258119,289199721,return,NA,806353501,NA,NA,NA,NA,NA,NA
+1541009258119,391527479,return,E,806353501,NA,NA,NA,NA,NA,NA
+1541009258119,1307052432,call,NA,NA,void,java.lang.System.out,10,0,NA,NA
+1541009258119,1307052432,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009258119,1381277881,call,NA,NA,class java.lang.String,java.lang.String.valueOf,11,1,java.lang.String,E
+1541009258119,1381277881,return,E,443308702,NA,NA,NA,NA,NA,NA
+1541009258119,360844217,call,Thread[Thread-5(comma)5(comma)main],443308702,class java.lang.String,SemaphoreTest$MyATMThread.name,10,0,NA,NA
+1541009258119,1026539995,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,11,1,java.lang.String,E
+1541009258119,360844217,return,F,0,NA,NA,NA,NA,NA,NA
+1541009258119,1026539995,return,E,0,NA,NA,NA,NA,NA,NA
+1541009258119,1485000036,call,NA,NA,class java.lang.String,java.lang.String.valueOf,11,1,java.lang.String,F
+1541009258119,1674334534,call,E,1163751052,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.String, : acquiring lock...
+1541009258119,1485000036,return,F,1163751052,NA,NA,NA,NA,NA,NA
+1541009258119,1674334534,return,E : acquiring lock...,0,NA,NA,NA,NA,NA,NA
+1541009258119,796612483,call,NA,NA,class java.lang.StringBuilder,java.lang.StringBuilder.<init>,11,1,java.lang.String,F
+1541009258119,846946294,call,E : acquiring lock...,1163751052,class java.lang.String,java.lang.StringBuilder.toString,11,0,NA,NA
+1541009258119,796612483,return,F,1163751052,NA,NA,NA,NA,NA,NA
+1541009258119,846946294,return,E : acquiring lock...,1163751052,NA,NA,NA,NA,NA,NA
+1541009258119,575831925,call,F,654866245,class java.lang.StringBuilder,java.lang.StringBuilder.append,10,1,java.lang.String, : got the permit!
+1541009258119,575831925,return,F : got the permit!,1313922862,NA,NA,NA,NA,NA,NA
+1541009258119,1905877371,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,11,1,java.lang.String,E : acquiring lock...
+1541009258119,1705178797,call,F : got the permit!,654866245,class java.lang.String,java.lang.StringBuilder.toString,11,0,NA,NA
+1541009258119,1905877371,return,NA,654866245,NA,NA,NA,NA,NA,NA
+1541009258119,1705178797,return,F : got the permit!,654866245,NA,NA,NA,NA,NA,NA
+1541009258119,1893619823,call,NA,NA,class java.lang.String,java.lang.System.out,11,0,NA,NA
+1541009258119,1893619823,return,java.io.PrintStream@4e50df2e,1313922862,NA,NA,NA,NA,NA,NA
+1541009258119,277902037,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,11,1,java.lang.String,F : got the permit!
+1541009258119,1582916086,call,Thread[Thread-4(comma)5(comma)main],806353501,void,SemaphoreTest$MyATMThread.name,11,0,NA,NA
+1541009258119,1582916086,return,E,806353501,NA,NA,NA,NA,NA,NA
+1541009258119,909443364,call,NA,NA,class java.lang.String,java.lang.String.valueOf,11,1,java.lang.String,E
+1541009258119,909443364,return,E,0,NA,NA,NA,NA,NA,NA
+1541009258119,211631136,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,11,1,java.lang.String,E
+1541009258119,211631136,return,E,0,NA,NA,NA,NA,NA,NA
+1541009258119,243405052,call,E,457278987,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.String, : available Semaphore permits now: 
+1541009258120,243405052,return,E : available Semaphore permits now: ,457278987,NA,NA,NA,NA,NA,NA
+1541009258120,90413158,call,NA,NA,class java.lang.StringBuilder,SemaphoreTest.semaphore,11,0,NA,NA
+1541009258120,90413158,return,java.util.concurrent.Semaphore@3feba861[Permits = 0],0,NA,NA,NA,NA,NA,NA
+1541009258120,1618663638,call,java.util.concurrent.Semaphore@3feba861[Permits = 0],1072408673,int,java.util.concurrent.Semaphore.availablePermits,11,0,NA,NA
+1541009258120,1618663638,return,0,1072408673,NA,NA,NA,NA,NA,NA
+1541009258120,2128683477,call,E : available Semaphore permits now: ,457278987,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.Integer,0
+1541009258120,2128683477,return,E : available Semaphore permits now: 0,457278987,NA,NA,NA,NA,NA,NA
+1541009258120,1770492380,call,E : available Semaphore permits now: 0,457278987,class java.lang.String,java.lang.StringBuilder.toString,11,0,NA,NA
+1541009258120,1770492380,return,E : available Semaphore permits now: 0,457278987,NA,NA,NA,NA,NA,NA
+1541009258120,1883145250,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,11,1,java.lang.String,E : available Semaphore permits now: 0
+1541009258120,1883145250,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009258120,1177833115,call,NA,NA,void,SemaphoreTest.semaphore,11,0,NA,NA
+1541009258120,1177833115,return,java.util.concurrent.Semaphore@3feba861[Permits = 0],0,NA,NA,NA,NA,NA,NA
+1541009258120,824975361,call,java.util.concurrent.Semaphore@3feba861[Permits = 0],1072408673,void,java.util.concurrent.Semaphore.acquire,11,0,NA,NA
+1541009258120,1581214268,return,C : available Semaphore permits now: 2,1072408673,NA,NA,NA,NA,NA,NA
+1541009258120,975054242,call,C : available Semaphore permits now: 2,1053508056,class java.lang.String,java.lang.StringBuilder.toString,11,0,NA,NA
+1541009258120,975054242,return,C : available Semaphore permits now: 2,1053508056,NA,NA,NA,NA,NA,NA
+1541009258120,277902037,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009258120,2058124357,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,11,1,java.lang.String,C : available Semaphore permits now: 2
+1541009258120,554180197,call,NA,NA,void,java.lang.System.out,11,0,NA,NA
+1541009258120,2058124357,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009258120,2093392354,call,NA,NA,void,SemaphoreTest.semaphore,11,0,NA,NA
+1541009258120,554180197,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009258121,2093392354,return,java.util.concurrent.Semaphore@3feba861[Permits = 0],0,NA,NA,NA,NA,NA,NA
+1541009258121,1494047436,call,java.util.concurrent.Semaphore@3feba861[Permits = 0],1072408673,void,java.util.concurrent.Semaphore.acquire,11,0,NA,NA,0,NA,NA
+1541009258121,1172236126,call,Thread[Thread-5(comma)5(comma)main],1072408673,void,SemaphoreTest$MyATMThread.name,11,0,NA,NA,0,NA,NA
+1541009258121,1172236126,return,F,1072408673,NA,NA,NA,NA,NA,NA
+1541009258121,935032534,call,NA,NA,class java.lang.String,java.lang.String.valueOf,11,1,java.lang.String,F
+1541009258121,935032534,return,F,0,NA,NA,NA,NA,NA,NA
+1541009258121,615431214,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,11,1,java.lang.String,F
+1541009258121,615431214,return,F,0,NA,NA,NA,NA,NA,NA
+1541009258121,1169450472,call,F,2002951703,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.String, : is performing operation 
+1541009258121,1169450472,return,F : is performing operation ,2002951703,NA,NA,NA,NA,NA,NA
+1541009258121,453204971,call,F : is performing operation ,2002951703,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.Integer,1
+1541009258121,453204971,return,F : is performing operation 1,2002951703,NA,NA,NA,NA,NA,NA
+1541009258121,1251859305,call,F : is performing operation 1,2002951703,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.String,(comma) available Semaphore permits : 
+1541009258121,1251859305,return,F : is performing operation 1(comma) available Semaphore permits : ,2002951703,NA,NA,NA,NA,NA,NA
+1541009258121,752909559,call,NA,NA,class java.lang.StringBuilder,SemaphoreTest.semaphore,11,0,NA,NA
+1541009258121,752909559,return,java.util.concurrent.Semaphore@3feba861[Permits = 0],0,NA,NA,NA,NA,NA,NA
+1541009258121,1326566746,call,java.util.concurrent.Semaphore@3feba861[Permits = 0],1072408673,int,java.util.concurrent.Semaphore.availablePermits,11,0,NA,NA
+1541009258121,1326566746,return,0,1072408673,NA,NA,NA,NA,NA,NA
+1541009258121,1321999184,call,F : is performing operation 1(comma) available Semaphore permits : ,2002951703,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.Integer,0
+1541009258121,1321999184,return,F : is performing operation 1(comma) available Semaphore permits : 0,2002951703,NA,NA,NA,NA,NA,NA
+1541009258121,1789839219,call,F : is performing operation 1(comma) available Semaphore permits : 0,2002951703,class java.lang.String,java.lang.StringBuilder.toString,11,0,NA,NA
+1541009258121,1789839219,return,F : is performing operation 1(comma) available Semaphore permits : 0,2002951703,NA,NA,NA,NA,NA,NA
+1541009258121,1166412053,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,11,1,java.lang.String,F : is performing operation 1(comma) available Semaphore permits : 0
+1541009258122,1166412053,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009258122,71067618,call,NA,NA,void,java.lang.Thread.sleep,11,1,java.lang.Long,1000
+1541009258111,1545540663,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009259112,1526924106,call,NA,NA,void,java.lang.System.out,11,0,NA,NA
+1541009259112,1526924106,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009259112,575726605,call,Thread[Thread-0(comma)5(comma)main],1349393271,void,SemaphoreTest$MyATMThread.name,11,0,NA,NA
+1541009259112,575726605,return,A,1349393271,NA,NA,NA,NA,NA,NA
+1541009259112,188575619,call,NA,NA,class java.lang.String,java.lang.String.valueOf,11,1,java.lang.String,A
+1541009259112,188575619,return,A,0,NA,NA,NA,NA,NA,NA
+1541009259112,791112831,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,11,1,java.lang.String,A
+1541009259112,791112831,return,A,0,NA,NA,NA,NA,NA,NA
+1541009259112,1828529026,call,A,1235796636,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.String, : is performing operation 
+1541009259112,1828529026,return,A : is performing operation ,1235796636,NA,NA,NA,NA,NA,NA
+1541009259112,696905053,call,A : is performing operation ,1235796636,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.Integer,2
+1541009259112,696905053,return,A : is performing operation 2,1235796636,NA,NA,NA,NA,NA,NA
+1541009259112,1037641863,call,A : is performing operation 2,1235796636,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.String,(comma) available Semaphore permits : 
+1541009259112,1037641863,return,A : is performing operation 2(comma) available Semaphore permits : ,1235796636,NA,NA,NA,NA,NA,NA
+1541009259112,943582605,call,NA,NA,class java.lang.StringBuilder,SemaphoreTest.semaphore,11,0,NA,NA
+1541009259112,943582605,return,java.util.concurrent.Semaphore@3feba861[Permits = 0],0,NA,NA,NA,NA,NA,NA
+1541009259112,923690036,call,java.util.concurrent.Semaphore@3feba861[Permits = 0],1072408673,int,java.util.concurrent.Semaphore.availablePermits,11,0,NA,NA
+1541009259112,923690036,return,0,1072408673,NA,NA,NA,NA,NA,NA
+1541009259112,1359709325,call,A : is performing operation 2(comma) available Semaphore permits : ,1235796636,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.Integer,0
+1541009259112,1359709325,return,A : is performing operation 2(comma) available Semaphore permits : 0,1235796636,NA,NA,NA,NA,NA,NA
+1541009259112,635573051,call,A : is performing operation 2(comma) available Semaphore permits : 0,1235796636,class java.lang.String,java.lang.StringBuilder.toString,11,0,NA,NA
+1541009259112,635573051,return,A : is performing operation 2(comma) available Semaphore permits : 0,1235796636,NA,NA,NA,NA,NA,NA
+1541009259112,1927598991,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,11,1,java.lang.String,A : is performing operation 2(comma) available Semaphore permits : 0
+1541009259112,1927598991,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009259113,915351075,call,NA,NA,void,java.lang.Thread.sleep,11,1,java.lang.Long,1000
+1541009258116,1344077279,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009259117,1392935393,call,NA,NA,void,java.lang.System.out,11,0,NA,NA
+1541009259117,1392935393,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009259117,2133447906,call,Thread[Thread-3(comma)5(comma)main],1848402763,void,SemaphoreTest$MyATMThread.name,11,0,NA,NA
+1541009259117,2133447906,return,D,1848402763,NA,NA,NA,NA,NA,NA
+1541009259117,1212103041,call,NA,NA,class java.lang.String,java.lang.String.valueOf,11,1,java.lang.String,D
+1541009259117,1212103041,return,D,0,NA,NA,NA,NA,NA,NA
+1541009259117,2147141468,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,11,1,java.lang.String,D
+1541009259117,2147141468,return,D,0,NA,NA,NA,NA,NA,NA
+1541009259117,403982539,call,D,690688495,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.String, : is performing operation 
+1541009259117,403982539,return,D : is performing operation ,690688495,NA,NA,NA,NA,NA,NA
+1541009259117,409589370,call,D : is performing operation ,690688495,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.Integer,2
+1541009259117,409589370,return,D : is performing operation 2,690688495,NA,NA,NA,NA,NA,NA
+1541009259117,822092300,call,D : is performing operation 2,690688495,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.String,(comma) available Semaphore permits : 
+1541009259117,822092300,return,D : is performing operation 2(comma) available Semaphore permits : ,690688495,NA,NA,NA,NA,NA,NA
+1541009259117,191391479,call,NA,NA,class java.lang.StringBuilder,SemaphoreTest.semaphore,11,0,NA,NA
+1541009259117,191391479,return,java.util.concurrent.Semaphore@3feba861[Permits = 0],0,NA,NA,NA,NA,NA,NA
+1541009259117,2059250204,call,java.util.concurrent.Semaphore@3feba861[Permits = 0],1072408673,int,java.util.concurrent.Semaphore.availablePermits,11,0,NA,NA
+1541009259117,2059250204,return,0,1072408673,NA,NA,NA,NA,NA,NA
+1541009259117,749828407,call,D : is performing operation 2(comma) available Semaphore permits : ,690688495,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.Integer,0
+1541009259117,749828407,return,D : is performing operation 2(comma) available Semaphore permits : 0,690688495,NA,NA,NA,NA,NA,NA
+1541009259117,479280879,call,D : is performing operation 2(comma) available Semaphore permits : 0,690688495,class java.lang.String,java.lang.StringBuilder.toString,11,0,NA,NA
+1541009259117,479280879,return,D : is performing operation 2(comma) available Semaphore permits : 0,690688495,NA,NA,NA,NA,NA,NA
+1541009259117,1418112084,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,11,1,java.lang.String,D : is performing operation 2(comma) available Semaphore permits : 0
+1541009259117,1418112084,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009259117,1140593042,call,NA,NA,void,java.lang.Thread.sleep,11,1,java.lang.Long,1000
+1541009258118,518084559,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009259119,1637645821,call,NA,NA,void,java.lang.System.out,11,0,NA,NA
+1541009259119,1637645821,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009259119,1342054069,call,Thread[Thread-1(comma)5(comma)main],1323165413,void,SemaphoreTest$MyATMThread.name,11,0,NA,NA
+1541009259119,1342054069,return,B,1323165413,NA,NA,NA,NA,NA,NA
+1541009259119,942555871,call,NA,NA,class java.lang.String,java.lang.String.valueOf,11,1,java.lang.String,B
+1541009259119,942555871,return,B,0,NA,NA,NA,NA,NA,NA
+1541009259119,753214778,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,11,1,java.lang.String,B
+1541009259119,753214778,return,B,0,NA,NA,NA,NA,NA,NA
+1541009259119,773113550,call,B,287337999,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.String, : is performing operation 
+1541009259119,773113550,return,B : is performing operation ,287337999,NA,NA,NA,NA,NA,NA
+1541009259119,1540554318,call,B : is performing operation ,287337999,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.Integer,2
+1541009259119,1540554318,return,B : is performing operation 2,287337999,NA,NA,NA,NA,NA,NA
+1541009259119,1578880251,call,B : is performing operation 2,287337999,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.String,(comma) available Semaphore permits : 
+1541009259119,1578880251,return,B : is performing operation 2(comma) available Semaphore permits : ,287337999,NA,NA,NA,NA,NA,NA
+1541009259119,1446073152,call,NA,NA,class java.lang.StringBuilder,SemaphoreTest.semaphore,11,0,NA,NA
+1541009259119,1446073152,return,java.util.concurrent.Semaphore@3feba861[Permits = 0],0,NA,NA,NA,NA,NA,NA
+1541009259119,1156784031,call,java.util.concurrent.Semaphore@3feba861[Permits = 0],1072408673,int,java.util.concurrent.Semaphore.availablePermits,11,0,NA,NA
+1541009259119,1156784031,return,0,1072408673,NA,NA,NA,NA,NA,NA
+1541009259119,136292801,call,B : is performing operation 2(comma) available Semaphore permits : ,287337999,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.Integer,0
+1541009259119,136292801,return,B : is performing operation 2(comma) available Semaphore permits : 0,287337999,NA,NA,NA,NA,NA,NA
+1541009259119,149143597,call,B : is performing operation 2(comma) available Semaphore permits : 0,287337999,class java.lang.String,java.lang.StringBuilder.toString,11,0,NA,NA
+1541009259119,149143597,return,B : is performing operation 2(comma) available Semaphore permits : 0,287337999,NA,NA,NA,NA,NA,NA
+1541009259119,1418996002,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,11,1,java.lang.String,B : is performing operation 2(comma) available Semaphore permits : 0
+1541009259119,1418996002,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009259119,147311560,call,NA,NA,void,java.lang.Thread.sleep,11,1,java.lang.Long,1000
+1541009258122,71067618,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009259123,704969390,call,NA,NA,void,java.lang.System.out,11,0,NA,NA
+1541009259123,704969390,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009259123,915219906,call,Thread[Thread-5(comma)5(comma)main],443308702,void,SemaphoreTest$MyATMThread.name,11,0,NA,NA
+1541009259123,915219906,return,F,443308702,NA,NA,NA,NA,NA,NA
+1541009259123,1127636135,call,NA,NA,class java.lang.String,java.lang.String.valueOf,11,1,java.lang.String,F
+1541009259123,1127636135,return,F,0,NA,NA,NA,NA,NA,NA
+1541009259123,609366100,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,11,1,java.lang.String,F
+1541009259123,609366100,return,F,0,NA,NA,NA,NA,NA,NA
+1541009259123,688816122,call,F,1987243052,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.String, : is performing operation 
+1541009259123,688816122,return,F : is performing operation ,1987243052,NA,NA,NA,NA,NA,NA
+1541009259123,131089697,call,F : is performing operation ,1987243052,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.Integer,2
+1541009259123,131089697,return,F : is performing operation 2,1987243052,NA,NA,NA,NA,NA,NA
+1541009259123,842339615,call,F : is performing operation 2,1987243052,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.String,(comma) available Semaphore permits : 
+1541009259123,842339615,return,F : is performing operation 2(comma) available Semaphore permits : ,1987243052,NA,NA,NA,NA,NA,NA
+1541009259123,1755208972,call,NA,NA,class java.lang.StringBuilder,SemaphoreTest.semaphore,11,0,NA,NA
+1541009259123,1755208972,return,java.util.concurrent.Semaphore@3feba861[Permits = 0],0,NA,NA,NA,NA,NA,NA
+1541009259123,166518719,call,java.util.concurrent.Semaphore@3feba861[Permits = 0],1072408673,int,java.util.concurrent.Semaphore.availablePermits,11,0,NA,NA
+1541009259123,166518719,return,0,1072408673,NA,NA,NA,NA,NA,NA
+1541009259123,202406638,call,F : is performing operation 2(comma) available Semaphore permits : ,1987243052,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.Integer,0
+1541009259123,202406638,return,F : is performing operation 2(comma) available Semaphore permits : 0,1987243052,NA,NA,NA,NA,NA,NA
+1541009259123,379001758,call,F : is performing operation 2(comma) available Semaphore permits : 0,1987243052,class java.lang.String,java.lang.StringBuilder.toString,11,0,NA,NA
+1541009259123,379001758,return,F : is performing operation 2(comma) available Semaphore permits : 0,1987243052,NA,NA,NA,NA,NA,NA
+1541009259123,217793149,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,11,1,java.lang.String,F : is performing operation 2(comma) available Semaphore permits : 0
+1541009259123,217793149,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009259123,1661298042,call,NA,NA,void,java.lang.Thread.sleep,11,1,java.lang.Long,1000
+1541009259113,915351075,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009260113,992867219,call,NA,NA,void,java.lang.System.out,11,0,NA,NA
+1541009260113,992867219,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009260113,249775110,call,Thread[Thread-0(comma)5(comma)main],1349393271,void,SemaphoreTest$MyATMThread.name,11,0,NA,NA
+1541009260113,249775110,return,A,1349393271,NA,NA,NA,NA,NA,NA
+1541009260113,1515161342,call,NA,NA,class java.lang.String,java.lang.String.valueOf,11,1,java.lang.String,A
+1541009260113,1515161342,return,A,0,NA,NA,NA,NA,NA,NA
+1541009260113,356388266,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,11,1,java.lang.String,A
+1541009260113,356388266,return,A,0,NA,NA,NA,NA,NA,NA
+1541009260113,1104922101,call,A,1435265724,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.String, : is performing operation 
+1541009260113,1104922101,return,A : is performing operation ,1435265724,NA,NA,NA,NA,NA,NA
+1541009260113,1943170693,call,A : is performing operation ,1435265724,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.Integer,3
+1541009260113,1943170693,return,A : is performing operation 3,1435265724,NA,NA,NA,NA,NA,NA
+1541009260113,384069128,call,A : is performing operation 3,1435265724,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.String,(comma) available Semaphore permits : 
+1541009260113,384069128,return,A : is performing operation 3(comma) available Semaphore permits : ,1435265724,NA,NA,NA,NA,NA,NA
+1541009260113,152040780,call,NA,NA,class java.lang.StringBuilder,SemaphoreTest.semaphore,11,0,NA,NA
+1541009260113,152040780,return,java.util.concurrent.Semaphore@3feba861[Permits = 0],0,NA,NA,NA,NA,NA,NA
+1541009260113,1071687515,call,java.util.concurrent.Semaphore@3feba861[Permits = 0],1072408673,int,java.util.concurrent.Semaphore.availablePermits,11,0,NA,NA
+1541009260113,1071687515,return,0,1072408673,NA,NA,NA,NA,NA,NA
+1541009260113,1604730980,call,A : is performing operation 3(comma) available Semaphore permits : ,1435265724,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.Integer,0
+1541009260113,1604730980,return,A : is performing operation 3(comma) available Semaphore permits : 0,1435265724,NA,NA,NA,NA,NA,NA
+1541009260113,1778901430,call,A : is performing operation 3(comma) available Semaphore permits : 0,1435265724,class java.lang.String,java.lang.StringBuilder.toString,11,0,NA,NA
+1541009260113,1778901430,return,A : is performing operation 3(comma) available Semaphore permits : 0,1435265724,NA,NA,NA,NA,NA,NA
+1541009260113,483707951,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,11,1,java.lang.String,A : is performing operation 3(comma) available Semaphore permits : 0
+1541009260113,483707951,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009260113,640973457,call,NA,NA,void,java.lang.Thread.sleep,11,1,java.lang.Long,1000
+1541009259118,1140593042,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009260118,1688444955,call,NA,NA,void,java.lang.System.out,11,0,NA,NA
+1541009260118,1688444955,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009260118,1909492774,call,Thread[Thread-3(comma)5(comma)main],1848402763,void,SemaphoreTest$MyATMThread.name,11,0,NA,NA
+1541009260118,1909492774,return,D,1848402763,NA,NA,NA,NA,NA,NA
+1541009260118,282421828,call,NA,NA,class java.lang.String,java.lang.String.valueOf,11,1,java.lang.String,D
+1541009260118,282421828,return,D,0,NA,NA,NA,NA,NA,NA
+1541009260118,856066381,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,11,1,java.lang.String,D
+1541009260118,856066381,return,D,0,NA,NA,NA,NA,NA,NA
+1541009260118,1255953486,call,D,1066946703,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.String, : is performing operation 
+1541009260118,1255953486,return,D : is performing operation ,1066946703,NA,NA,NA,NA,NA,NA
+1541009260118,69503602,call,D : is performing operation ,1066946703,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.Integer,3
+1541009260118,69503602,return,D : is performing operation 3,1066946703,NA,NA,NA,NA,NA,NA
+1541009260118,57620314,call,D : is performing operation 3,1066946703,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.String,(comma) available Semaphore permits : 
+1541009260118,57620314,return,D : is performing operation 3(comma) available Semaphore permits : ,1066946703,NA,NA,NA,NA,NA,NA
+1541009260118,733576541,call,NA,NA,class java.lang.StringBuilder,SemaphoreTest.semaphore,11,0,NA,NA
+1541009260118,733576541,return,java.util.concurrent.Semaphore@3feba861[Permits = 0],0,NA,NA,NA,NA,NA,NA
+1541009260118,1457015949,call,java.util.concurrent.Semaphore@3feba861[Permits = 0],1072408673,int,java.util.concurrent.Semaphore.availablePermits,11,0,NA,NA
+1541009260118,1457015949,return,0,1072408673,NA,NA,NA,NA,NA,NA
+1541009260118,1980705598,call,D : is performing operation 3(comma) available Semaphore permits : ,1066946703,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.Integer,0
+1541009260118,1980705598,return,D : is performing operation 3(comma) available Semaphore permits : 0,1066946703,NA,NA,NA,NA,NA,NA
+1541009260118,203425602,call,D : is performing operation 3(comma) available Semaphore permits : 0,1066946703,class java.lang.String,java.lang.StringBuilder.toString,11,0,NA,NA
+1541009260118,203425602,return,D : is performing operation 3(comma) available Semaphore permits : 0,1066946703,NA,NA,NA,NA,NA,NA
+1541009260118,1821622286,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,11,1,java.lang.String,D : is performing operation 3(comma) available Semaphore permits : 0
+1541009259119,147311560,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009260119,2103655088,call,NA,NA,void,java.lang.System.out,11,0,NA,NA
+1541009260119,2103655088,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009260119,1796698009,call,Thread[Thread-1(comma)5(comma)main],1323165413,void,SemaphoreTest$MyATMThread.name,11,0,NA,NA
+1541009260119,1796698009,return,B,1323165413,NA,NA,NA,NA,NA,NA
+1541009260119,507479776,call,NA,NA,class java.lang.String,java.lang.String.valueOf,11,1,java.lang.String,B
+1541009260119,507479776,return,B,0,NA,NA,NA,NA,NA,NA
+1541009260119,680560484,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,11,1,java.lang.String,B
+1541009260119,680560484,return,B,0,NA,NA,NA,NA,NA,NA
+1541009260119,1287822972,call,B,477715418,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.String, : is performing operation 
+1541009260119,1287822972,return,B : is performing operation ,477715418,NA,NA,NA,NA,NA,NA
+1541009260119,1821622286,return,NA,477715418,NA,NA,NA,NA,NA,NA
+1541009260119,2115225139,call,B : is performing operation ,477715418,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.Integer,3
+1541009260119,2115225139,return,B : is performing operation 3,0,NA,NA,NA,NA,NA,NA
+1541009260119,2025538869,call,NA,NA,void,java.lang.Thread.sleep,11,1,java.lang.Long,1000
+1541009260119,1385485618,call,B : is performing operation 3,477715418,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.String,(comma) available Semaphore permits : 
+1541009260119,1385485618,return,B : is performing operation 3(comma) available Semaphore permits : ,477715418,NA,NA,NA,NA,NA,NA
+1541009260119,184385634,call,NA,NA,class java.lang.StringBuilder,SemaphoreTest.semaphore,11,0,NA,NA
+1541009260119,184385634,return,java.util.concurrent.Semaphore@3feba861[Permits = 0],0,NA,NA,NA,NA,NA,NA
+1541009260119,1544338796,call,java.util.concurrent.Semaphore@3feba861[Permits = 0],1072408673,int,java.util.concurrent.Semaphore.availablePermits,11,0,NA,NA
+1541009260119,1544338796,return,0,1072408673,NA,NA,NA,NA,NA,NA
+1541009260119,1011800704,call,B : is performing operation 3(comma) available Semaphore permits : ,477715418,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.Integer,0
+1541009260119,1011800704,return,B : is performing operation 3(comma) available Semaphore permits : 0,477715418,NA,NA,NA,NA,NA,NA
+1541009260119,1208464766,call,B : is performing operation 3(comma) available Semaphore permits : 0,477715418,class java.lang.String,java.lang.StringBuilder.toString,11,0,NA,NA
+1541009260119,1208464766,return,B : is performing operation 3(comma) available Semaphore permits : 0,477715418,NA,NA,NA,NA,NA,NA
+1541009260119,782221964,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,11,1,java.lang.String,B : is performing operation 3(comma) available Semaphore permits : 0
+1541009260119,782221964,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009260120,398585326,call,NA,NA,void,java.lang.Thread.sleep,11,1,java.lang.Long,1000
+1541009259124,1661298042,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009260124,1825416446,call,NA,NA,void,java.lang.System.out,11,0,NA,NA
+1541009260124,1825416446,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009260124,1118308626,call,Thread[Thread-5(comma)5(comma)main],443308702,void,SemaphoreTest$MyATMThread.name,11,0,NA,NA
+1541009260124,1118308626,return,F,443308702,NA,NA,NA,NA,NA,NA
+1541009260124,337003408,call,NA,NA,class java.lang.String,java.lang.String.valueOf,11,1,java.lang.String,F
+1541009260124,337003408,return,F,0,NA,NA,NA,NA,NA,NA
+1541009260124,1550899933,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,11,1,java.lang.String,F
+1541009260124,1550899933,return,F,0,NA,NA,NA,NA,NA,NA
+1541009260124,1570467833,call,F,1601772993,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.String, : is performing operation 
+1541009260124,1570467833,return,F : is performing operation ,1601772993,NA,NA,NA,NA,NA,NA
+1541009260124,2044059517,call,F : is performing operation ,1601772993,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.Integer,3
+1541009260124,2044059517,return,F : is performing operation 3,1601772993,NA,NA,NA,NA,NA,NA
+1541009260124,598299816,call,F : is performing operation 3,1601772993,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.String,(comma) available Semaphore permits : 
+1541009260124,598299816,return,F : is performing operation 3(comma) available Semaphore permits : ,1601772993,NA,NA,NA,NA,NA,NA
+1541009260124,634065795,call,NA,NA,class java.lang.StringBuilder,SemaphoreTest.semaphore,11,0,NA,NA
+1541009260124,634065795,return,java.util.concurrent.Semaphore@3feba861[Permits = 0],0,NA,NA,NA,NA,NA,NA
+1541009260124,852198894,call,java.util.concurrent.Semaphore@3feba861[Permits = 0],1072408673,int,java.util.concurrent.Semaphore.availablePermits,11,0,NA,NA
+1541009260124,852198894,return,0,1072408673,NA,NA,NA,NA,NA,NA
+1541009260124,1706203901,call,F : is performing operation 3(comma) available Semaphore permits : ,1601772993,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.Integer,0
+1541009260124,1706203901,return,F : is performing operation 3(comma) available Semaphore permits : 0,1601772993,NA,NA,NA,NA,NA,NA
+1541009260124,215453431,call,F : is performing operation 3(comma) available Semaphore permits : 0,1601772993,class java.lang.String,java.lang.StringBuilder.toString,11,0,NA,NA
+1541009260124,215453431,return,F : is performing operation 3(comma) available Semaphore permits : 0,1601772993,NA,NA,NA,NA,NA,NA
+1541009260124,1904071653,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,11,1,java.lang.String,F : is performing operation 3(comma) available Semaphore permits : 0
+1541009260124,1904071653,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009260124,536337617,call,NA,NA,void,java.lang.Thread.sleep,11,1,java.lang.Long,1000
+1541009260113,640973457,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009261114,1266461523,call,NA,NA,void,java.lang.System.out,11,0,NA,NA
+1541009261114,1266461523,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009261114,514062811,call,Thread[Thread-0(comma)5(comma)main],1349393271,void,SemaphoreTest$MyATMThread.name,11,0,NA,NA
+1541009261114,514062811,return,A,1349393271,NA,NA,NA,NA,NA,NA
+1541009261114,606923668,call,NA,NA,class java.lang.String,java.lang.String.valueOf,11,1,java.lang.String,A
+1541009261114,606923668,return,A,0,NA,NA,NA,NA,NA,NA
+1541009261114,566881650,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,11,1,java.lang.String,A
+1541009261114,566881650,return,A,0,NA,NA,NA,NA,NA,NA
+1541009261114,255978539,call,A,246260025,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.String, : is performing operation 
+1541009261114,255978539,return,A : is performing operation ,246260025,NA,NA,NA,NA,NA,NA
+1541009261114,1293847347,call,A : is performing operation ,246260025,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.Integer,4
+1541009261114,1293847347,return,A : is performing operation 4,246260025,NA,NA,NA,NA,NA,NA
+1541009261114,592600479,call,A : is performing operation 4,246260025,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.String,(comma) available Semaphore permits : 
+1541009261114,592600479,return,A : is performing operation 4(comma) available Semaphore permits : ,246260025,NA,NA,NA,NA,NA,NA
+1541009261114,594730346,call,NA,NA,class java.lang.StringBuilder,SemaphoreTest.semaphore,11,0,NA,NA
+1541009261114,594730346,return,java.util.concurrent.Semaphore@3feba861[Permits = 0],0,NA,NA,NA,NA,NA,NA
+1541009261114,1077216340,call,java.util.concurrent.Semaphore@3feba861[Permits = 0],1072408673,int,java.util.concurrent.Semaphore.availablePermits,11,0,NA,NA
+1541009261114,1077216340,return,0,1072408673,NA,NA,NA,NA,NA,NA
+1541009261114,2043369586,call,A : is performing operation 4(comma) available Semaphore permits : ,246260025,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.Integer,0
+1541009261114,2043369586,return,A : is performing operation 4(comma) available Semaphore permits : 0,246260025,NA,NA,NA,NA,NA,NA
+1541009261114,1212439665,call,A : is performing operation 4(comma) available Semaphore permits : 0,246260025,class java.lang.String,java.lang.StringBuilder.toString,11,0,NA,NA
+1541009261114,1212439665,return,A : is performing operation 4(comma) available Semaphore permits : 0,246260025,NA,NA,NA,NA,NA,NA
+1541009261114,2112377246,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,11,1,java.lang.String,A : is performing operation 4(comma) available Semaphore permits : 0
+1541009261114,2112377246,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009261114,353893843,call,NA,NA,void,java.lang.Thread.sleep,11,1,java.lang.Long,1000
+1541009260119,2025538869,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009261119,2002962375,call,NA,NA,void,java.lang.System.out,11,0,NA,NA
+1541009261119,2002962375,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009261119,2071254142,call,Thread[Thread-3(comma)5(comma)main],1848402763,void,SemaphoreTest$MyATMThread.name,11,0,NA,NA
+1541009261119,2071254142,return,D,1848402763,NA,NA,NA,NA,NA,NA
+1541009261119,160819374,call,NA,NA,class java.lang.String,java.lang.String.valueOf,11,1,java.lang.String,D
+1541009261119,160819374,return,D,0,NA,NA,NA,NA,NA,NA
+1541009261119,732268100,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,11,1,java.lang.String,D
+1541009261119,732268100,return,D,0,NA,NA,NA,NA,NA,NA
+1541009261119,1243095048,call,D,395495953,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.String, : is performing operation 
+1541009261119,1243095048,return,D : is performing operation ,395495953,NA,NA,NA,NA,NA,NA
+1541009261119,828674261,call,D : is performing operation ,395495953,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.Integer,4
+1541009261119,828674261,return,D : is performing operation 4,395495953,NA,NA,NA,NA,NA,NA
+1541009261119,922007323,call,D : is performing operation 4,395495953,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.String,(comma) available Semaphore permits : 
+1541009261119,922007323,return,D : is performing operation 4(comma) available Semaphore permits : ,395495953,NA,NA,NA,NA,NA,NA
+1541009261119,1038604717,call,NA,NA,class java.lang.StringBuilder,SemaphoreTest.semaphore,11,0,NA,NA
+1541009261119,1038604717,return,java.util.concurrent.Semaphore@3feba861[Permits = 0],0,NA,NA,NA,NA,NA,NA
+1541009261119,1009012290,call,java.util.concurrent.Semaphore@3feba861[Permits = 0],1072408673,int,java.util.concurrent.Semaphore.availablePermits,11,0,NA,NA
+1541009261119,1009012290,return,0,1072408673,NA,NA,NA,NA,NA,NA
+1541009261119,693338923,call,D : is performing operation 4(comma) available Semaphore permits : ,395495953,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.Integer,0
+1541009261119,693338923,return,D : is performing operation 4(comma) available Semaphore permits : 0,395495953,NA,NA,NA,NA,NA,NA
+1541009261119,973907317,call,D : is performing operation 4(comma) available Semaphore permits : 0,395495953,class java.lang.String,java.lang.StringBuilder.toString,11,0,NA,NA
+1541009261119,973907317,return,D : is performing operation 4(comma) available Semaphore permits : 0,395495953,NA,NA,NA,NA,NA,NA
+1541009261119,967129384,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,11,1,java.lang.String,D : is performing operation 4(comma) available Semaphore permits : 0
+1541009261119,967129384,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009261119,661464576,call,NA,NA,void,java.lang.Thread.sleep,11,1,java.lang.Long,1000
+1541009260120,398585326,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009261120,1569828684,call,NA,NA,void,java.lang.System.out,11,0,NA,NA
+1541009261120,1569828684,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009261120,684219845,call,Thread[Thread-1(comma)5(comma)main],1323165413,void,SemaphoreTest$MyATMThread.name,11,0,NA,NA
+1541009261120,684219845,return,B,1323165413,NA,NA,NA,NA,NA,NA
+1541009261120,2014540274,call,NA,NA,class java.lang.String,java.lang.String.valueOf,11,1,java.lang.String,B
+1541009261120,2014540274,return,B,0,NA,NA,NA,NA,NA,NA
+1541009261120,1621446019,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,11,1,java.lang.String,B
+1541009261120,1621446019,return,B,0,NA,NA,NA,NA,NA,NA
+1541009261120,807298324,call,B,1515335847,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.String, : is performing operation 
+1541009261120,807298324,return,B : is performing operation ,1515335847,NA,NA,NA,NA,NA,NA
+1541009261120,959268606,call,B : is performing operation ,1515335847,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.Integer,4
+1541009261120,959268606,return,B : is performing operation 4,1515335847,NA,NA,NA,NA,NA,NA
+1541009261120,1940835597,call,B : is performing operation 4,1515335847,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.String,(comma) available Semaphore permits : 
+1541009261120,1940835597,return,B : is performing operation 4(comma) available Semaphore permits : ,1515335847,NA,NA,NA,NA,NA,NA
+1541009261120,811278505,call,NA,NA,class java.lang.StringBuilder,SemaphoreTest.semaphore,11,0,NA,NA
+1541009261120,811278505,return,java.util.concurrent.Semaphore@3feba861[Permits = 0],0,NA,NA,NA,NA,NA,NA
+1541009261120,2068314381,call,java.util.concurrent.Semaphore@3feba861[Permits = 0],1072408673,int,java.util.concurrent.Semaphore.availablePermits,11,0,NA,NA
+1541009261120,2068314381,return,0,1072408673,NA,NA,NA,NA,NA,NA
+1541009261120,680413741,call,B : is performing operation 4(comma) available Semaphore permits : ,1515335847,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.Integer,0
+1541009261120,680413741,return,B : is performing operation 4(comma) available Semaphore permits : 0,1515335847,NA,NA,NA,NA,NA,NA
+1541009261120,768421012,call,B : is performing operation 4(comma) available Semaphore permits : 0,1515335847,class java.lang.String,java.lang.StringBuilder.toString,11,0,NA,NA
+1541009261120,768421012,return,B : is performing operation 4(comma) available Semaphore permits : 0,1515335847,NA,NA,NA,NA,NA,NA
+1541009261120,1148850156,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,11,1,java.lang.String,B : is performing operation 4(comma) available Semaphore permits : 0
+1541009261120,1148850156,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009261120,3217919,call,NA,NA,void,java.lang.Thread.sleep,11,1,java.lang.Long,1000
+1541009260124,536337617,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009261124,1852037280,call,NA,NA,void,java.lang.System.out,11,0,NA,NA
+1541009261124,1852037280,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009261124,1584612269,call,Thread[Thread-5(comma)5(comma)main],443308702,void,SemaphoreTest$MyATMThread.name,11,0,NA,NA
+1541009261124,1584612269,return,F,443308702,NA,NA,NA,NA,NA,NA
+1541009261124,1099841917,call,NA,NA,class java.lang.String,java.lang.String.valueOf,11,1,java.lang.String,F
+1541009261124,1099841917,return,F,0,NA,NA,NA,NA,NA,NA
+1541009261124,1623071945,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,11,1,java.lang.String,F
+1541009261124,1623071945,return,F,0,NA,NA,NA,NA,NA,NA
+1541009261124,275283622,call,F,1413622061,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.String, : is performing operation 
+1541009261124,275283622,return,F : is performing operation ,1413622061,NA,NA,NA,NA,NA,NA
+1541009261124,1735663473,call,F : is performing operation ,1413622061,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.Integer,4
+1541009261124,1735663473,return,F : is performing operation 4,1413622061,NA,NA,NA,NA,NA,NA
+1541009261124,2000428802,call,F : is performing operation 4,1413622061,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.String,(comma) available Semaphore permits : 
+1541009261124,2000428802,return,F : is performing operation 4(comma) available Semaphore permits : ,1413622061,NA,NA,NA,NA,NA,NA
+1541009261124,611500557,call,NA,NA,class java.lang.StringBuilder,SemaphoreTest.semaphore,11,0,NA,NA
+1541009261124,611500557,return,java.util.concurrent.Semaphore@3feba861[Permits = 0],0,NA,NA,NA,NA,NA,NA
+1541009261124,1639750895,call,java.util.concurrent.Semaphore@3feba861[Permits = 0],1072408673,int,java.util.concurrent.Semaphore.availablePermits,11,0,NA,NA
+1541009261124,1639750895,return,0,1072408673,NA,NA,NA,NA,NA,NA
+1541009261124,653559870,call,F : is performing operation 4(comma) available Semaphore permits : ,1413622061,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.Integer,0
+1541009261124,653559870,return,F : is performing operation 4(comma) available Semaphore permits : 0,1413622061,NA,NA,NA,NA,NA,NA
+1541009261124,833050605,call,F : is performing operation 4(comma) available Semaphore permits : 0,1413622061,class java.lang.String,java.lang.StringBuilder.toString,11,0,NA,NA
+1541009261124,833050605,return,F : is performing operation 4(comma) available Semaphore permits : 0,1413622061,NA,NA,NA,NA,NA,NA
+1541009261124,66558334,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,11,1,java.lang.String,F : is performing operation 4(comma) available Semaphore permits : 0
+1541009261124,66558334,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009261124,103360011,call,NA,NA,void,java.lang.Thread.sleep,11,1,java.lang.Long,1000
+1541009261114,353893843,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009262114,918306763,call,NA,NA,void,java.lang.System.out,11,0,NA,NA
+1541009262114,918306763,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009262114,1559321273,call,Thread[Thread-0(comma)5(comma)main],1349393271,void,SemaphoreTest$MyATMThread.name,11,0,NA,NA
+1541009262114,1559321273,return,A,1349393271,NA,NA,NA,NA,NA,NA
+1541009262114,1663734808,call,NA,NA,class java.lang.String,java.lang.String.valueOf,11,1,java.lang.String,A
+1541009262114,1663734808,return,A,0,NA,NA,NA,NA,NA,NA
+1541009262114,1232671947,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,11,1,java.lang.String,A
+1541009262114,1232671947,return,A,0,NA,NA,NA,NA,NA,NA
+1541009262114,510408776,call,A,1218350510,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.String, : is performing operation 
+1541009262114,510408776,return,A : is performing operation ,1218350510,NA,NA,NA,NA,NA,NA
+1541009262114,2141407985,call,A : is performing operation ,1218350510,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.Integer,5
+1541009262114,2141407985,return,A : is performing operation 5,1218350510,NA,NA,NA,NA,NA,NA
+1541009262114,2130564738,call,A : is performing operation 5,1218350510,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.String,(comma) available Semaphore permits : 
+1541009262114,2130564738,return,A : is performing operation 5(comma) available Semaphore permits : ,1218350510,NA,NA,NA,NA,NA,NA
+1541009262114,19668845,call,NA,NA,class java.lang.StringBuilder,SemaphoreTest.semaphore,11,0,NA,NA
+1541009262114,19668845,return,java.util.concurrent.Semaphore@3feba861[Permits = 0],0,NA,NA,NA,NA,NA,NA
+1541009262114,1038287131,call,java.util.concurrent.Semaphore@3feba861[Permits = 0],1072408673,int,java.util.concurrent.Semaphore.availablePermits,11,0,NA,NA
+1541009262114,1038287131,return,0,1072408673,NA,NA,NA,NA,NA,NA
+1541009262114,1483874452,call,A : is performing operation 5(comma) available Semaphore permits : ,1218350510,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.Integer,0
+1541009262114,1483874452,return,A : is performing operation 5(comma) available Semaphore permits : 0,1218350510,NA,NA,NA,NA,NA,NA
+1541009262114,1210823902,call,A : is performing operation 5(comma) available Semaphore permits : 0,1218350510,class java.lang.String,java.lang.StringBuilder.toString,11,0,NA,NA
+1541009262114,1210823902,return,A : is performing operation 5(comma) available Semaphore permits : 0,1218350510,NA,NA,NA,NA,NA,NA
+1541009262114,689769921,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,11,1,java.lang.String,A : is performing operation 5(comma) available Semaphore permits : 0
+1541009262114,689769921,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009262114,206780960,call,NA,NA,void,java.lang.Thread.sleep,11,1,java.lang.Long,1000
+1541009261119,661464576,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009262120,311603997,call,NA,NA,void,java.lang.System.out,11,0,NA,NA
+1541009262120,311603997,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009262120,1307216695,call,Thread[Thread-3(comma)5(comma)main],1848402763,void,SemaphoreTest$MyATMThread.name,11,0,NA,NA
+1541009262120,1307216695,return,D,1848402763,NA,NA,NA,NA,NA,NA
+1541009262120,1561757659,call,NA,NA,class java.lang.String,java.lang.String.valueOf,11,1,java.lang.String,D
+1541009262120,1561757659,return,D,0,NA,NA,NA,NA,NA,NA
+1541009262120,319158111,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,11,1,java.lang.String,D
+1541009262120,319158111,return,D,0,NA,NA,NA,NA,NA,NA
+1541009262120,336110713,call,D,220342012,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.String, : is performing operation 
+1541009262120,336110713,return,D : is performing operation ,220342012,NA,NA,NA,NA,NA,NA
+1541009262120,1692614876,call,D : is performing operation ,220342012,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.Integer,5
+1541009262120,1692614876,return,D : is performing operation 5,220342012,NA,NA,NA,NA,NA,NA
+1541009262120,1482750992,call,D : is performing operation 5,220342012,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.String,(comma) available Semaphore permits : 
+1541009262120,1482750992,return,D : is performing operation 5(comma) available Semaphore permits : ,220342012,NA,NA,NA,NA,NA,NA
+1541009262120,152743945,call,NA,NA,class java.lang.StringBuilder,SemaphoreTest.semaphore,11,0,NA,NA
+1541009262120,152743945,return,java.util.concurrent.Semaphore@3feba861[Permits = 0],0,NA,NA,NA,NA,NA,NA
+1541009262120,361980432,call,java.util.concurrent.Semaphore@3feba861[Permits = 0],1072408673,int,java.util.concurrent.Semaphore.availablePermits,11,0,NA,NA
+1541009262120,361980432,return,0,1072408673,NA,NA,NA,NA,NA,NA
+1541009262120,1795700190,call,D : is performing operation 5(comma) available Semaphore permits : ,220342012,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.Integer,0
+1541009262120,1795700190,return,D : is performing operation 5(comma) available Semaphore permits : 0,220342012,NA,NA,NA,NA,NA,NA
+1541009262120,886559955,call,D : is performing operation 5(comma) available Semaphore permits : 0,220342012,class java.lang.String,java.lang.StringBuilder.toString,11,0,NA,NA
+1541009262120,886559955,return,D : is performing operation 5(comma) available Semaphore permits : 0,220342012,NA,NA,NA,NA,NA,NA
+1541009262120,1754374328,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,11,1,java.lang.String,D : is performing operation 5(comma) available Semaphore permits : 0
+1541009262120,1754374328,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009262120,1713163352,call,NA,NA,void,java.lang.Thread.sleep,11,1,java.lang.Long,1000
+1541009261120,3217919,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009262121,1521808630,call,NA,NA,void,java.lang.System.out,11,0,NA,NA
+1541009262121,1521808630,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009262121,517589688,call,Thread[Thread-1(comma)5(comma)main],1323165413,void,SemaphoreTest$MyATMThread.name,11,0,NA,NA
+1541009262121,517589688,return,B,1323165413,NA,NA,NA,NA,NA,NA
+1541009262121,172532704,call,NA,NA,class java.lang.String,java.lang.String.valueOf,11,1,java.lang.String,B
+1541009262121,172532704,return,B,0,NA,NA,NA,NA,NA,NA
+1541009262121,46050743,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,11,1,java.lang.String,B
+1541009262121,46050743,return,B,0,NA,NA,NA,NA,NA,NA
+1541009262121,2144397906,call,B,797733658,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.String, : is performing operation 
+1541009262121,2144397906,return,B : is performing operation ,797733658,NA,NA,NA,NA,NA,NA
+1541009262121,1611956904,call,B : is performing operation ,797733658,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.Integer,5
+1541009262121,1611956904,return,B : is performing operation 5,797733658,NA,NA,NA,NA,NA,NA
+1541009262121,397432840,call,B : is performing operation 5,797733658,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.String,(comma) available Semaphore permits : 
+1541009262121,397432840,return,B : is performing operation 5(comma) available Semaphore permits : ,797733658,NA,NA,NA,NA,NA,NA
+1541009262121,1867166422,call,NA,NA,class java.lang.StringBuilder,SemaphoreTest.semaphore,11,0,NA,NA
+1541009262121,1867166422,return,java.util.concurrent.Semaphore@3feba861[Permits = 0],0,NA,NA,NA,NA,NA,NA
+1541009262121,588388486,call,java.util.concurrent.Semaphore@3feba861[Permits = 0],1072408673,int,java.util.concurrent.Semaphore.availablePermits,11,0,NA,NA
+1541009262121,588388486,return,0,1072408673,NA,NA,NA,NA,NA,NA
+1541009262121,1733808014,call,B : is performing operation 5(comma) available Semaphore permits : ,797733658,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.Integer,0
+1541009262121,1733808014,return,B : is performing operation 5(comma) available Semaphore permits : 0,797733658,NA,NA,NA,NA,NA,NA
+1541009262121,1915927412,call,B : is performing operation 5(comma) available Semaphore permits : 0,797733658,class java.lang.String,java.lang.StringBuilder.toString,11,0,NA,NA
+1541009262121,1915927412,return,B : is performing operation 5(comma) available Semaphore permits : 0,797733658,NA,NA,NA,NA,NA,NA
+1541009262121,1213496294,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,11,1,java.lang.String,B : is performing operation 5(comma) available Semaphore permits : 0
+1541009262121,1213496294,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009262121,2075233346,call,NA,NA,void,java.lang.Thread.sleep,11,1,java.lang.Long,1000
+1541009261124,103360011,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009262125,77527944,call,NA,NA,void,java.lang.System.out,11,0,NA,NA
+1541009262125,77527944,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009262125,260951241,call,Thread[Thread-5(comma)5(comma)main],443308702,void,SemaphoreTest$MyATMThread.name,11,0,NA,NA
+1541009262125,260951241,return,F,443308702,NA,NA,NA,NA,NA,NA
+1541009262125,806258735,call,NA,NA,class java.lang.String,java.lang.String.valueOf,11,1,java.lang.String,F
+1541009262125,806258735,return,F,0,NA,NA,NA,NA,NA,NA
+1541009262125,2144921947,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,11,1,java.lang.String,F
+1541009262125,2144921947,return,F,0,NA,NA,NA,NA,NA,NA
+1541009262125,216600467,call,F,1843622211,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.String, : is performing operation 
+1541009262125,216600467,return,F : is performing operation ,1843622211,NA,NA,NA,NA,NA,NA
+1541009262125,703120160,call,F : is performing operation ,1843622211,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.Integer,5
+1541009262125,703120160,return,F : is performing operation 5,1843622211,NA,NA,NA,NA,NA,NA
+1541009262125,289564023,call,F : is performing operation 5,1843622211,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.String,(comma) available Semaphore permits : 
+1541009262125,289564023,return,F : is performing operation 5(comma) available Semaphore permits : ,1843622211,NA,NA,NA,NA,NA,NA
+1541009262125,1427334491,call,NA,NA,class java.lang.StringBuilder,SemaphoreTest.semaphore,11,0,NA,NA
+1541009262125,1427334491,return,java.util.concurrent.Semaphore@3feba861[Permits = 0],0,NA,NA,NA,NA,NA,NA
+1541009262125,588021715,call,java.util.concurrent.Semaphore@3feba861[Permits = 0],1072408673,int,java.util.concurrent.Semaphore.availablePermits,11,0,NA,NA
+1541009262125,588021715,return,0,1072408673,NA,NA,NA,NA,NA,NA
+1541009262125,1284659537,call,F : is performing operation 5(comma) available Semaphore permits : ,1843622211,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.Integer,0
+1541009262125,1284659537,return,F : is performing operation 5(comma) available Semaphore permits : 0,1843622211,NA,NA,NA,NA,NA,NA
+1541009262125,1325003881,call,F : is performing operation 5(comma) available Semaphore permits : 0,1843622211,class java.lang.String,java.lang.StringBuilder.toString,11,0,NA,NA
+1541009262125,1325003881,return,F : is performing operation 5(comma) available Semaphore permits : 0,1843622211,NA,NA,NA,NA,NA,NA
+1541009262125,9333072,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,11,1,java.lang.String,F : is performing operation 5(comma) available Semaphore permits : 0
+1541009262125,9333072,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009262125,1086090357,call,NA,NA,void,java.lang.Thread.sleep,11,1,java.lang.Long,1000
+1541009262114,206780960,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009263114,1164762558,call,NA,NA,void,java.lang.System.out,11,0,NA,NA
+1541009263114,1164762558,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009263114,1349782665,call,Thread[Thread-0(comma)5(comma)main],1349393271,void,SemaphoreTest$MyATMThread.name,11,0,NA,NA
+1541009263114,1349782665,return,A,1349393271,NA,NA,NA,NA,NA,NA
+1541009263114,298217539,call,NA,NA,class java.lang.String,java.lang.String.valueOf,11,1,java.lang.String,A
+1541009263114,298217539,return,A,0,NA,NA,NA,NA,NA,NA
+1541009263114,72473185,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,11,1,java.lang.String,A
+1541009263114,72473185,return,A,0,NA,NA,NA,NA,NA,NA
+1541009263114,661874296,call,A,1469265499,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.String, : releasing lock...
+1541009263114,661874296,return,A : releasing lock...,1469265499,NA,NA,NA,NA,NA,NA
+1541009263114,1970602114,call,A : releasing lock...,1469265499,class java.lang.String,java.lang.StringBuilder.toString,11,0,NA,NA
+1541009263114,1970602114,return,A : releasing lock...,1469265499,NA,NA,NA,NA,NA,NA
+1541009263114,2147311263,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,11,1,java.lang.String,A : releasing lock...
+1541009263114,2147311263,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009263114,1124186046,call,NA,NA,void,SemaphoreTest.semaphore,11,0,NA,NA
+1541009263114,1124186046,return,java.util.concurrent.Semaphore@3feba861[Permits = 0],0,NA,NA,NA,NA,NA,NA
+1541009263114,225337451,call,java.util.concurrent.Semaphore@3feba861[Permits = 0],1072408673,void,java.util.concurrent.Semaphore.release,11,0,NA,NA
+1541009263114,225337451,return,NA,1072408673,NA,NA,NA,NA,NA,NA
+1541009263114,1354895444,call,NA,NA,void,java.lang.System.out,11,0,NA,NA
+1541009263114,1354895444,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009258120,824975361,return,NA,1349393271,NA,NA,NA,NA,NA,NA
+1541009263114,1693470345,call,NA,NA,void,java.lang.System.out,11,0,NA,NA
+1541009263114,1163834741,call,Thread[Thread-0(comma)5(comma)main],0,void,SemaphoreTest$MyATMThread.name,11,0,NA,NA,0,NA,NA
+1541009263114,1693470345,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009263114,1163834741,return,A,0,NA,NA,NA,NA,NA,NA
+1541009263114,1626065313,call,Thread[Thread-4(comma)5(comma)main],0,void,SemaphoreTest$MyATMThread.name,11,0,NA,NA
+1541009263114,187455015,call,NA,NA,class java.lang.String,java.lang.String.valueOf,11,1,java.lang.String,A
+1541009263114,1626065313,return,E,0,NA,NA,NA,NA,NA,NA
+1541009263114,187455015,return,A,0,NA,NA,NA,NA,NA,NA
+1541009263114,72291249,call,NA,NA,class java.lang.String,java.lang.String.valueOf,11,1,java.lang.String,E
+1541009263114,72291249,return,E,0,NA,NA,NA,NA,NA,NA
+1541009263114,1975452177,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,11,1,java.lang.String,A
+1541009263114,1421018897,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,11,1,java.lang.String,E
+1541009263114,1975452177,return,A,0,NA,NA,NA,NA,NA,NA
+1541009263114,1421018897,return,E,0,NA,NA,NA,NA,NA,NA
+1541009263114,852594440,call,E,206175794,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.String, : got the permit!
+1541009263114,852594440,return,E : got the permit!,1885841041,NA,NA,NA,NA,NA,NA
+1541009263114,1008774147,call,E : got the permit!,206175794,class java.lang.String,java.lang.StringBuilder.toString,11,0,NA,NA
+1541009263114,901770306,call,E : got the permit!,206175794,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.String, : available Semaphore permits now: 
+1541009263114,1008774147,return,E : got the permit!,206175794,NA,NA,NA,NA,NA,NA
+1541009263114,901770306,return,A : available Semaphore permits now: ,206175794,NA,NA,NA,NA,NA,NA
+1541009263114,45604160,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,11,1,java.lang.String,E : got the permit!
+1541009263115,91886237,call,NA,NA,void,SemaphoreTest.semaphore,11,0,NA,NA
+1541009263115,45604160,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009263115,91886237,return,java.util.concurrent.Semaphore@3feba861[Permits = 0],0,NA,NA,NA,NA,NA,NA
+1541009263115,1103895370,call,NA,NA,void,java.lang.System.out,11,0,NA,NA
+1541009263115,1103895370,return,java.io.PrintStream@4e50df2e,1072408673,NA,NA,NA,NA,NA,NA
+1541009263115,1821307259,call,java.util.concurrent.Semaphore@3feba861[Permits = 0],1072408673,int,java.util.concurrent.Semaphore.availablePermits,11,0,NA,NA
+1541009263115,1821307259,return,0,806353501,NA,NA,NA,NA,NA,NA
+1541009263115,215117516,call,Thread[Thread-4(comma)5(comma)main],806353501,int,SemaphoreTest$MyATMThread.name,11,0,NA,NA
+1541009263115,1630325105,call,A : available Semaphore permits now: ,1885841041,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.Integer,0
+1541009263115,215117516,return,E,1885841041,NA,NA,NA,NA,NA,NA
+1541009263115,892050401,call,NA,NA,class java.lang.String,java.lang.String.valueOf,11,1,java.lang.String,E
+1541009263115,892050401,return,E,0,NA,NA,NA,NA,NA,NA
+1541009263115,155848153,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,11,1,java.lang.String,E
+1541009263115,155848153,return,E,0,NA,NA,NA,NA,NA,NA
+1541009263115,1630325105,return,A : available Semaphore permits now: 0,1885841041,NA,NA,NA,NA,NA,NA
+1541009263115,679297521,call,E,927399484,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.String, : is performing operation 
+1541009263115,679297521,return,E : is performing operation ,1885841041,NA,NA,NA,NA,NA,NA
+1541009263115,733738218,call,A : available Semaphore permits now: 0,1885841041,class java.lang.String,java.lang.StringBuilder.toString,11,0,NA,NA
+1541009263115,1583062950,call,E : is performing operation ,927399484,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.Integer,1
+1541009263115,733738218,return,A : available Semaphore permits now: 0,927399484,NA,NA,NA,NA,NA,NA
+1541009263115,1583062950,return,E : is performing operation 1,927399484,NA,NA,NA,NA,NA,NA
+1541009263115,128345457,call,E : is performing operation 1,927399484,class java.lang.StringBuilder,java.lang.StringBuilder.append,11,1,java.lang.String,(comma) available Semaphore permits : 
+1541009263115,2113992186,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,11,1,java.lang.String,A : available Semaphore permits now: 0
+1541009263115,128345457,return,E : is performing operation 1(comma) available Semaphore permits : ,1313922862,NA,NA,NA,NA,NA,NA
+1541009263115,1167515325,call,NA,NA,void,SemaphoreTest.semaphore,11,0,NA,NA
+1541009263115,1167515325,return,java.util.concurrent.Semaphore@3feba861[Permits = 0],0,NA,NA,NA,NA,NA,NA
+1541009263115,2113992186,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009258102,1505375615,return,NA,1072408673,NA,NA,NA,NA,NA,NA
+1541009263115,1159823149,call,java.util.concurrent.Semaphore@3feba861[Permits = 0],1072408673,int,java.util.concurrent.Semaphore.availablePermits,10,0,NA,NA
+1541009263115,1159823149,return,0,1072408673,NA,NA,NA,NA,NA,NA
+1541009263115,1199931008,call,E : is performing operation 1(comma) available Semaphore permits : ,927399484,class java.lang.StringBuilder,java.lang.StringBuilder.append,9,1,java.lang.Integer,0
+1541009263115,1199931008,return,E : is performing operation 1(comma) available Semaphore permits : 0,927399484,NA,NA,NA,NA,NA,NA
+1541009263115,1933317868,call,E : is performing operation 1(comma) available Semaphore permits : 0,927399484,class java.lang.String,java.lang.StringBuilder.toString,9,0,NA,NA
+1541009263115,1933317868,return,E : is performing operation 1(comma) available Semaphore permits : 0,927399484,NA,NA,NA,NA,NA,NA
+1541009263115,11291904,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,9,1,java.lang.String,E : is performing operation 1(comma) available Semaphore permits : 0
+1541009263115,11291904,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009263115,1312461359,call,NA,NA,void,java.lang.Thread.sleep,9,1,java.lang.Long,1000
+1541009262120,1713163352,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009263120,1276158848,call,NA,NA,void,java.lang.System.out,9,0,NA,NA
+1541009263120,1276158848,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009263120,1181452189,call,Thread[Thread-3(comma)5(comma)main],1848402763,void,SemaphoreTest$MyATMThread.name,9,0,NA,NA
+1541009263120,1181452189,return,D,1848402763,NA,NA,NA,NA,NA,NA
+1541009263120,588934024,call,NA,NA,class java.lang.String,java.lang.String.valueOf,9,1,java.lang.String,D
+1541009263120,588934024,return,D,0,NA,NA,NA,NA,NA,NA
+1541009263120,602152383,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,9,1,java.lang.String,D
+1541009263120,602152383,return,D,0,NA,NA,NA,NA,NA,NA
+1541009263120,1788978912,call,D,1886159686,class java.lang.StringBuilder,java.lang.StringBuilder.append,9,1,java.lang.String, : releasing lock...
+1541009263120,1788978912,return,D : releasing lock...,1886159686,NA,NA,NA,NA,NA,NA
+1541009263120,14344424,call,D : releasing lock...,1886159686,class java.lang.String,java.lang.StringBuilder.toString,9,0,NA,NA
+1541009263120,14344424,return,D : releasing lock...,1886159686,NA,NA,NA,NA,NA,NA
+1541009263120,55581865,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,9,1,java.lang.String,D : releasing lock...
+1541009263120,55581865,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009263120,1679895685,call,NA,NA,void,SemaphoreTest.semaphore,9,0,NA,NA
+1541009263120,1679895685,return,java.util.concurrent.Semaphore@3feba861[Permits = 0],0,NA,NA,NA,NA,NA,NA
+1541009263120,1883502068,call,java.util.concurrent.Semaphore@3feba861[Permits = 0],1072408673,void,java.util.concurrent.Semaphore.release,9,0,NA,NA
+1541009263120,1883502068,return,NA,1072408673,NA,NA,NA,NA,NA,NA
+1541009263120,667522740,call,NA,NA,void,java.lang.System.out,9,0,NA,NA
+1541009263120,667522740,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009258121,1494047436,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009263120,620716976,call,Thread[Thread-3(comma)5(comma)main],0,void,SemaphoreTest$MyATMThread.name,9,0,NA,NA,0,NA,NA
+1541009263120,309679994,call,NA,NA,void,java.lang.System.out,9,0,NA,NA,0,NA,NA
+1541009263120,620716976,return,D,0,NA,NA,NA,NA,NA,NA
+1541009263120,1230448302,call,NA,NA,class java.lang.String,java.lang.String.valueOf,9,1,java.lang.String,D
+1541009263120,1230448302,return,D,0,NA,NA,NA,NA,NA,NA
+1541009263120,309679994,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009263120,643073573,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,9,1,java.lang.String,D
+1541009263120,643073573,return,D,541265204,NA,NA,NA,NA,NA,NA
+1541009263120,1304676461,call,D,318689414,class java.lang.StringBuilder,java.lang.StringBuilder.append,9,1,java.lang.String, : available Semaphore permits now: 
+1541009263120,1304676461,return,D : available Semaphore permits now: ,318689414,NA,NA,NA,NA,NA,NA
+1541009263120,186797861,call,Thread[Thread-2(comma)5(comma)main],541265204,class java.lang.String,SemaphoreTest$MyATMThread.name,9,0,NA,NA
+1541009263120,1659692577,call,NA,NA,class java.lang.StringBuilder,SemaphoreTest.semaphore,9,0,NA,NA
+1541009263120,186797861,return,C,0,NA,NA,NA,NA,NA,NA
+1541009263120,1659692577,return,java.util.concurrent.Semaphore@3feba861[Permits = 0],0,NA,NA,NA,NA,NA,NA
+1541009263120,1109538322,call,NA,NA,class java.lang.String,java.lang.String.valueOf,9,1,java.lang.String,C
+1541009263120,1611342327,call,java.util.concurrent.Semaphore@3feba861[Permits = 0],1072408673,int,java.util.concurrent.Semaphore.availablePermits,9,0,NA,NA
+1541009263120,1109538322,return,C,1072408673,NA,NA,NA,NA,NA,NA
+1541009263120,1611342327,return,0,1072408673,NA,NA,NA,NA,NA,NA
+1541009263120,861412667,call,D : available Semaphore permits now: ,318689414,class java.lang.StringBuilder,java.lang.StringBuilder.append,9,1,java.lang.Integer,0
+1541009263120,861412667,return,D : available Semaphore permits now: 0,318689414,NA,NA,NA,NA,NA,NA
+1541009263120,1472626998,call,D : available Semaphore permits now: 0,318689414,class java.lang.String,java.lang.StringBuilder.toString,9,1,java.lang.String
+1541009263120,1909116832,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,9,1,java.lang.String,C
+1541009263120,1472626998,return,D : available Semaphore permits now: 0,0,NA,NA,NA,NA,NA,NA
+1541009263120,1909116832,return,C,0,NA,NA,NA,NA,NA,NA
+1541009263120,1237096548,call,C,1358867729,class java.lang.StringBuilder,java.lang.StringBuilder.append,9,1,java.lang.String, : got the permit!
+1541009263120,1237096548,return,C : got the permit!,1313922862,NA,NA,NA,NA,NA,NA
+1541009263120,1377740801,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,9,1,java.lang.String,D : available Semaphore permits now: 0
+1541009263120,62886842,call,C : got the permit!,1358867729,class java.lang.String,java.lang.StringBuilder.toString,9,0,NA,NA
+1541009263120,62886842,return,C : got the permit!,1358867729,NA,NA,NA,NA,NA,NA
+1541009263120,1377740801,return,NA,1358867729,NA,NA,NA,NA,NA,NA
+1541009263120,615512994,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,9,1,java.lang.String,C : got the permit!
+1541009263120,615512994,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009263120,159201515,call,NA,NA,void,java.lang.System.out,8,0,NA,NA
+1541009258107,914179924,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009263120,159201515,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009262121,2075233346,return,NA,541265204,NA,NA,NA,NA,NA,NA
+1541009263121,743348976,call,Thread[Thread-2(comma)5(comma)main],541265204,void,SemaphoreTest$MyATMThread.name,7,0,NA,NA
+1541009263121,583210757,call,NA,NA,void,java.lang.System.out,7,0,NA,NA
+1541009263121,743348976,return,C,0,NA,NA,NA,NA,NA,NA
+1541009263121,583210757,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009263121,1393819264,call,NA,NA,class java.lang.String,java.lang.String.valueOf,6,1,java.lang.String,C
+1541009263121,1393819264,return,C,1323165413,NA,NA,NA,NA,NA,NA
+1541009263121,1162731826,call,Thread[Thread-1(comma)5(comma)main],1323165413,class java.lang.String,SemaphoreTest$MyATMThread.name,7,0,NA,NA
+1541009263121,138046891,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,7,1,java.lang.String,C
+1541009263121,1162731826,return,B,0,NA,NA,NA,NA,NA,NA
+1541009263121,138046891,return,C,0,NA,NA,NA,NA,NA,NA
+1541009263121,774711606,call,NA,NA,class java.lang.String,java.lang.String.valueOf,7,1,java.lang.String,B
+1541009263121,1759557159,call,C,807483601,class java.lang.StringBuilder,java.lang.StringBuilder.append,7,1,java.lang.String, : is performing operation 
+1541009263121,1759557159,return,C : is performing operation ,807483601,NA,NA,NA,NA,NA,NA
+1541009263121,774711606,return,B,807483601,NA,NA,NA,NA,NA,NA
+1541009263121,2081040299,call,C : is performing operation ,807483601,class java.lang.StringBuilder,java.lang.StringBuilder.append,7,1,java.lang.Integer,1
+1541009263121,1493791533,call,NA,NA,class java.lang.StringBuilder,java.lang.StringBuilder.<init>,7,1,java.lang.String,B
+1541009263121,2081040299,return,C : is performing operation 1,0,NA,NA,NA,NA,NA,NA
+1541009263121,1493791533,return,B,0,NA,NA,NA,NA,NA,NA
+1541009263121,1665678390,call,B,1227228444,class java.lang.StringBuilder,java.lang.StringBuilder.append,7,1,java.lang.String, : releasing lock...
+1541009263121,663116468,call,C : is performing operation 1,807483601,class java.lang.StringBuilder,java.lang.StringBuilder.append,7,1,java.lang.String,(comma) available Semaphore permits : 
+1541009263121,1665678390,return,B : releasing lock...,1227228444,NA,NA,NA,NA,NA,NA
+1541009263121,243659159,call,B : releasing lock...,1227228444,class java.lang.String,java.lang.StringBuilder.toString,7,0,NA,NA
+1541009263121,663116468,return,C : is performing operation 1(comma) available Semaphore permits : ,1227228444,NA,NA,NA,NA,NA,NA
+1541009263121,243659159,return,B : releasing lock...,1227228444,NA,NA,NA,NA,NA,NA
+1541009263121,1253736941,call,NA,NA,class java.lang.String,SemaphoreTest.semaphore,7,0,NA,NA
+1541009263121,470248305,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,7,1,java.lang.String,B : releasing lock...
+1541009263121,1253736941,return,java.util.concurrent.Semaphore@3feba861[Permits = 0],1313922862,NA,NA,NA,NA,NA,NA
+1541009263121,1935990747,call,java.util.concurrent.Semaphore@3feba861[Permits = 0],1072408673,int,java.util.concurrent.Semaphore.availablePermits,7,0,NA,NA
+1541009263121,470248305,return,NA,1072408673,NA,NA,NA,NA,NA,NA
+1541009263121,1935990747,return,0,1072408673,NA,NA,NA,NA,NA,NA
+1541009263121,1049386315,call,NA,NA,int,SemaphoreTest.semaphore,7,0,NA,NA
+1541009263121,1049386315,return,java.util.concurrent.Semaphore@3feba861[Permits = 0],807483601,NA,NA,NA,NA,NA,NA
+1541009263121,1593743715,call,C : is performing operation 1(comma) available Semaphore permits : ,807483601,class java.lang.StringBuilder,java.lang.StringBuilder.append,7,1,java.lang.Integer,0
+1541009263121,1207673187,call,java.util.concurrent.Semaphore@3feba861[Permits = 0],1072408673,void,java.util.concurrent.Semaphore.release,7,0,NA,NA
+1541009263121,1593743715,return,C : is performing operation 1(comma) available Semaphore permits : 0,1072408673,NA,NA,NA,NA,NA,NA
+1541009263121,1207673187,return,NA,1072408673,NA,NA,NA,NA,NA,NA
+1541009263121,1716779330,call,NA,NA,void,java.lang.System.out,7,0,NA,NA
+1541009263121,1716779330,return,java.io.PrintStream@4e50df2e,807483601,NA,NA,NA,NA,NA,NA
+1541009263121,1270361074,call,C : is performing operation 1(comma) available Semaphore permits : 0,1323165413,class java.lang.String,java.lang.StringBuilder.toString,7,0,NA,NA
+1541009263121,1270361074,return,C : is performing operation 1(comma) available Semaphore permits : 0,1323165413,NA,NA,NA,NA,NA,NA
+1541009263121,1101548058,call,Thread[Thread-1(comma)5(comma)main],1323165413,class java.lang.String,SemaphoreTest$MyATMThread.name,7,0,NA,NA,0,NA,NA
+1541009263121,1435725441,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,7,1,java.lang.String,C : is performing operation 1(comma) available Semaphore permits : 0
+1541009263122,1101548058,return,B,1313922862,NA,NA,NA,NA,NA,NA
+1541009263122,1435725441,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009263122,487731553,call,NA,NA,class java.lang.String,java.lang.String.valueOf,7,1,java.lang.String,B
+1541009263122,6093295,call,NA,NA,void,java.lang.Thread.sleep,7,1,java.lang.Long,1000
+1541009263122,487731553,return,B,0,NA,NA,NA,NA,NA,NA
+1541009263122,133724953,call,NA,NA,void,java.lang.StringBuilder.<init>,7,1,java.lang.String,B
+1541009263122,133724953,return,B,0,NA,NA,NA,NA,NA,NA
+1541009263122,2123893581,call,B,2112058910,class java.lang.StringBuilder,java.lang.StringBuilder.append,7,1,java.lang.String, : available Semaphore permits now: 
+1541009263122,2123893581,return,B : available Semaphore permits now: ,2112058910,NA,NA,NA,NA,NA,NA
+1541009263122,1912003066,call,NA,NA,class java.lang.StringBuilder,SemaphoreTest.semaphore,7,0,NA,NA
+1541009263122,1912003066,return,java.util.concurrent.Semaphore@3feba861[Permits = 1],0,NA,NA,NA,NA,NA,NA
+1541009263122,890393710,call,java.util.concurrent.Semaphore@3feba861[Permits = 1],1072408673,int,java.util.concurrent.Semaphore.availablePermits,7,0,NA,NA
+1541009263122,890393710,return,1,1072408673,NA,NA,NA,NA,NA,NA
+1541009263122,200209378,call,B : available Semaphore permits now: ,2112058910,class java.lang.StringBuilder,java.lang.StringBuilder.append,7,1,java.lang.Integer,1
+1541009263122,200209378,return,B : available Semaphore permits now: 1,2112058910,NA,NA,NA,NA,NA,NA
+1541009263122,1843078919,call,B : available Semaphore permits now: 1,2112058910,class java.lang.String,java.lang.StringBuilder.toString,7,0,NA,NA
+1541009263122,1843078919,return,B : available Semaphore permits now: 1,2112058910,NA,NA,NA,NA,NA,NA
+1541009263122,715463247,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,7,1,java.lang.String,B : available Semaphore permits now: 1
+1541009263122,715463247,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009258105,1332035430,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009262125,1086090357,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009263125,515567074,call,NA,NA,void,java.lang.System.out,5,0,NA,NA
+1541009263125,515567074,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009263125,534841568,call,Thread[Thread-5(comma)5(comma)main],443308702,void,SemaphoreTest$MyATMThread.name,5,0,NA,NA
+1541009263125,534841568,return,F,443308702,NA,NA,NA,NA,NA,NA
+1541009263125,1825973925,call,NA,NA,class java.lang.String,java.lang.String.valueOf,5,1,java.lang.String,F
+1541009263125,1825973925,return,F,0,NA,NA,NA,NA,NA,NA
+1541009263125,1336549518,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,5,1,java.lang.String,F
+1541009263125,1336549518,return,F,0,NA,NA,NA,NA,NA,NA
+1541009263125,112591204,call,F,285720410,class java.lang.StringBuilder,java.lang.StringBuilder.append,5,1,java.lang.String, : releasing lock...
+1541009263125,112591204,return,F : releasing lock...,285720410,NA,NA,NA,NA,NA,NA
+1541009263125,1287209169,call,F : releasing lock...,285720410,class java.lang.String,java.lang.StringBuilder.toString,5,0,NA,NA
+1541009263125,1287209169,return,F : releasing lock...,285720410,NA,NA,NA,NA,NA,NA
+1541009263125,1376364440,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,5,1,java.lang.String,F : releasing lock...
+1541009263125,1376364440,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009263125,1686249884,call,NA,NA,void,SemaphoreTest.semaphore,5,0,NA,NA
+1541009263125,1686249884,return,java.util.concurrent.Semaphore@3feba861[Permits = 1],0,NA,NA,NA,NA,NA,NA
+1541009263125,1221832505,call,java.util.concurrent.Semaphore@3feba861[Permits = 1],1072408673,void,java.util.concurrent.Semaphore.release,5,0,NA,NA
+1541009263125,1221832505,return,NA,1072408673,NA,NA,NA,NA,NA,NA
+1541009263125,1315623226,call,NA,NA,void,java.lang.System.out,5,0,NA,NA
+1541009263125,1315623226,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009263125,1371572744,call,Thread[Thread-5(comma)5(comma)main],443308702,void,SemaphoreTest$MyATMThread.name,5,0,NA,NA
+1541009263125,1371572744,return,F,443308702,NA,NA,NA,NA,NA,NA
+1541009263125,616292205,call,NA,NA,class java.lang.String,java.lang.String.valueOf,5,1,java.lang.String,F
+1541009263125,616292205,return,F,0,NA,NA,NA,NA,NA,NA
+1541009263125,1908676260,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,5,1,java.lang.String,F
+1541009263125,1908676260,return,F,0,NA,NA,NA,NA,NA,NA
+1541009263125,1765796519,call,F,1014672706,class java.lang.StringBuilder,java.lang.StringBuilder.append,5,1,java.lang.String, : available Semaphore permits now: 
+1541009263125,1765796519,return,F : available Semaphore permits now: ,1014672706,NA,NA,NA,NA,NA,NA
+1541009263125,1187011863,call,NA,NA,class java.lang.StringBuilder,SemaphoreTest.semaphore,5,0,NA,NA
+1541009263125,1187011863,return,java.util.concurrent.Semaphore@3feba861[Permits = 2],0,NA,NA,NA,NA,NA,NA
+1541009263125,392168029,call,java.util.concurrent.Semaphore@3feba861[Permits = 2],1072408673,int,java.util.concurrent.Semaphore.availablePermits,5,0,NA,NA
+1541009263125,392168029,return,2,1072408673,NA,NA,NA,NA,NA,NA
+1541009263125,18659524,call,F : available Semaphore permits now: ,1014672706,class java.lang.StringBuilder,java.lang.StringBuilder.append,5,1,java.lang.Integer,2
+1541009263125,18659524,return,F : available Semaphore permits now: 2,1014672706,NA,NA,NA,NA,NA,NA
+1541009263125,1759843608,call,F : available Semaphore permits now: 2,1014672706,class java.lang.String,java.lang.StringBuilder.toString,5,0,NA,NA
+1541009263125,1759843608,return,F : available Semaphore permits now: 2,1014672706,NA,NA,NA,NA,NA,NA
+1541009263125,738838006,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,5,1,java.lang.String,F : available Semaphore permits now: 2
+1541009263125,738838006,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009258117,1983600766,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009263115,1312461359,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009264116,573015062,call,NA,NA,void,java.lang.System.out,3,0,NA,NA
+1541009264116,573015062,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009264116,826240456,call,Thread[Thread-4(comma)5(comma)main],806353501,void,SemaphoreTest$MyATMThread.name,3,0,NA,NA
+1541009264116,826240456,return,E,806353501,NA,NA,NA,NA,NA,NA
+1541009264116,1394205346,call,NA,NA,class java.lang.String,java.lang.String.valueOf,3,1,java.lang.String,E
+1541009264116,1394205346,return,E,0,NA,NA,NA,NA,NA,NA
+1541009264116,1235794180,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,3,1,java.lang.String,E
+1541009264116,1235794180,return,E,0,NA,NA,NA,NA,NA,NA
+1541009264116,1462866707,call,E,497739024,class java.lang.StringBuilder,java.lang.StringBuilder.append,3,1,java.lang.String, : is performing operation 
+1541009264116,1462866707,return,E : is performing operation ,497739024,NA,NA,NA,NA,NA,NA
+1541009264116,28969205,call,E : is performing operation ,497739024,class java.lang.StringBuilder,java.lang.StringBuilder.append,3,1,java.lang.Integer,2
+1541009264116,28969205,return,E : is performing operation 2,497739024,NA,NA,NA,NA,NA,NA
+1541009264116,223797599,call,E : is performing operation 2,497739024,class java.lang.StringBuilder,java.lang.StringBuilder.append,3,1,java.lang.String,(comma) available Semaphore permits : 
+1541009264116,223797599,return,E : is performing operation 2(comma) available Semaphore permits : ,497739024,NA,NA,NA,NA,NA,NA
+1541009264116,1445217005,call,NA,NA,class java.lang.StringBuilder,SemaphoreTest.semaphore,3,0,NA,NA
+1541009264116,1445217005,return,java.util.concurrent.Semaphore@3feba861[Permits = 2],0,NA,NA,NA,NA,NA,NA
+1541009264116,476888924,call,java.util.concurrent.Semaphore@3feba861[Permits = 2],1072408673,int,java.util.concurrent.Semaphore.availablePermits,3,0,NA,NA
+1541009264116,476888924,return,2,1072408673,NA,NA,NA,NA,NA,NA
+1541009264116,1304486276,call,E : is performing operation 2(comma) available Semaphore permits : ,497739024,class java.lang.StringBuilder,java.lang.StringBuilder.append,3,1,java.lang.Integer,2
+1541009264116,1304486276,return,E : is performing operation 2(comma) available Semaphore permits : 2,497739024,NA,NA,NA,NA,NA,NA
+1541009264116,1999023482,call,E : is performing operation 2(comma) available Semaphore permits : 2,497739024,class java.lang.String,java.lang.StringBuilder.toString,3,0,NA,NA
+1541009264116,1999023482,return,E : is performing operation 2(comma) available Semaphore permits : 2,497739024,NA,NA,NA,NA,NA,NA
+1541009264116,65120857,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,3,1,java.lang.String,E : is performing operation 2(comma) available Semaphore permits : 2
+1541009264116,65120857,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009264116,2047763238,call,NA,NA,void,java.lang.Thread.sleep,3,1,java.lang.Long,1000
+1541009263122,6093295,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009264123,709053702,call,NA,NA,void,java.lang.System.out,3,0,NA,NA
+1541009264123,709053702,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009264123,548279303,call,Thread[Thread-2(comma)5(comma)main],541265204,void,SemaphoreTest$MyATMThread.name,3,0,NA,NA
+1541009264123,548279303,return,C,541265204,NA,NA,NA,NA,NA,NA
+1541009264123,1854378485,call,NA,NA,class java.lang.String,java.lang.String.valueOf,3,1,java.lang.String,C
+1541009264123,1854378485,return,C,0,NA,NA,NA,NA,NA,NA
+1541009264123,166960715,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,3,1,java.lang.String,C
+1541009264123,166960715,return,C,0,NA,NA,NA,NA,NA,NA
+1541009264123,971557134,call,C,1773595672,class java.lang.StringBuilder,java.lang.StringBuilder.append,3,1,java.lang.String, : is performing operation 
+1541009264123,971557134,return,C : is performing operation ,1773595672,NA,NA,NA,NA,NA,NA
+1541009264123,996987106,call,C : is performing operation ,1773595672,class java.lang.StringBuilder,java.lang.StringBuilder.append,3,1,java.lang.Integer,2
+1541009264123,996987106,return,C : is performing operation 2,1773595672,NA,NA,NA,NA,NA,NA
+1541009264123,788004866,call,C : is performing operation 2,1773595672,class java.lang.StringBuilder,java.lang.StringBuilder.append,3,1,java.lang.String,(comma) available Semaphore permits : 
+1541009264123,788004866,return,C : is performing operation 2(comma) available Semaphore permits : ,1773595672,NA,NA,NA,NA,NA,NA
+1541009264123,1361517674,call,NA,NA,class java.lang.StringBuilder,SemaphoreTest.semaphore,3,0,NA,NA
+1541009264123,1361517674,return,java.util.concurrent.Semaphore@3feba861[Permits = 2],0,NA,NA,NA,NA,NA,NA
+1541009264123,254798970,call,java.util.concurrent.Semaphore@3feba861[Permits = 2],1072408673,int,java.util.concurrent.Semaphore.availablePermits,3,0,NA,NA
+1541009264123,254798970,return,2,1072408673,NA,NA,NA,NA,NA,NA
+1541009264123,1377425085,call,C : is performing operation 2(comma) available Semaphore permits : ,1773595672,class java.lang.StringBuilder,java.lang.StringBuilder.append,3,1,java.lang.Integer,2
+1541009264123,1377425085,return,C : is performing operation 2(comma) available Semaphore permits : 2,1773595672,NA,NA,NA,NA,NA,NA
+1541009264123,1007629548,call,C : is performing operation 2(comma) available Semaphore permits : 2,1773595672,class java.lang.String,java.lang.StringBuilder.toString,3,0,NA,NA
+1541009264123,1007629548,return,C : is performing operation 2(comma) available Semaphore permits : 2,1773595672,NA,NA,NA,NA,NA,NA
+1541009264123,1436724043,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,3,1,java.lang.String,C : is performing operation 2(comma) available Semaphore permits : 2
+1541009264123,1436724043,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009264123,622772665,call,NA,NA,void,java.lang.Thread.sleep,3,1,java.lang.Long,1000
+1541009264116,2047763238,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009265116,814244130,call,NA,NA,void,java.lang.System.out,3,0,NA,NA
+1541009265116,814244130,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009265116,1913083700,call,Thread[Thread-4(comma)5(comma)main],806353501,void,SemaphoreTest$MyATMThread.name,3,0,NA,NA
+1541009265116,1913083700,return,E,806353501,NA,NA,NA,NA,NA,NA
+1541009265116,2092603471,call,NA,NA,class java.lang.String,java.lang.String.valueOf,3,1,java.lang.String,E
+1541009265116,2092603471,return,E,0,NA,NA,NA,NA,NA,NA
+1541009265116,1973732269,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,3,1,java.lang.String,E
+1541009265116,1973732269,return,E,0,NA,NA,NA,NA,NA,NA
+1541009265116,106310986,call,E,1310749763,class java.lang.StringBuilder,java.lang.StringBuilder.append,3,1,java.lang.String, : is performing operation 
+1541009265116,106310986,return,E : is performing operation ,1310749763,NA,NA,NA,NA,NA,NA
+1541009265116,1718674728,call,E : is performing operation ,1310749763,class java.lang.StringBuilder,java.lang.StringBuilder.append,3,1,java.lang.Integer,3
+1541009265116,1718674728,return,E : is performing operation 3,1310749763,NA,NA,NA,NA,NA,NA
+1541009265116,890960864,call,E : is performing operation 3,1310749763,class java.lang.StringBuilder,java.lang.StringBuilder.append,3,1,java.lang.String,(comma) available Semaphore permits : 
+1541009265116,890960864,return,E : is performing operation 3(comma) available Semaphore permits : ,1310749763,NA,NA,NA,NA,NA,NA
+1541009265116,34712692,call,NA,NA,class java.lang.StringBuilder,SemaphoreTest.semaphore,3,0,NA,NA
+1541009265116,34712692,return,java.util.concurrent.Semaphore@3feba861[Permits = 2],0,NA,NA,NA,NA,NA,NA
+1541009265116,1339970073,call,java.util.concurrent.Semaphore@3feba861[Permits = 2],1072408673,int,java.util.concurrent.Semaphore.availablePermits,3,0,NA,NA
+1541009265116,1339970073,return,2,1072408673,NA,NA,NA,NA,NA,NA
+1541009265116,778483567,call,E : is performing operation 3(comma) available Semaphore permits : ,1310749763,class java.lang.StringBuilder,java.lang.StringBuilder.append,3,1,java.lang.Integer,2
+1541009265116,778483567,return,E : is performing operation 3(comma) available Semaphore permits : 2,1310749763,NA,NA,NA,NA,NA,NA
+1541009265116,1287752888,call,E : is performing operation 3(comma) available Semaphore permits : 2,1310749763,class java.lang.String,java.lang.StringBuilder.toString,3,0,NA,NA
+1541009265116,1287752888,return,E : is performing operation 3(comma) available Semaphore permits : 2,1310749763,NA,NA,NA,NA,NA,NA
+1541009265116,1136458584,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,3,1,java.lang.String,E : is performing operation 3(comma) available Semaphore permits : 2
+1541009265116,1136458584,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009265116,2127505324,call,NA,NA,void,java.lang.Thread.sleep,3,1,java.lang.Long,1000
+1541009264123,622772665,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009265123,959338393,call,NA,NA,void,java.lang.System.out,3,0,NA,NA
+1541009265123,959338393,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009265123,2084813828,call,Thread[Thread-2(comma)5(comma)main],541265204,void,SemaphoreTest$MyATMThread.name,3,0,NA,NA
+1541009265123,2084813828,return,C,541265204,NA,NA,NA,NA,NA,NA
+1541009265123,1014741044,call,NA,NA,class java.lang.String,java.lang.String.valueOf,3,1,java.lang.String,C
+1541009265123,1014741044,return,C,0,NA,NA,NA,NA,NA,NA
+1541009265123,1874572555,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,3,1,java.lang.String,C
+1541009265123,1874572555,return,C,0,NA,NA,NA,NA,NA,NA
+1541009265123,618837498,call,C,1159765758,class java.lang.StringBuilder,java.lang.StringBuilder.append,3,1,java.lang.String, : is performing operation 
+1541009265123,618837498,return,C : is performing operation ,1159765758,NA,NA,NA,NA,NA,NA
+1541009265123,620438646,call,C : is performing operation ,1159765758,class java.lang.StringBuilder,java.lang.StringBuilder.append,3,1,java.lang.Integer,3
+1541009265123,620438646,return,C : is performing operation 3,1159765758,NA,NA,NA,NA,NA,NA
+1541009265123,375049743,call,C : is performing operation 3,1159765758,class java.lang.StringBuilder,java.lang.StringBuilder.append,3,1,java.lang.String,(comma) available Semaphore permits : 
+1541009265123,375049743,return,C : is performing operation 3(comma) available Semaphore permits : ,1159765758,NA,NA,NA,NA,NA,NA
+1541009265123,665248859,call,NA,NA,class java.lang.StringBuilder,SemaphoreTest.semaphore,3,0,NA,NA
+1541009265123,665248859,return,java.util.concurrent.Semaphore@3feba861[Permits = 2],0,NA,NA,NA,NA,NA,NA
+1541009265123,1722829119,call,java.util.concurrent.Semaphore@3feba861[Permits = 2],1072408673,int,java.util.concurrent.Semaphore.availablePermits,3,0,NA,NA
+1541009265123,1722829119,return,2,1072408673,NA,NA,NA,NA,NA,NA
+1541009265123,454363403,call,C : is performing operation 3(comma) available Semaphore permits : ,1159765758,class java.lang.StringBuilder,java.lang.StringBuilder.append,3,1,java.lang.Integer,2
+1541009265123,454363403,return,C : is performing operation 3(comma) available Semaphore permits : 2,1159765758,NA,NA,NA,NA,NA,NA
+1541009265123,1543476944,call,C : is performing operation 3(comma) available Semaphore permits : 2,1159765758,class java.lang.String,java.lang.StringBuilder.toString,3,0,NA,NA
+1541009265123,1543476944,return,C : is performing operation 3(comma) available Semaphore permits : 2,1159765758,NA,NA,NA,NA,NA,NA
+1541009265123,1273705928,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,3,1,java.lang.String,C : is performing operation 3(comma) available Semaphore permits : 2
+1541009265123,1273705928,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009265123,804680763,call,NA,NA,void,java.lang.Thread.sleep,3,1,java.lang.Long,1000
+1541009265116,2127505324,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009266117,1695103701,call,NA,NA,void,java.lang.System.out,3,0,NA,NA
+1541009266117,1695103701,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009266117,636345984,call,Thread[Thread-4(comma)5(comma)main],806353501,void,SemaphoreTest$MyATMThread.name,3,0,NA,NA
+1541009266117,636345984,return,E,806353501,NA,NA,NA,NA,NA,NA
+1541009266117,19892062,call,NA,NA,class java.lang.String,java.lang.String.valueOf,3,1,java.lang.String,E
+1541009266117,19892062,return,E,0,NA,NA,NA,NA,NA,NA
+1541009266117,114958992,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,3,1,java.lang.String,E
+1541009266117,114958992,return,E,0,NA,NA,NA,NA,NA,NA
+1541009266117,707362572,call,E,1635495191,class java.lang.StringBuilder,java.lang.StringBuilder.append,3,1,java.lang.String, : is performing operation 
+1541009266117,707362572,return,E : is performing operation ,1635495191,NA,NA,NA,NA,NA,NA
+1541009266117,479449873,call,E : is performing operation ,1635495191,class java.lang.StringBuilder,java.lang.StringBuilder.append,3,1,java.lang.Integer,4
+1541009266117,479449873,return,E : is performing operation 4,1635495191,NA,NA,NA,NA,NA,NA
+1541009266117,1258994865,call,E : is performing operation 4,1635495191,class java.lang.StringBuilder,java.lang.StringBuilder.append,3,1,java.lang.String,(comma) available Semaphore permits : 
+1541009266117,1258994865,return,E : is performing operation 4(comma) available Semaphore permits : ,1635495191,NA,NA,NA,NA,NA,NA
+1541009266117,708475843,call,NA,NA,class java.lang.StringBuilder,SemaphoreTest.semaphore,3,0,NA,NA
+1541009266117,708475843,return,java.util.concurrent.Semaphore@3feba861[Permits = 2],0,NA,NA,NA,NA,NA,NA
+1541009266117,370501766,call,java.util.concurrent.Semaphore@3feba861[Permits = 2],1072408673,int,java.util.concurrent.Semaphore.availablePermits,3,0,NA,NA
+1541009266117,370501766,return,2,1072408673,NA,NA,NA,NA,NA,NA
+1541009266117,345778702,call,E : is performing operation 4(comma) available Semaphore permits : ,1635495191,class java.lang.StringBuilder,java.lang.StringBuilder.append,3,1,java.lang.Integer,2
+1541009266117,345778702,return,E : is performing operation 4(comma) available Semaphore permits : 2,1635495191,NA,NA,NA,NA,NA,NA
+1541009266117,174977816,call,E : is performing operation 4(comma) available Semaphore permits : 2,1635495191,class java.lang.String,java.lang.StringBuilder.toString,3,0,NA,NA
+1541009266117,174977816,return,E : is performing operation 4(comma) available Semaphore permits : 2,1635495191,NA,NA,NA,NA,NA,NA
+1541009266117,1945138677,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,3,1,java.lang.String,E : is performing operation 4(comma) available Semaphore permits : 2
+1541009266117,1945138677,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009266117,1318875733,call,NA,NA,void,java.lang.Thread.sleep,3,1,java.lang.Long,1000
+1541009265123,804680763,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009266124,471362975,call,NA,NA,void,java.lang.System.out,3,0,NA,NA
+1541009266124,471362975,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009266124,997601754,call,Thread[Thread-2(comma)5(comma)main],541265204,void,SemaphoreTest$MyATMThread.name,3,0,NA,NA
+1541009266124,997601754,return,C,541265204,NA,NA,NA,NA,NA,NA
+1541009266124,690030089,call,NA,NA,class java.lang.String,java.lang.String.valueOf,3,1,java.lang.String,C
+1541009266124,690030089,return,C,0,NA,NA,NA,NA,NA,NA
+1541009266124,896202938,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,3,1,java.lang.String,C
+1541009266124,896202938,return,C,0,NA,NA,NA,NA,NA,NA
+1541009266124,1791041309,call,C,1622350718,class java.lang.StringBuilder,java.lang.StringBuilder.append,3,1,java.lang.String, : is performing operation 
+1541009266124,1791041309,return,C : is performing operation ,1622350718,NA,NA,NA,NA,NA,NA
+1541009266124,1099122735,call,C : is performing operation ,1622350718,class java.lang.StringBuilder,java.lang.StringBuilder.append,3,1,java.lang.Integer,4
+1541009266124,1099122735,return,C : is performing operation 4,1622350718,NA,NA,NA,NA,NA,NA
+1541009266124,592365453,call,C : is performing operation 4,1622350718,class java.lang.StringBuilder,java.lang.StringBuilder.append,3,1,java.lang.String,(comma) available Semaphore permits : 
+1541009266124,592365453,return,C : is performing operation 4(comma) available Semaphore permits : ,1622350718,NA,NA,NA,NA,NA,NA
+1541009266124,1100287246,call,NA,NA,class java.lang.StringBuilder,SemaphoreTest.semaphore,3,0,NA,NA
+1541009266124,1100287246,return,java.util.concurrent.Semaphore@3feba861[Permits = 2],0,NA,NA,NA,NA,NA,NA
+1541009266124,956667561,call,java.util.concurrent.Semaphore@3feba861[Permits = 2],1072408673,int,java.util.concurrent.Semaphore.availablePermits,3,0,NA,NA
+1541009266124,956667561,return,2,1072408673,NA,NA,NA,NA,NA,NA
+1541009266124,1654416278,call,C : is performing operation 4(comma) available Semaphore permits : ,1622350718,class java.lang.StringBuilder,java.lang.StringBuilder.append,3,1,java.lang.Integer,2
+1541009266124,1654416278,return,C : is performing operation 4(comma) available Semaphore permits : 2,1622350718,NA,NA,NA,NA,NA,NA
+1541009266124,935047911,call,C : is performing operation 4(comma) available Semaphore permits : 2,1622350718,class java.lang.String,java.lang.StringBuilder.toString,3,0,NA,NA
+1541009266124,935047911,return,C : is performing operation 4(comma) available Semaphore permits : 2,1622350718,NA,NA,NA,NA,NA,NA
+1541009266124,1580151907,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,3,1,java.lang.String,C : is performing operation 4(comma) available Semaphore permits : 2
+1541009266124,1580151907,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009266124,1267356113,call,NA,NA,void,java.lang.Thread.sleep,3,1,java.lang.Long,1000
+1541009266117,1318875733,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009267117,1000730066,call,NA,NA,void,java.lang.System.out,3,0,NA,NA
+1541009267117,1000730066,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009267117,1580547213,call,Thread[Thread-4(comma)5(comma)main],806353501,void,SemaphoreTest$MyATMThread.name,3,0,NA,NA
+1541009267117,1580547213,return,E,806353501,NA,NA,NA,NA,NA,NA
+1541009267117,781886819,call,NA,NA,class java.lang.String,java.lang.String.valueOf,3,1,java.lang.String,E
+1541009267117,781886819,return,E,0,NA,NA,NA,NA,NA,NA
+1541009267117,54096959,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,3,1,java.lang.String,E
+1541009267117,54096959,return,E,0,NA,NA,NA,NA,NA,NA
+1541009267117,392614647,call,E,1623217602,class java.lang.StringBuilder,java.lang.StringBuilder.append,3,1,java.lang.String, : is performing operation 
+1541009267117,392614647,return,E : is performing operation ,1623217602,NA,NA,NA,NA,NA,NA
+1541009267117,462050564,call,E : is performing operation ,1623217602,class java.lang.StringBuilder,java.lang.StringBuilder.append,3,1,java.lang.Integer,5
+1541009267117,462050564,return,E : is performing operation 5,1623217602,NA,NA,NA,NA,NA,NA
+1541009267117,1398428358,call,E : is performing operation 5,1623217602,class java.lang.StringBuilder,java.lang.StringBuilder.append,3,1,java.lang.String,(comma) available Semaphore permits : 
+1541009267117,1398428358,return,E : is performing operation 5(comma) available Semaphore permits : ,1623217602,NA,NA,NA,NA,NA,NA
+1541009267117,1921700656,call,NA,NA,class java.lang.StringBuilder,SemaphoreTest.semaphore,3,0,NA,NA
+1541009267117,1921700656,return,java.util.concurrent.Semaphore@3feba861[Permits = 2],0,NA,NA,NA,NA,NA,NA
+1541009267117,277276390,call,java.util.concurrent.Semaphore@3feba861[Permits = 2],1072408673,int,java.util.concurrent.Semaphore.availablePermits,3,0,NA,NA
+1541009267117,277276390,return,2,1072408673,NA,NA,NA,NA,NA,NA
+1541009267117,1500357511,call,E : is performing operation 5(comma) available Semaphore permits : ,1623217602,class java.lang.StringBuilder,java.lang.StringBuilder.append,3,1,java.lang.Integer,2
+1541009267117,1500357511,return,E : is performing operation 5(comma) available Semaphore permits : 2,1623217602,NA,NA,NA,NA,NA,NA
+1541009267117,1486882318,call,E : is performing operation 5(comma) available Semaphore permits : 2,1623217602,class java.lang.String,java.lang.StringBuilder.toString,3,0,NA,NA
+1541009267117,1486882318,return,E : is performing operation 5(comma) available Semaphore permits : 2,1623217602,NA,NA,NA,NA,NA,NA
+1541009267117,2081901945,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,3,1,java.lang.String,E : is performing operation 5(comma) available Semaphore permits : 2
+1541009267117,2081901945,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009267117,1526805963,call,NA,NA,void,java.lang.Thread.sleep,3,1,java.lang.Long,1000
+1541009266124,1267356113,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009267124,1250626533,call,NA,NA,void,java.lang.System.out,3,0,NA,NA
+1541009267124,1250626533,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009267124,541963481,call,Thread[Thread-2(comma)5(comma)main],541265204,void,SemaphoreTest$MyATMThread.name,3,0,NA,NA
+1541009267124,541963481,return,C,541265204,NA,NA,NA,NA,NA,NA
+1541009267124,132518047,call,NA,NA,class java.lang.String,java.lang.String.valueOf,3,1,java.lang.String,C
+1541009267124,132518047,return,C,0,NA,NA,NA,NA,NA,NA
+1541009267124,519818603,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,3,1,java.lang.String,C
+1541009267124,519818603,return,C,0,NA,NA,NA,NA,NA,NA
+1541009267124,213727602,call,C,1092337472,class java.lang.StringBuilder,java.lang.StringBuilder.append,3,1,java.lang.String, : is performing operation 
+1541009267124,213727602,return,C : is performing operation ,1092337472,NA,NA,NA,NA,NA,NA
+1541009267124,1984834836,call,C : is performing operation ,1092337472,class java.lang.StringBuilder,java.lang.StringBuilder.append,3,1,java.lang.Integer,5
+1541009267124,1984834836,return,C : is performing operation 5,1092337472,NA,NA,NA,NA,NA,NA
+1541009267124,907949603,call,C : is performing operation 5,1092337472,class java.lang.StringBuilder,java.lang.StringBuilder.append,3,1,java.lang.String,(comma) available Semaphore permits : 
+1541009267124,907949603,return,C : is performing operation 5(comma) available Semaphore permits : ,1092337472,NA,NA,NA,NA,NA,NA
+1541009267124,1393422139,call,NA,NA,class java.lang.StringBuilder,SemaphoreTest.semaphore,3,0,NA,NA
+1541009267124,1393422139,return,java.util.concurrent.Semaphore@3feba861[Permits = 2],0,NA,NA,NA,NA,NA,NA
+1541009267124,1341176741,call,java.util.concurrent.Semaphore@3feba861[Permits = 2],1072408673,int,java.util.concurrent.Semaphore.availablePermits,3,0,NA,NA
+1541009267124,1341176741,return,2,1072408673,NA,NA,NA,NA,NA,NA
+1541009267124,1213274562,call,C : is performing operation 5(comma) available Semaphore permits : ,1092337472,class java.lang.StringBuilder,java.lang.StringBuilder.append,3,1,java.lang.Integer,2
+1541009267124,1213274562,return,C : is performing operation 5(comma) available Semaphore permits : 2,1092337472,NA,NA,NA,NA,NA,NA
+1541009267124,255427013,call,C : is performing operation 5(comma) available Semaphore permits : 2,1092337472,class java.lang.String,java.lang.StringBuilder.toString,3,0,NA,NA
+1541009267124,255427013,return,C : is performing operation 5(comma) available Semaphore permits : 2,1092337472,NA,NA,NA,NA,NA,NA
+1541009267124,863093550,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,3,1,java.lang.String,C : is performing operation 5(comma) available Semaphore permits : 2
+1541009267124,863093550,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009267124,2039905142,call,NA,NA,void,java.lang.Thread.sleep,3,1,java.lang.Long,1000
+1541009267117,1526805963,return,NA,0,NA,NA,NA,NA,NA,NA
+1541009268117,1866781879,call,NA,NA,void,java.lang.System.out,3,0,NA,NA
+1541009268117,1866781879,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009268117,931938087,call,Thread[Thread-4(comma)5(comma)main],806353501,void,SemaphoreTest$MyATMThread.name,3,0,NA,NA
+1541009268117,931938087,return,E,806353501,NA,NA,NA,NA,NA,NA
+1541009268117,1907802154,call,NA,NA,class java.lang.String,java.lang.String.valueOf,3,1,java.lang.String,E
+1541009268117,1907802154,return,E,0,NA,NA,NA,NA,NA,NA
+1541009268117,592121018,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,3,1,java.lang.String,E
+1541009268117,592121018,return,E,0,NA,NA,NA,NA,NA,NA
+1541009268117,1793295624,call,E,1019279988,class java.lang.StringBuilder,java.lang.StringBuilder.append,3,1,java.lang.String, : releasing lock...
+1541009268117,1793295624,return,E : releasing lock...,1019279988,NA,NA,NA,NA,NA,NA
+1541009268117,2075187798,call,E : releasing lock...,1019279988,class java.lang.String,java.lang.StringBuilder.toString,3,0,NA,NA
+1541009268117,2075187798,return,E : releasing lock...,1019279988,NA,NA,NA,NA,NA,NA
+1541009268117,15021894,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,3,1,java.lang.String,E : releasing lock...
+1541009268117,15021894,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009268117,1985489303,call,NA,NA,void,SemaphoreTest.semaphore,3,0,NA,NA
+1541009268117,1985489303,return,java.util.concurrent.Semaphore@3feba861[Permits = 2],0,NA,NA,NA,NA,NA,NA
+1541009268117,1299218034,call,java.util.concurrent.Semaphore@3feba861[Permits = 2],1072408673,void,java.util.concurrent.Semaphore.release,3,0,NA,NA
+1541009268117,1299218034,return,NA,1072408673,NA,NA,NA,NA,NA,NA
+1541009268117,812609504,call,NA,NA,void,java.lang.System.out,3,0,NA,NA
+1541009268117,812609504,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009268117,429466028,call,Thread[Thread-4(comma)5(comma)main],806353501,void,SemaphoreTest$MyATMThread.name,3,0,NA,NA
+1541009268117,429466028,return,E,806353501,NA,NA,NA,NA,NA,NA
+1541009268117,783984537,call,NA,NA,class java.lang.String,java.lang.String.valueOf,3,1,java.lang.String,E
+1541009268117,783984537,return,E,0,NA,NA,NA,NA,NA,NA
+1541009268117,1618464722,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,3,1,java.lang.String,E
+1541009268117,1618464722,return,E,0,NA,NA,NA,NA,NA,NA
+1541009268117,732740691,call,E,2078833867,class java.lang.StringBuilder,java.lang.StringBuilder.append,3,1,java.lang.String, : available Semaphore permits now: 
+1541009268117,732740691,return,E : available Semaphore permits now: ,2078833867,NA,NA,NA,NA,NA,NA
+1541009268117,9804352,call,NA,NA,class java.lang.StringBuilder,SemaphoreTest.semaphore,3,0,NA,NA
+1541009268117,9804352,return,java.util.concurrent.Semaphore@3feba861[Permits = 3],0,NA,NA,NA,NA,NA,NA
+1541009268117,1581440223,call,java.util.concurrent.Semaphore@3feba861[Permits = 3],1072408673,int,java.util.concurrent.Semaphore.availablePermits,3,0,NA,NA
+1541009268117,1581440223,return,3,1072408673,NA,NA,NA,NA,NA,NA
+1541009268117,281197920,call,E : available Semaphore permits now: ,2078833867,class java.lang.StringBuilder,java.lang.StringBuilder.append,3,1,java.lang.Integer,3
+1541009268117,281197920,return,E : available Semaphore permits now: 3,2078833867,NA,NA,NA,NA,NA,NA
+1541009268117,687113623,call,E : available Semaphore permits now: 3,2078833867,class java.lang.String,java.lang.StringBuilder.toString,3,0,NA,NA
+1541009268117,687113623,return,E : available Semaphore permits now: 3,2078833867,NA,NA,NA,NA,NA,NA
+1541009268117,77548883,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,3,1,java.lang.String,E : available Semaphore permits now: 3
+1541009268117,77548883,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009258118,497964871,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009267124,2039905142,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009268124,961147535,call,NA,NA,void,java.lang.System.out,1,0,NA,NA
+1541009268124,961147535,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009268124,2059238346,call,Thread[Thread-2(comma)5(comma)main],541265204,void,SemaphoreTest$MyATMThread.name,1,0,NA,NA
+1541009268124,2059238346,return,C,541265204,NA,NA,NA,NA,NA,NA
+1541009268124,1198042880,call,NA,NA,class java.lang.String,java.lang.String.valueOf,1,1,java.lang.String,C
+1541009268124,1198042880,return,C,0,NA,NA,NA,NA,NA,NA
+1541009268124,225390928,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,1,1,java.lang.String,C
+1541009268124,225390928,return,C,0,NA,NA,NA,NA,NA,NA
+1541009268124,2068084728,call,C,1790324849,class java.lang.StringBuilder,java.lang.StringBuilder.append,1,1,java.lang.String, : releasing lock...
+1541009268124,2068084728,return,C : releasing lock...,1790324849,NA,NA,NA,NA,NA,NA
+1541009268124,1747227272,call,C : releasing lock...,1790324849,class java.lang.String,java.lang.StringBuilder.toString,1,0,NA,NA
+1541009268124,1747227272,return,C : releasing lock...,1790324849,NA,NA,NA,NA,NA,NA
+1541009268124,473287533,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,1,1,java.lang.String,C : releasing lock...
+1541009268124,473287533,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009268124,1150719140,call,NA,NA,void,SemaphoreTest.semaphore,1,0,NA,NA
+1541009268124,1150719140,return,java.util.concurrent.Semaphore@3feba861[Permits = 3],0,NA,NA,NA,NA,NA,NA
+1541009268124,536347135,call,java.util.concurrent.Semaphore@3feba861[Permits = 3],1072408673,void,java.util.concurrent.Semaphore.release,1,0,NA,NA
+1541009268124,536347135,return,NA,1072408673,NA,NA,NA,NA,NA,NA
+1541009268124,1392799834,call,NA,NA,void,java.lang.System.out,1,0,NA,NA
+1541009268124,1392799834,return,java.io.PrintStream@4e50df2e,0,NA,NA,NA,NA,NA,NA
+1541009268124,1633200116,call,Thread[Thread-2(comma)5(comma)main],541265204,void,SemaphoreTest$MyATMThread.name,1,0,NA,NA
+1541009268124,1633200116,return,C,541265204,NA,NA,NA,NA,NA,NA
+1541009268124,286997711,call,NA,NA,class java.lang.String,java.lang.String.valueOf,1,1,java.lang.String,C
+1541009268124,286997711,return,C,0,NA,NA,NA,NA,NA,NA
+1541009268124,1320362218,call,NA,NA,class java.lang.String,java.lang.StringBuilder.<init>,1,1,java.lang.String,C
+1541009268124,1320362218,return,C,0,NA,NA,NA,NA,NA,NA
+1541009268124,1053106118,call,C,445020397,class java.lang.StringBuilder,java.lang.StringBuilder.append,1,1,java.lang.String, : available Semaphore permits now: 
+1541009268124,1053106118,return,C : available Semaphore permits now: ,445020397,NA,NA,NA,NA,NA,NA
+1541009268124,1379123766,call,NA,NA,class java.lang.StringBuilder,SemaphoreTest.semaphore,1,0,NA,NA
+1541009268124,1379123766,return,java.util.concurrent.Semaphore@3feba861[Permits = 4],0,NA,NA,NA,NA,NA,NA
+1541009268124,97520874,call,java.util.concurrent.Semaphore@3feba861[Permits = 4],1072408673,int,java.util.concurrent.Semaphore.availablePermits,1,0,NA,NA
+1541009268124,97520874,return,4,1072408673,NA,NA,NA,NA,NA,NA
+1541009268124,335354041,call,C : available Semaphore permits now: ,445020397,class java.lang.StringBuilder,java.lang.StringBuilder.append,1,1,java.lang.Integer,4
+1541009268124,335354041,return,C : available Semaphore permits now: 4,445020397,NA,NA,NA,NA,NA,NA
+1541009268124,982862651,call,C : available Semaphore permits now: 4,445020397,class java.lang.String,java.lang.StringBuilder.toString,1,0,NA,NA
+1541009268124,982862651,return,C : available Semaphore permits now: 4,445020397,NA,NA,NA,NA,NA,NA
+1541009268124,1987779629,call,java.io.PrintStream@4e50df2e,1313922862,void,java.io.PrintStream.println,1,1,java.lang.String,C : available Semaphore permits now: 4
+1541009268124,1987779629,return,NA,1313922862,NA,NA,NA,NA,NA,NA
+1541009258105,1782200738,return,NA,1313922862,NA,NA,NA,NA,NA,NA
