@@ -1,3 +1,3 @@
 ---
 name : "RespondBQR"
-pattern : "(r && !q && once q) -> ( ((s -> once[3,10] p) and not( not(s) since[>=10] p)) since[>=0] q)"
+pattern : "(r && !q && once q) -> ( ((s -> once[3,10] p) and not( not(s) since[>=10] p)) since q)"

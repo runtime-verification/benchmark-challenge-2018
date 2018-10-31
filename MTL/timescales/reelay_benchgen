@@ -57,7 +57,7 @@ def main(argv):
         metavar='N')
 
     parser.add_argument('--name', 
-        help='''define the name of property (default: MySpec)''',
+        help='''define the name of specification (default: MySpec)''',
         default = "MySpec",
         metavar='STRING')
 
@@ -66,12 +66,12 @@ def main(argv):
         default = 0,
         type=int,
         metavar='N')
-    parser.add_argument('--failing-end', 
-        help='''append a sequence to the trace to makes the spec fail (default: True)''',
-        action="store_true",
+    parser.add_argument('--no-failing-end', 
+        help='''disable appending a sequence to the trace to make the spec fail (default: Enabled)''',
+        action="store_false",
         default=True)
     parser.add_argument('--output-dir', 
-        help='''use existing DIR as the directory to write output files in''',
+        help='''use existing DIR as the directory to write output files in (default: current)''',
         default = '',
         metavar='DIR')
 
@@ -85,7 +85,7 @@ def main(argv):
         max_recur=args.max_recur,
         limit_stutter=args.limit_stutter,
         duration=args.duration,
-        failing_end=args.failing_end
+        failing_end=args.no_failing_end
         )
 
     reelay_benchgen.write_spec(spec, filename=args.name, directory=args.output_dir)
