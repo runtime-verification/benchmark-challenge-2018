@@ -1,0 +1,5 @@
+# One blocker stops blocking after 5 s
+1271,0,ca.uqac.lif.pingus.characters.Blocker
+2388,1,ca.uqac.lif.pingus.rebels.SlackerBlocker
+2659,2,ca.uqac.lif.pingus.characters.Builder
+4315,3,ca.uqac.lif.pingus.characters.Basher

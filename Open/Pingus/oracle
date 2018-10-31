@@ -1,0 +1,5 @@
+Sample trace files are named xxx_yyy.xml where:
+
+- xxx is the number of Pingus introduced in the level
+- yyy is a suffix indicating which of the properties is false; `all_ok` means
+  that all properties should be valid on that trace
