@@ -13,10 +13,10 @@ of the traces to fit their monitor.
 The benchmark currently contains 5 trace files:
 
 * Tetris.csv: a trace from a freely available, open-source tetris game
-* Client-Server.csv: An instant messaging discussion between several users, over a client-server architecture
-* Safelock.csv: A run of a tutorial program for manipulating semaphores
-* FractalTreeTrace.csv: The drawing of a Fractal Tree using a graphics editor
-* Encryption.csv: A run of short Java program that generates AES encryption keys and encrypts several files. 
+* JavaChat.csv: An instant messaging discussion between several users, over a client-server architecture
+* Semaphore.csv: A run of a tutorial program for manipulating semaphores
+* FractalTree.csv: The drawing of a Fractal Tree using a graphics editor
+* AESenc.csv: A run of short Java program that generates AES encryption keys and encrypts several files. 
 
 ## Source code
 
