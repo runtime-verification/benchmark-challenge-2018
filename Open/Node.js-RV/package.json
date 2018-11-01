@@ -1,0 +1,14 @@
+{
+  "name": "data",
+  "version": "1.0.0",
+  "description": "Benchmark suites for RV benchmark challenge 2018",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "async": "^2.6.1",
+    "jalangi2": "^0.2.5"
+  }
+}
