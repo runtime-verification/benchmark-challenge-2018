@@ -33,13 +33,15 @@ The following papers on Dejavu are included in the repository:
 The repository contains the following entries:
 
 * This ``README.md`` file.
-* Six property folders:
+* Six property folders, each containing traces for a particular property:
   - ``property1-access``
   - ``property2-file``
   - ``property3-fifo``
   - ``property4-locks-basic``
   - ``property5-locks-cycles``
   - ``property6-locks-datarace``
+* A ``specification.txt`` file summarizing the properties.
+* An ``oracle.txt`` file summarizing the verdicts expected for combinations of properties and traces.
 * A ``papers`` folder containing papers on DejaVu.
 
 Each property folder contains:

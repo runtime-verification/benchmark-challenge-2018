@@ -1,0 +1,49 @@
+
+Property 1:
+
+| Trace          |  Verdict                 | 
+| --------------:|:-------------------------|
+| log-10k.txt    | fails on event 11,006    |
+| log-100k.txt   | fails on event 110,006   |
+| log-1000k.txt  | fails on event 1,100,006 |
+
+Property 2:
+
+| Trace          |  Verdict                 | 
+| --------------:|:-------------------------|
+| log-10k.txt    | fails on event 11,004    |
+| log-100k.txt   | fails on event 110,004   |
+| log-1000k.txt  | fails on event 1,100,004 |
+
+
+Property 3:
+
+| Trace          |  Verdict              | 
+| --------------:|:----------------------|
+| log-5k.txt     | fails on event 5,051  |
+| log-10k.txt    | fails on event 10,101 |
+
+Property 4:
+
+| Trace          |  Verdict                 | 
+| --------------:|:-------------------------|
+| log-10k.txt    | fails on event 10,401    |
+| log-100k.txt   | fails on event 105,001   |
+| log-1000k.txt  | fails on event 1,050,126 |
+
+Property 5:
+
+| Trace          |  Verdict                 | 
+| --------------:|:-------------------------|
+| log-10k.txt    | fails on event 9,606     |
+| log-100k.txt   | fails on event 100,006   |
+| log-1000k.txt  | fails on event 1,050,006 |
+
+Property 6:
+
+| Trace          |  Verdict                 | 
+| --------------:|:-------------------------|
+| log-10k.txt    | fails on event 10,005    |
+| log-100k.txt   | fails on event 100,005   |
+| log-1000k.txt  | fails on event 1,050,005 |
+

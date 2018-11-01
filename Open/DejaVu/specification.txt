@@ -1,0 +1,192 @@
+
+## Properties
+
+In the following we present the six properties informally, the events they concern, and their formalization in DejaVu.
+
+### Property 1 : Access
+
+#### Informal
+
+_The Access property states that if a file is accessed by a user, then the user should have logged in and not yet logged out, and the file should have been opened and not yet closed._ 
+
+#### Events
+
+| Event              |  Explanation       | 
+| ------------------:|:-------------------|
+| access(user,file)  | user accesses file |
+| login(user)        | user logs in       |
+| logout(user)       | user logs out      |
+| open(file)         | file is opened     |
+| close(file)        | file is closed     |
+
+#### Formal
+
+```
+prop access :
+  Forall user . Forall file .
+    access(user,file) ->
+      [login(user),logout(user))
+        &
+      [open(file),close(file))
+```
+
+
+### Property 2 : File
+
+#### Informal
+
+_The File property states that if a file is closed, then it must have been opened (and not yet closed) with some mode m (e.g. read or write)._ 
+
+#### Events
+
+| Event              |  Explanation       | 
+| ------------------:|:-------------------|
+| open(file,mode)    | file is opened with a particular mode (e.g, read or write) |
+| close(file)        | file is closed     |
+
+#### Formal
+
+```
+prop file : Forall f . close(f) -> Exists m . @ [open(f,m),close(f))
+```
+
+### Property 3 : FIFO
+
+#### Informal
+
+_The FIFO property is a conjunction of four subproperties about data entering and exiting a queue:_ 
+
+  1. _A datum can enter the queue at most once._
+  2. _A datum can exit the queue at most once._
+  3. _A datum can only exit if it has previously been entered._
+  4. _The queue has to respect the FIFO principle._
+
+#### Events
+
+| Event              |  Explanation                     | 
+| ------------------:|:---------------------------------|
+| enter(x)           | datum x is entered into the queue|
+| exit(x)            | datum x us removed from the queue|
+
+#### Formal
+
+```
+prop fifo :
+ Forall x .
+  (enter(x) -> ! @ P enter(x)) &
+  (exit(x) -> ! @ P exit(x)) &
+  (exit(x) -> @ P enter(x)) &
+  (Forall y . (exit(y) & P (enter(y) & @ P enter(x))) -> @ P exit(x))
+```
+
+### Property 4 : Locks
+
+#### Informal
+
+_This property concerns the acquisition and release of locks by concurrentlyexecuting threads. It consists of three subproperties:_
+
+  1. _A thread going to sleep must have released all acquired locks before then._ 
+  2. _If a thread acquires a lock, no thread may prior have acquired the lock and not yet released it._ 
+  3. _A thread cannot release a lock without having acquired it and not yet released it._ 
+
+#### Events
+
+| Event              |  Explanation         | 
+| ------------------:|:---------------------|
+| acq(thread,lock)   | thread acquires lock |
+| rel(thread,lock)   | thread releases lock |
+| sleep(thread)      | thread goes to sleep |
+
+#### Formal
+
+```
+prop locksBasic :
+  Forall t . Forall l .
+    (
+      (sleep(t) -> ![acq(t,l),rel(t,l))) &
+      (acq(t,l) -> ! exists s . @ [acq(s,l),rel(s,l))) &
+      (rel(t,l) -> @ [acq(t,l),rel(t,l)))
+    )
+```
+
+### Property 5 : Deadlocks
+
+#### Informal
+
+_The Deadlock property states that any two threads are not allowed to acquire any two locks in opposite order. That is, if a thread t1 acquires a lock l1, and then before releasing it, acquires a lock l2, then another thread t2 is not allowed to first acquire l2 and then, before releasing it, acquire l1. Following this discipline prevents cyclic deadlocks between two threads. Note that a violation of this property in a trace only indicates that the monitored application has a potential for deadlocking (in a difference schedule), not that it is necessarily deadlocking in the observed schedule._
+
+#### Events
+
+| Event              |  Explanation         | 
+| ------------------:|:---------------------|
+| acq(thread,lock)   | thread acquires lock |
+| rel(thread,lock)   | thread releases lock |
+
+#### Formal
+
+```
+prop locksDeadlocks :
+  Forall t1 . Forall t2 . Forall l1 . Forall l2 .
+    (@ [acq(t1,l1),rel(t1,l1)) & acq(t1,l2))
+    ->
+    (! @ P (@ [acq(t2,l2),rel(t2,l2)) & acq(t2,l1)))
+```
+
+### Property 6 : Dataraces
+
+#### Informal
+
+_The Datarace property captures data race potentials. A data race occurs when two threads access (read or write) the same shared variable simultaneously, and at least one of the threads writes to the variable. The property states that if a variable is acccessed by two threads, and one writes to the variable, there must exist a lock, which both threads hold whenever they access the variable._
+
+#### Events
+
+| Event              |  Explanation           | 
+| ------------------:|:-----------------------|
+| acq(thread,lock)   | thread acquires lock   |
+| rel(thread,lock)   | thread releases lock   |
+| read(thread,var)   | thread reads variable  |
+| write(thread,var)  | thread writes variable |
+
+#### Formal
+
+```
+prop locksDataraces :
+  Forall t1 . Forall t2 . Forall x .
+    (
+      (P (read(t1,x) | write(t1,x)))
+      &
+      (P write(t2,x))
+    )
+    ->
+    Exists l .
+      (
+        H ((read(t1,x) | write(t1,x)) -> [acq(t1,l),rel(t1,l)))
+        &
+        H ((read(t2,x) | write(t2,x)) -> [acq(t2,l),rel(t2,l)))
+      )
+```
+
+## Executing the Benchmark with DejaVu
+
+The traces can be analyzed with DejaVu by following the follwing instructions.
+
+### Step 1
+
+* Install dejavu : https://github.com/havelund/dejavu 
+
+### Step 2
+
+Say you want to analyze traces in the folder ``property1-access``. Do a:
+
+    cd property1-access
+
+To run dejavu on the log with around 10,000 events do:
+
+    dejavu prop.dejavu log-10k.csv
+
+DejaVu represents each variable with _N_ BDD bits, the default is _N_ = 20 bits per variable. _N_ bits allows for _2^N_ different data values to be observed. However, DejaVu performs garbage collection, so the exact number of values observable may be bigger than _2^N_. The smaller the number of bits the more efficient DejaVu is. However, too few bits may cause DejaVu to run out of memory.
+
+The bit number _N_ can be changed by providing the desired bit number to the dejavu command. E.g. if we want to try with 13 bits, it will look as follows:
+
+    dejavu prop.dejavu log-10k.csv 13
+        
