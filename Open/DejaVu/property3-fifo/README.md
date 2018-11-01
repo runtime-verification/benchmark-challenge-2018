@@ -15,7 +15,7 @@ _The FIFO property is a conjunction of four subproperties about data entering an
 | Event              |  Explanation                     | 
 | ------------------:|:---------------------------------|
 | enter(x)           | datum x is entered into the queue|
-| exit(x)            | datum x us removed from the queue|
+| exit(x)            | datum x is removed from the queue|
 
 ## Formalization in DejaVu
 
