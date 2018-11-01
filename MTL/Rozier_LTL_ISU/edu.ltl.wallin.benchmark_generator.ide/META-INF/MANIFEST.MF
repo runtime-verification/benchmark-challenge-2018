@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: edu.ltl.wallin.benchmark_generator.ide
+Bundle-ManifestVersion: 2
+Bundle-Name: edu.ltl.wallin.benchmark_generator.ide
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: edu.ltl.wallin.benchmark_generator.ide; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: edu.ltl.wallin.benchmark_generator,
+ org.eclipse.xtext.ide,
+ org.eclipse.xtext.xbase.ide,
+ org.antlr.runtime
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: edu.ltl.wallin.ide.contentassist.antlr,
+ edu.ltl.wallin.ide.contentassist.antlr.internal
+
