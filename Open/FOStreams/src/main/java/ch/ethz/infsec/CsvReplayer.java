@@ -489,7 +489,7 @@ public class CsvReplayer {
         String outputHost = null;
         int outputPort = 0;
         Reporter reporter = new NullReporter();
-        int queueCapacity = 64;
+        int queueCapacity = 1024;
 
         try {
             for (int i = 0; i < args.length; ++i) {

@@ -4,8 +4,9 @@ Building
 The following software packages must be installed to build and run the
 benchmark tools:
 
-  - Java JDK version 8 or later <https://openjdk.java.net>
+  - Java JDK 8 or later <https://openjdk.java.net>
   - a current version of Apache Maven <https://maven.apache.org>
+  - MonPoly 1.1.7 <https://sourceforge.net/projects/monpoly> for the oracle
 
 Run
 
@@ -13,6 +14,7 @@ Run
 
 from the directory that contains this README file. After completion, the tools
 can be run using the provided Shell scripts generator.sh and replayer.sh.
+MonPoly must be on the PATH in order to use the oracle.
 
 
 Stream Generator
@@ -172,8 +174,8 @@ Option summary:
 
     -q <buffer size>
             Sets the size of the internal buffer between the reader and writer
-            thread (default: 64). Increase this value if -vv repeatedly reports
-            underruns.
+            thread (default: 1024). Increase this value if -vv repeatedly
+            reports underruns.
 
     -m      Output in MonPoly format. If this option is not given, the modified
             CSV format is used.
@@ -238,3 +240,17 @@ line consists of the following fields, which are separated by spaces:
   - the average delay.
 
 All values are printed in seconds unless noted otherwise.
+
+
+Oracle
+======
+
+Usage:
+
+./run.sh oracle {-S | -L | -T | -P <pattern>} [-w <interval>]
+
+The oracle reads events **in MonPoly format** from standard input and reports
+violations on standard output. Its arguments are a subset of those for the
+generator described above. They define the property which is monitored by the
+oracle. Usually, the property specification should correspond to the invocation
+of the generator that was used to generate the event stream.
