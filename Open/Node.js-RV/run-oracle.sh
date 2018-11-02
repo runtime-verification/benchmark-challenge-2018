@@ -13,4 +13,5 @@ if [ $# -ne 2 ]
 fi
 
 # run SWI-Prolog
-swipl -p node=oracle oracle/oracle.pl -- "$1" "$2"
+DIR="$PWD"/`dirname "$0"`
+swipl -p node="$DIR"/oracle "$DIR"/oracle/oracle.pl -- "$1" "$2"
