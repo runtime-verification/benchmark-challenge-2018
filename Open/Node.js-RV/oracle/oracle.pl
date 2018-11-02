@@ -23,7 +23,7 @@ read_file(Stream,[X|L]) :-
     atom_chars(X, Codes),
     read_file(Stream,L), !.
 
-trace([], _, _).
+trace([], TE, _) :- may_halt(TE) -> write('Execution terminated correctly');write('Execution aborted').
 trace([E|Es], TE, N) :-
 	(trace, next(TE, E, TE2), write('matched '), write(N), nl, N2 is N+1, trace(Es, TE2, N2));
 	write('ERROR'), nl.
