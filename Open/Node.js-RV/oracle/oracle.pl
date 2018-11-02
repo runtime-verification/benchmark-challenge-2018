@@ -24,9 +24,9 @@ read_file(Stream,[X|L]) :-
     read_file(Stream,L), !.
 
 trace([], TE, _) :- may_halt(TE) -> write('Execution terminated correctly');write('Execution aborted').
-trace([E|Es], TE, N) :-
-	(next(TE, E, TE2), write('matched '), write(N), nl, N2 is N+1, trace(Es, TE2, N2));
-	write('ERROR'), nl.
+trace([E|Es], TE, N) :-	next(TE, E, TE2) ->
+	(write('matched '), write(N), nl, N2 is N+1, trace(Es, TE2, N2));
+	(write('ERROR on event '), write(E), nl).
 
 % load spec
 :- current_prolog_flag(argv, [_, Spec]), use_module(Spec).
