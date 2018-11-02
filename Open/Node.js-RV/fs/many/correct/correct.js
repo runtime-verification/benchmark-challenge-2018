@@ -1,8 +1,8 @@
 var async = require('async'),
     fs = require('fs');
 
-var MAX_FILES = 1,
-    MAX_WRITES = 1;
+var MAX_FILES = 10,
+    MAX_WRITES = 10;
 
 for (var i = 0; i < MAX_FILES; ++i) {
     var filename = '/tmp/out'+i+'.txt';

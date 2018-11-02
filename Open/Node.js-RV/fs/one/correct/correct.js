@@ -1,5 +1,5 @@
 var fs = require('fs')
-var MAX = 3
+var MAX = 20
 
 function error(err) {
 	if (err) {
