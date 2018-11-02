@@ -15,7 +15,7 @@ match(Json, myfilter) :- func_pre(Json, NameString, _, _, _),
                          string_chars(NameString, ['f','s','.'|_]).
 
 trace_expression(fs_many, T) :-
-	T  = myfilter >> (eps \/ var(ID, open(ID):(Tf|T))),
-	Tf = var(FD, opencb(ID, FD):W),
-	W  = var(ID2, write(ID2, FD):cb(ID2):W) \/ var(ID3, close(ID3, FD):cb(ID3):eps),
+	T  = myfilter >> (eps \/ var(id, open(var(id)):(Tf|T))),
+	Tf = var(fd, opencb(var(id), var(fd)):W),
+	W  = var(id2, write(var(id2), var(fd)):cb(var(id2)):W) \/ var(id3, close(var(id3), var(fd)):cb(var(id3)):eps),
 	numbervars(T, 0, _).
