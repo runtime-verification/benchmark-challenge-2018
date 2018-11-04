@@ -1,3 +1,3 @@
-Link to fractal tree execution trace:
+FractalTree Java execution trace:
 
-https://drive.google.com/file/d/1yTMLDeFu_MIh45ARu50jvnU2yaxE01iw/view?usp=sharing
+https://drive.google.com/open?id=1OUxSPx8RR22FRvfk2aXeznoEGjNH8m0P
