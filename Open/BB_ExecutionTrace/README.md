@@ -10,12 +10,12 @@ of the traces to fit their monitor.
 
 ## Content
 
-The benchmark currently contains 5 trace files:
+The benchmark currently contains 7  trace files, from 5 scenarios
 
-* Tetris.csv: a trace from a freely available, open-source tetris game
+* Tetris.csv: a trace from a freely available, open-source tetris game  (2 traces)
 * JavaChat.csv: An instant messaging discussion between several users, over a client-server architecture
 * Semaphore.csv: A run of a tutorial program for manipulating semaphores
-* FractalTree.csv: The drawing of a Fractal Tree using a graphics editor
+* FractalTree.csv: The drawing of a Fractal Tree using a graphics editor (2 traces)
 * AESenc.csv: A run of short Java program that generates AES encryption keys and encrypts several files. 
 
 ## Source code
