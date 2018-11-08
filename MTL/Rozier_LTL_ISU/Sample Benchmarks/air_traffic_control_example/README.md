@@ -20,7 +20,7 @@ The example contained here was generated using requirements drawn directly from 
 )
 ```
 
-These specifications compose core requirements of an automated air traffic control system. Note that in the line ```(-INITIAL | G[10,10](TSAFE_ALERT_AT & TSAFE_ALERT_BT)``` a fault is intentionally triggered, in which the mutual exclusivity of ```TSAFE_ALERT_BT```, ```TSAFE_ALERT_AT```, and ```TSAFE_ALERT_NON``` (as expressed in the previous line) is violated. Thus, in the sample trace generated, the oracle reports ```false``` at time step 10.
+These specifications compose core requirements of an automated air traffic control system. Note that in the line ```(-INITIAL | G[10,10](TSAFE_ALERT_AT & TSAFE_ALERT_BT)``` a fault is intentionally triggered, in which the mutual exclusivity of ```TSAFE_ALERT_BT```, ```TSAFE_ALERT_AT```, and ```TSAFE_ALERT_NON``` (as expressed in the previous line) is violated. Thus, in the sample trace generated, the oracle reports ```false``` at time step 10. More complex errors may be easily generated using this structure, in which the error is "scheduled" relative to t = 0, using the ```INITIAL``` macro.
 
 ## References
 [1] Zhao, Yang, and Rozier, Kristin Yvonne. “Formal Specification and Verification of a Coordination Protocol for an Automated Air Traffic Control System.” In 12th International Workshop on Automated Verification of Critical Systems (AVoCS2012), volume 53 of Electronic Communications of the EASST, 2012.
