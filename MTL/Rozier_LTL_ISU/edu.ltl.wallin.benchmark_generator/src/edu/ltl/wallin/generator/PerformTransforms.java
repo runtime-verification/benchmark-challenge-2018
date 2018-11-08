@@ -46,7 +46,7 @@ public class PerformTransforms {
 		}
 	}
 	
-	static String debugPrettyPrinter(Formula f) {
+	public static String debugPrettyPrinter(Formula f) {
 		sb = new StringBuffer();
 		debugPrettyPrinterHelper(f);
 		sb.append(";\n");
