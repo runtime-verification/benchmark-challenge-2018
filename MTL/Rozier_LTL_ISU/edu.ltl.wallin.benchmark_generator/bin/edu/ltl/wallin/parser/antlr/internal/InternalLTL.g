@@ -649,7 +649,7 @@ ruleLiteral returns [EObject current=null]
 	)
 ;
 
-RULE_VAR_NAME : 'a'..'z';
+RULE_VAR_NAME : ('a'..'z'|'A'..'Z'|'_')*;
 
 RULE_ID : '^'? ('a'..'z'|'A'..'Z'|'_') ('a'..'z'|'A'..'Z'|'_'|'0'..'9')*;
 

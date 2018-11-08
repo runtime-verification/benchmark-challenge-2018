@@ -26,5 +26,5 @@ Literal returns Formula:
 ;
 
 terminal VAR_NAME:
-	'a'..'z' //('a'..'z'|'0'..'9')*
+	('a'..'z'|'A'..'Z'|'_')* //('a'..'z'|'0'..'9')*
 ;

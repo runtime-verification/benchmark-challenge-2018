@@ -8,12 +8,14 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.regex.Pattern;
 
 import org.eclipse.emf.common.util.TreeIterator;
 import org.eclipse.emf.ecore.EObject;
 
 import edu.ltl.wallin.generator.ComputeDeadlines;
 import edu.ltl.wallin.generator.LTLGenerator;
+import edu.ltl.wallin.generator.PerformTransforms;
 import edu.ltl.wallin.lTL.BinaryExpr;
 import edu.ltl.wallin.lTL.Formula;
 import edu.ltl.wallin.lTL.IdFormula;
@@ -70,24 +72,29 @@ public class SAT_Output {
 	}
 	
 	private static int maxDepth(Formula f) {
-		int largestVarNum = 0;
+		int maxDepth = 0;
+		String varPattern = "[a-zA-Z]";
 		TreeIterator<EObject> treeContents = f.eAllContents();
 		EObject cur = f;
 		do {
-			largestVarNum += ((Formula)cur).getUpperBound();
+			if(cur instanceof IdFormula) {
+				if(((IdFormula)cur).getUpperBound() > maxDepth) {
+					maxDepth = ((IdFormula)cur).getUpperBound();
+				}
+			}
 			if(treeContents.hasNext()) cur = treeContents.next();
 			else cur = null;
 		}while(cur != null);
-		return largestVarNum;
+		return maxDepth;
 	}
 	
 	private static void incrementFormula(Formula f) {
 		TreeIterator<EObject> treeContents = f.eAllContents();
 		EObject cur = f;
 		do {
-			if(cur instanceof Formula) {
-				((Formula) cur).setLowerBound(((Formula) cur).getLowerBound() + 1);
-				((Formula) cur).setUpperBound(((Formula) cur).getUpperBound() + 1);
+			if(cur instanceof IdFormula) {
+				((IdFormula) cur).setLowerBound(((IdFormula) cur).getLowerBound() + 1);
+				((IdFormula) cur).setUpperBound(((IdFormula) cur).getUpperBound() + 1);
 			}
 			if(treeContents.hasNext()) cur = treeContents.next();
 			else cur = null;
@@ -97,23 +104,39 @@ public class SAT_Output {
 	
 	public static String writeForSMT(Formula f, String output_filename, int trace_length) {
 		StringBuffer Sat_buffer = new StringBuffer();
-		//Sat_buffer.append("BC1.1\n");
-		System.out.println(maxDepth(f));
+
 		for(String s : ComputeDeadlines.numVars(f)) {
+			if(s.equalsIgnoreCase("initial")) continue;
 			for(int j = 0; j <= trace_length + maxDepth(f); j++) {
 				Sat_buffer.append("(declare-fun " + (s) + Integer.toString(j) + "() (Bool))\n");
 			}
 		}
+		
+		for(int j = 0; j <=trace_length + maxDepth(f); j++) {
+			Sat_buffer.append("(declare-fun INITIAL" + j +"() (Bool))\n");
+		}
 	
 		int t = 0;
-		for(t = 0; t < trace_length; t++) {
-			Sat_buffer.append("(define-fun t" + t + "() Bool" + satPrinter(f) + ")\n");
-			Sat_buffer.append("(assert-soft t" + t + ")\n");
+		Sat_buffer.append("(define-fun O_t" + t + "() Bool" + "(and " + satPrinter(f) + " INITIAL0)" + ")\n");
+		Sat_buffer.append("(assert O_t" + t + ")\n");
+		incrementFormula(f);
+		for(t = 1; t < trace_length; t++) {
+			//Sat_buffer.append("(declare-fun t" + t + "() (Bool))\n");
+			Sat_buffer.append("(define-fun O_t" + t + "() Bool" + satPrinter(f) + ")\n");
+			Sat_buffer.append("(assert-soft O_t" + t + ")\n");
+			Sat_buffer.append("(assert (not INITIAL" + t + "))");
+			//Sat_buffer.append("(assert-soft (and t" + t + " (and (or (not" + satPrinter(f) + ") t" + t + ")" + " (or " + satPrinter(f) + " (not t" + t + ")))" + "))\n");
+			//Sat_buffer.append("(assert-soft (and (or (not t" + t + ") " +   satPrinter(f) + ") t" + t + "))\n");
 			//increment formula by 1
 			incrementFormula(f);
 		}
-		Sat_buffer.append("(check-sat)\n(get-model)\n");
-		
+		Sat_buffer.append("(set-option :opt.priority pareto)\n" + 
+				"(check-sat)\n(get-model)\n");
+		Sat_buffer.append("(echo \" \")\n");
+		for(t = 0; t <trace_length; t++) {
+			Sat_buffer.append("(eval O_t" + t + ")\n");
+			Sat_buffer.append("(echo \" \")\n");
+		}
 		String output = Sat_buffer.toString();
 		
 		try {
@@ -221,12 +244,12 @@ public class SAT_Output {
 		return trace;
 	}
 	
-	public static String processSMTResponse(String bczchaff_result, String output_filename, HashSet<String> var_set, int trace_length) {
-		if(bczchaff_result.contains("unsat")) return "UNSATISFIABLE";
-
+	public static String processSMTResponse(String smt_result, String output_filename, HashSet<String> var_set, int trace_length) {
 		String trace = "";
 		HashMap<String, HashMap<Integer, Boolean>> variableValues = new HashMap<String, HashMap<Integer, Boolean>>();
-				
+			
+		var_set.add("O_t");
+		var_set.add("INITIAL");
 		//Set all variables to false before reading in actual values
 		for(String var : var_set) {
 			HashMap<Integer, Boolean> varMap = new HashMap<Integer, Boolean>();
@@ -236,31 +259,49 @@ public class SAT_Output {
 			variableValues.put(var, varMap);
 		}
 		
-		//Read result for var values
-		String[] results = bczchaff_result.split(" ");
-//		for(String fs : results) {
-//			System.out.println("||" + fs + "||");
-//		}
 
-		String s;
-		for(int i = 0; i < results.length; i++) {
-			s = results[i];
-			if(s.contains("define-fun")) {
-				i++;
-				String  var_name = results[i]; //Now is variable name;
-				i+=6;
+//		for(int i = 0; i < trace_length; i++) {
+//			HashMap<Integer, Boolean> varMap = new HashMap<Integer, Boolean>();
+//			varMap.put(i, false);
+//			variableValues.put("O_t", varMap);
+//		}
+//		for(int i = 0; i < trace_length; i++) {
+//			HashMap<Integer, Boolean> varMap = new HashMap<Integer, Boolean>();
+//			varMap.put(i, false);
+//			variableValues.put("INITIAL", varMap);
+//		}
+		
+		if(!smt_result.contains("unsat")) {
+		
+			//Read result for var values
+			String[] results = smt_result.split(" ");
+	
+	
+			String s;
+			int i = 0;
+	
+			for(i = 0; i < results.length - trace_length; i++) {
 				s = results[i];
-				boolean isTrue = s.contains("true");
-				System.out.println(var_name + " : " + s);
-				variableValues.get(var_name.substring(0,1)).put(Integer.parseInt(var_name.substring(1)), isTrue);
+				if(s.contains("define-fun")) {
+					i++;
+					String  var_name = results[i]; //Now is variable name;
+					i+=6;
+					s = results[i];
+					boolean isTrue = s.contains("true");
+					variableValues.get(var_name.replaceAll("[0-9]", "")).put(Integer.parseInt(var_name.replaceAll("[^0-9]", "")), isTrue);
+				}
+			}
+			
+			for(int t = i; t < i + trace_length; t++) {
+				variableValues.get("O_t").put((t-i), results[t].contains("true"));
 			}
 		}
 		
-		
-			
+
 		//Add variable labels at top
 		trace += "TIME, ";
 		for(String r : var_set) {
+			if(r.equalsIgnoreCase("initial")) continue;
 			trace += (r) + ", ";
 		}
 		trace += "\n";
@@ -270,6 +311,7 @@ public class SAT_Output {
 			trace += t + ", ";
 			
 			for(String v : var_set) {
+				if(v.equalsIgnoreCase("initial")) continue;
 				trace += variableValues.get(v).get(t) + ", ";
 			}
 			

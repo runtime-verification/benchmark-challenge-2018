@@ -468,7 +468,7 @@ public class LTLGrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	//terminal VAR_NAME:
-	//	'a'..'z' //('a'..'z'|'0'..'9')*
+	//	'a'..'z' | 'A'..'Z' | '_'* //('a'..'z'|'0'..'9')*
 	//;
 	public TerminalRule getVAR_NAMERule() {
 		return tVAR_NAME;
