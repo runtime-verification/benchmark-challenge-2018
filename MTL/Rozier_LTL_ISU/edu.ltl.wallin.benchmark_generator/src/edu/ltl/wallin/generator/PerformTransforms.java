@@ -17,7 +17,7 @@ import org.eclipse.xtext.EcoreUtil2;
 public class PerformTransforms {
 	
 	private static StringBuffer sb = new StringBuffer();
-	
+
 	private static void debugPrettyPrinterHelper(Formula f) {
 		if(f instanceof UnaryExpr) {
 			UnaryExpr castUnary = (UnaryExpr) f;

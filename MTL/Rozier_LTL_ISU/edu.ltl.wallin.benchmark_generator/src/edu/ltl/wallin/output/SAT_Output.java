@@ -244,8 +244,20 @@ public class SAT_Output {
 		return trace;
 	}
 	
+	public static String getOracle(String trace, int num_vars, int trace_length) {
+		String[] toparse = trace.split(",");
+		String oracle = "";
+		int i = 0, j = 0;
+		while(!toparse[i].equals("O_t")) i++;
+		for(j = 0; j < trace_length; j++) {
+			oracle += toparse[num_vars*j + i] + ",";
+		}
+		return oracle;
+	}
+	
 	public static String processSMTResponse(String smt_result, String output_filename, HashSet<String> var_set, int trace_length) {
 		String trace = "";
+		String oracle = "";
 		HashMap<String, HashMap<Integer, Boolean>> variableValues = new HashMap<String, HashMap<Integer, Boolean>>();
 			
 		var_set.add("O_t");
@@ -329,6 +341,20 @@ public class SAT_Output {
 			e.printStackTrace();
 		}
 			
+		for(int k = 0; k < trace_length; k++) {
+			oracle += k +"," + variableValues.get("O_t").get(k)+ "\n";
+		}
+			
+		BufferedWriter oracle_writer;
+		try {
+			oracle_writer = new BufferedWriter(new FileWriter(output_filename + "_oracle.csv"));
+			oracle_writer.write(oracle);
+			oracle_writer.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 		return trace;
 	}
 	
