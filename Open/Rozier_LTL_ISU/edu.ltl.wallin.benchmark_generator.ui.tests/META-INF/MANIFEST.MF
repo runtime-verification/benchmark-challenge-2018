@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: edu.ltl.wallin.benchmark_generator.ui.tests
+Bundle-SymbolicName: edu.ltl.wallin.benchmark_generator.ui.tests;singleton:=true
+Bundle-Version: 0.0.1.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Export-Package: edu.ltl.wallin.ui.tests;x-internal=true
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.ui.workbench;resolution:=optional,
+ org.eclipse.xtext.junit4,
+ org.eclipse.xtext.testing,
+ org.eclipse.xtext.xbase.junit,
+ org.eclipse.xtext.xbase.testing
+Automatic-Module-Name: edu.ltl.wallin.benchmark_generator.ui.tests
+

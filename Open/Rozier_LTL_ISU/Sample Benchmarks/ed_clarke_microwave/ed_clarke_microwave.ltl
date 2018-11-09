@@ -1,0 +1,10 @@
+(
+    (-INITIAL | (-Start & -Close & -Heat & -Error)) &
+    (-(-Start & -Close & -Heat & -Error) | G[1,1]((Start & -Close & -Heat & Error) | (-Start & Close & -Heat & -Error))) &
+    (-(Start & -Close & -Heat & Error) | G[1,1](Start & Close & -Heat & Error)) &
+    (-(-Start & Close & -Heat & -Error) | G[1,1]((-Start & -Close & -Heat & -Error) | (Start & Close & -Heat & -Error))) &
+    (-(-Start & Close & Heat & -Error) | G[1,1]((-Start & Close & -Heat & -Error) | (-Start & -Close & -Heat & -Error) | (-Start & Close & Heat & -Error))) &
+    (-(Start & Close & -Heat & Error) | G[1,1]((Start & -Close & -Heat & Error) | (-Start & Close & -Heat & -Error))) &
+    (-(Start & Close & -Heat & -Error) | G[1,1](Start & Close & Heat & -Error)) &
+    (-(Start & Close & Heat & -Error) | G[1,1](-Start & Close & Heat & -Error))
+)
