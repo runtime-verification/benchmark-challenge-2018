@@ -46,6 +46,7 @@ class LTLGenerator extends AbstractGenerator {
 		log("SAT SOLVER RESULT\n\n" + sat_result + "\n", log_writer);
 		val trace = SAT_Output.processSMTResponse(sat_result, modified_output_filename, var_set, trace_length);
 		log("GENERATED TRACE\n\n" + trace + "\n", log_writer);
+		//log("ORACLE\n\n" + SAT_Output.getOracle(trace, 1 + ComputeDeadlines.numVars(resource.getContents().get(0) as Formula).size(),trace_length) + "\n", log_writer);
 		log_writer.close();
 	}
 	
